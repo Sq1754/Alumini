@@ -4,23 +4,34 @@ import { IonicModule } from '@ionic/angular';
 import { register } from 'swiper/element/bundle';
 // register Swiper custom elements
 register();
-
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
- // standalone: true,
- // imports: [IonicModule],
 })
 export class AppComponent {
-  public pages: any[] = [
-    {title: 'Home', url: '/home', icon: 'home'},
-    {title: 'Profile', url: '/profile', icon: 'person'},
-    {title: 'About Us', url: '/about', icon: 'information-circle'},
-    {title: 'Privacy Policy', url: '/privacy', icon: 'document-lock'},
-    {title: 'Awards', url: '/awards', icon: 'star'},
-    {title: 'Sign Out', url: '', icon: 'log-out', route: true},
+  public appPages = [
+    { title: 'Home', url: 'home', icon: 'home' },
+    { title: 'About', url: 'about', icon: 'person' },
+    { title: 'Alumni', url: 'alumni', icon: 'school' },
+    { title: 'Batch', url: 'batch', icon: 'ribbon' },
+    { title: 'Publication', url: 'publication', icon: 'book' },
+    { title: 'Membership', url: 'membership', icon: 'cash' },
+    { title: 'Company', url: 'company', icon: 'briefcase' },
+    { title: 'Award', url: 'award', icon: 'trophy' },
+    { title: 'Donate', url: 'donate', icon: 'wallet' },
+    { title: 'Feedback', url: 'feedback', icon: 'share' },
+    { title: 'Sign out', url: 'sign', icon: 'walk' },
   ];
+  // public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 
+  public contactDetails = {
+    socialMedia: [
+      {URL: 'twitter.com', icon:''},
+      {URL: 'instragam.com', icon:''},
+      {URL: 'facebook.com', icon:''},
+      {URL: 'linked.in', icon:''},
+    ],
+  };
   constructor() {}
 }

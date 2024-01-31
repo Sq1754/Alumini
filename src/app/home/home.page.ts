@@ -18,8 +18,8 @@ export class HomePage {
 
   ngOnInit(): void {
     this.slides = [
-      {banner: './../../assets/heroImg.jpeg'},
-      {banner: './../../assets/b1.jpeg'},
+      {banner: 'assets/IMG-20240123-WA0003.jpg'},
+      {banner: 'assets/IMG-20240123-WA0005.jpg'},
       {banner: 'assets/b2.jpeg'},
       {banner: 'assets/b3.jpeg'},
     ];

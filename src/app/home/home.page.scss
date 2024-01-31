@@ -1,5 +1,13 @@
 ion-header{
+  height: 10vh;
   ion-toolbar{
+    ion-title{
+      #nav{
+        width: 20vw;
+        height: 10vh;
+        padding-left: 10px;
+      }
+    }
     ion-button{
       p{
         font-size: 0.5rem;
@@ -74,14 +82,7 @@ ion-menu-button.md{
 
 }
 
-#nav{
-  // padding-top: 5px;
-  // margin-top: 10px;
-  height: 50px;
-  width: auto;
-  margin: 0%;
-  padding-top: 5px;
-}
+
 
 ion-title{
   margin: 0%;
@@ -106,6 +107,9 @@ ion-title{
 
 //container
 .container{
+  h1{
+    color: grey;
+  }
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: rgb(27, 0, 61); 
   color: white;
@@ -119,8 +123,11 @@ ion-title{
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  line-height: 20px;
+  padding-bottom: 20%;
+  padding-top: 20%;
 
 }
 
@@ -357,4 +364,26 @@ display: flex;
 align-items: center;
 justify-content: center;
 padding: 10px;
+}
+
+
+@media screen and (max-width:717px) {
+  .container{
+    height: 65%;
+  }
+
+  ion-header{
+    height: 9vh;
+    ion-toolbar{
+      ion-title{
+        #nav{
+          margin-top: 5px;
+          width: 20vw;
+          height: 7vh;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+
 }

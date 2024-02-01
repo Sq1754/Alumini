@@ -42,13 +42,13 @@ export class HomePage implements OnInit {
       if (this.counterValue1 >= 500) {
         clearInterval(this.counterInterval1);
       }
-    }, 20);
+    }, 10);
   }
 
   startCounter2() {
     this.counterInterval2 = setInterval(() => {
       this.counterValue2++;
-      if (this.counterValue2 >= 2500) { // Adjust the stopping point for counter 2
+      if (this.counterValue2 >= 2000) { // Adjust the stopping point for counter 2
         clearInterval(this.counterInterval2);
       }
     }, 0);
@@ -60,7 +60,7 @@ export class HomePage implements OnInit {
       if (this.counterValue3 >= 200) { // Adjust the stopping point for counter 3
         clearInterval(this.counterInterval3);
       }
-    }, 100);
+    }, 50);
   }
 
 }

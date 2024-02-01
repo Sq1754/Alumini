@@ -1,12 +1,40 @@
 ion-header{
-  height: 10vh;
+  height: 6vh;
   ion-toolbar{
-    ion-title{
-      #nav{
-        width: 20vw;
-        height: 10vh;
-        padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: -1px 5px 6px -2px rgb(62, 0, 107);
+    
+    
+    
+    .name{
+      // padding-top: 10px;
+      height: 7vh;
+      width: 20vw;
+      display: flex;
+      padding-left: 10px;
+      text-transform: uppercase;
+      font-size: 7px;
+      letter-spacing: .1em;
+      align-items: center;
+    }
+
+    .name img{
+      height: 5vh;
+      width: 16vw;
+    }
+    @media (max-width:412px) {
+      .name img{
+        height: 4vh;
+        width: 16vw;
       }
+    }
+
+    .name p{
+      display: contents;
+    }
+     
     }
     ion-button{
       p{
@@ -14,7 +42,9 @@ ion-header{
       }
     }
   }
-}
+
+
+
 
 ion-content{
   ion-header{
@@ -373,7 +403,7 @@ padding: 10px;
   }
 
   ion-header{
-    height: 9vh;
+    height: 6vh;
     ion-toolbar{
       ion-title{
         #nav{

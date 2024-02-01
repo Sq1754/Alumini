@@ -21,9 +21,12 @@ ion-content{
     text-align: center;
   }
   ion-card{
-    
+        height: 80%;
+        width: 100%;
+        overflow: scroll;
     
     ion-card-header{
+      margin-bottom: 10px;
       font-size: 1.3rem;
       font-weight: bold;
       

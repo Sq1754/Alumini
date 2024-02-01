@@ -14,16 +14,13 @@ export class AppComponent {
     { title: 'Home', url: 'home', icon: 'home' },
     { title: 'About', url: 'about', icon: 'person' },
     { title: 'Alumni', url: 'alumni', icon: 'school' },
-    { title: 'Batch', url: 'batch', icon: 'ribbon' },
-    { title: 'Publication', url: 'publication', icon: 'book' },
     { title: 'Membership', url: 'membership', icon: 'cash' },
-    { title: 'Company', url: 'company', icon: 'briefcase' },
-    { title: 'Award', url: 'award', icon: 'trophy' },
+    { title: 'Reunion', url: 'company', icon: 'ribbon' },
     { title: 'Donate', url: 'donate', icon: 'wallet' },
-    { title: 'Feedback', url: 'feedback', icon: 'share' },
-    { title: 'Sign out', url: 'sign', icon: 'walk' },
+    { title: 'Team', url: '/team', icon: 'people' },
+   
   ];
-  // public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+ 
 
   public contactDetails = {
     socialMedia: [

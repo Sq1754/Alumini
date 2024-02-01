@@ -1,0 +1,17 @@
+ion-card{
+    height: 80vh;
+    max-width: 30vw;
+    display: flex;
+    flex-direction: column;
+    
+    img{
+        width: 50vw;
+        height: 30vh;
+    }
+
+    ion-card-content{
+        position: relative;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+}

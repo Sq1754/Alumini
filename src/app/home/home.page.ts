@@ -29,10 +29,10 @@ export class HomePage implements OnInit {
     this.startCounter2();
     this.startCounter3();
     this.slides = [
+      {banner: 'assets/AAECA Banner.png'},
       {banner: 'assets/IMG-20240123-WA0003.jpg'},
-      {banner: 'assets/IMG-20240123-WA0005.jpg'},
-      {banner: 'assets/b2.jpeg'},
-      {banner: 'assets/b3.jpeg'},
+      // {banner: 'assets/b2.jpeg'},
+      // {banner: 'assets/b3.jpeg'},
     ];
   }
 

@@ -16,6 +16,7 @@ export class BannerComponent  implements OnInit {
   swiperModules = [IonicSlides];
   @ViewChild('swiper')
   swiperRef: ElementRef | undefined;
+flip: any;
 
   constructor() { }
 

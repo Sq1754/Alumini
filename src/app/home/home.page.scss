@@ -1,13 +1,28 @@
+ion-content {
+  // overwrite inline styles
+  --offset-bottom: auto!important;
+  --overflow: hidden;
+  overflow: auto;
+  scroll-behavior: smooth;
+  &::-webkit-scrollbar {
+  display: none;
+  }
+  }
+// Navbar
 ion-header{
-  height: 6vh;
+  height: 10vh;
   ion-toolbar{
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     box-shadow: -1px 5px 6px -2px rgb(62, 0, 107);
-    
-    
-    
+  ion-buttons{
+    margin-top: 10px;
+    p{
+      font-size: 0.5rem;
+    } 
+  }  
     .name{
       // padding-top: 10px;
       height: 7vh;
@@ -15,12 +30,13 @@ ion-header{
       display: flex;
       padding-left: 10px;
       text-transform: uppercase;
-      font-size: 7px;
+      font-size: 8px;
       letter-spacing: .1em;
       align-items: center;
     }
 
     .name img{
+      margin-top: 10px;
       height: 5vh;
       width: 16vw;
     }
@@ -36,17 +52,11 @@ ion-header{
     }
      
     }
-    ion-button{
-      p{
-        font-size: 0.5rem;
-      }
-    }
   }
 
 
-
-
 ion-content{
+  scroll-behavior: smooth;
   ion-header{
     text-align: center;
   }
@@ -143,6 +153,9 @@ ion-title{
   h1{
     color: grey;
   }
+  // .sub-container{
+  //   flex-direction: column;
+  // }
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: rgb(27, 0, 61); 
   color: white;
@@ -150,8 +163,8 @@ ion-title{
   height: 40%;
   width: 100%;
   flex-direction: column;
-  align-content: center;
-  align-items: center;
+  // align-content: start;
+  // align-items: start;
   // width: fit-content;
   justify-content: center;
   align-items: center;
@@ -159,8 +172,8 @@ ion-title{
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   line-height: 20px;
-  padding-bottom: 20%;
-  padding-top: 20%;
+  padding-bottom: 7%;
+  padding-top: 7%;
 
 }
 
@@ -350,8 +363,8 @@ padding: 10px;
 background-color: rgb(25, 0, 45);
 color: white;
 text-decoration: none;
-border-top-right-radius: 25px;
-border-top-left-radius: 25px;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
 
 }
 

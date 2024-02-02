@@ -91,12 +91,13 @@ ion-header{
 
 //card
 ion-card{
-    margin: 40px auto;
+    margin: 40px autoz;
     height: 70vh;
     color: black;
     max-width: 27vw;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
    
     box-shadow: 1px 1px 10px 1px rgba(10, 10, 10, 0.66);
     

@@ -1,3 +1,4 @@
+
 ion-content {
   // overwrite inline styles
   --offset-bottom: auto!important;
@@ -8,70 +9,84 @@ ion-content {
   display: none;
   }
   }
+
+
+  
 // Navbar
 ion-header{
+  height: 10vh;
+  ion-toolbar{
     height: 10vh;
-    ion-toolbar{
-      height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: -1px 5px 6px -2px rgb(62, 0, 107);
+  ion-buttons{
+    margin-top: 10px;
+    p{
+      font-size: 0.5rem;
+    } 
+  }  
+    .name{
+      // padding-top: 10px;
+      height: 7vh;
+      width: 20vw;
       display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      box-shadow: -1px 5px 6px -2px rgb(62, 0, 107);
-    ion-buttons{
-      ion-menu-button{
-        margin-top: 10px;
-      }  
-    }  
+      // padding-left: 10px;
+      margin: 0;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: .1em;
+      align-items: center;
+    }
+
+    .name img{
+      margin-top: -8px;
+      height: 5vh;
+      width: 16vw;
+    }
+
+
+    @media (max-width:412px) {
       .name{
         // padding-top: 10px;
         height: 7vh;
         width: 20vw;
         display: flex;
-        padding-left: 10px;
+        // padding-left: 10px;
         text-transform: uppercase;
-        font-size: 7px;
+        font-size: 8px;
         letter-spacing: .1em;
         align-items: center;
       }
-  
       .name img{
-        margin-top: 10px;
-        height: 5vh;
+        height: 4vh;
         width: 16vw;
-      }
-      @media (max-width:412px) {
-        .name img{
-          height: 4vh;
-          width: 16vw;
-        }
-      }
-  
-      .name p{
-        display: contents;
-      }
-       
-      }
-      ion-button{
-        p{
-          font-size: 0.5rem;
-        }
       }
     }
 
-
-//login
-h5{
-    height: 40px;
-    display: flex;
-    border-radius: 8px;
-    border: 10px;
-    border-bottom: black;
-    padding: 10px;
-    padding-right: 10px;
-    margin: 5px;
-    color: white;
-    background-color: rgba(50, 0, 91, 0.866);
+    .name p{
+      display: contents;
+    }
+     
+    }
   }
+
+@media (max-width:500px) {
+  ion-header{
+    height: 8vh;
+
+  ion-toolbar{
+    height: 8vh;
+  }
+  }
+}
+
+
+//enclass
+#enclass{
+  background-color: rgba(193, 227, 255, 0.909);
+}
 
 
 //card

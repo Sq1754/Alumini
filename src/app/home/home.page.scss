@@ -8,6 +8,8 @@ ion-content {
   display: none;
   }
   }
+
+  
 // Navbar
 ion-header{
   height: 10vh;
@@ -30,17 +32,30 @@ ion-header{
       display: flex;
       padding-left: 10px;
       text-transform: uppercase;
-      font-size: 8px;
+      font-size: 12px;
       letter-spacing: .1em;
       align-items: center;
     }
 
     .name img{
-      margin-top: 10px;
+      margin-top: -8px;
       height: 5vh;
       width: 16vw;
     }
+
+
     @media (max-width:412px) {
+      .name{
+        // padding-top: 10px;
+        height: 7vh;
+        width: 20vw;
+        display: flex;
+        padding-left: 10px;
+        text-transform: uppercase;
+        font-size: 8px;
+        letter-spacing: .1em;
+        align-items: center;
+      }
       .name img{
         height: 4vh;
         width: 16vw;
@@ -54,6 +69,18 @@ ion-header{
     }
   }
 
+@media (max-width:500px) {
+  ion-header{
+    height: 8vh;
+
+  ion-toolbar{
+    height: 8vh;
+  }
+  }
+}
+
+
+// slides....
 
 ion-content{
   scroll-behavior: smooth;
@@ -172,8 +199,9 @@ ion-title{
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   line-height: 20px;
-  padding-bottom: 7%;
-  padding-top: 7%;
+  margin-top: 2%;
+  padding-bottom: 5%;
+  padding-top: 2%;
 
 }
 

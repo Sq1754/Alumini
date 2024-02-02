@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
 ion-content {
   // overwrite inline styles
   --offset-bottom: auto!important;
@@ -109,15 +113,18 @@ ion-content{
     text-align: center;
   }
   ion-card{
-        height: 80%;
+        height: 100%;
         width: 100%;
-        overflow: scroll;
+        // overflow: scroll;
     
     ion-card-header{
       margin-bottom: 10px;
       font-size: 1.3rem;
       font-weight: bold;
-      
+      ion-card-title{
+        font-weight: bold;
+        font-family: 'Playfair Display', serif;
+      }
     }
     ion-label{
       font-weight: bold;
@@ -142,6 +149,16 @@ ion-content{
   
 }
 
+ion-grid{
+  p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5rem;
+    padding-left: 25px;
+  }
+  ion-card{
+    width: 30vw;
+  }
+}
 
 
 
@@ -254,9 +271,8 @@ ion-title{
   margin: 10px;
   display: flex;
   padding-top: 20px;
+  padding-left: 20px;
 }
-
-
 
 // Icon 
 ion-icon{
@@ -478,6 +494,12 @@ padding: 10px;
           padding-left: 10px;
         }
       }
+    }
+  }
+
+  ion-grid{
+    ion-card{
+      width: 90vw;
     }
   }
 

@@ -21,6 +21,7 @@ export class HomePage implements OnInit {
   counterInterval3: any;
 
   slides: any[] = [];
+  slides2: any[] = [];
   
   constructor() {}
 
@@ -34,6 +35,7 @@ export class HomePage implements OnInit {
       // {banner: 'assets/b2.jpeg'},
       // {banner: 'assets/b3.jpeg'},
     ];
+    
   }
 
   startCounter1() {

@@ -1,7 +1,3 @@
-// @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-
-
 ion-content {
   // overwrite inline styles
   --offset-bottom: auto!important;
@@ -14,27 +10,26 @@ ion-content {
   }
 
 
-  ion-header{
-    height: 10vh;
-    ion-toolbar{
-      height: 10vh;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-    //  box-shadow: -1px 5px 6px -2px rgb(62, 0, 107);
-    ion-buttons{
-      margin-top: 10px;
-      p{
-        font-size: 0.5rem;
-      } 
-    }  
+// Navbar
+ion-header{
+  height: 8vh;
+  ion-toolbar{
+    height: 8.4vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: -1px 5px 6px -2px rgb(62, 0, 107);
+  ion-buttons{
+    p{
+      font-size: 0.5rem;
+    } 
+  }  
     .name{
       // padding-top: 10px;
       height: 7vh;
       font-weight: bold;
       width: 20vw;
       display: flex;
-      margin-top: 10px;
       padding-left: 10px;
       text-transform: uppercase;
       font-size: 15px;
@@ -45,52 +40,67 @@ ion-content {
         font-size: 10px;
     }
     }
-  
+    
+
+    .name img{
+      margin-top: -8px;
+      height: 5vh;
+      width: 16vw;
+    }
+
+
+  @media screen and (max-width:712px) {
+      .name{
+        // padding-top: 10px;
+        height: 7vh;
+        width: 20vw;
+        display: flex;
+        padding-left: 5px;
+        text-transform: uppercase;
+        font-size: 9px;
+        font-weight: bolder;
+        letter-spacing: .1em;
+        align-items: center;
+        #sub{
+          font-weight: bolder;
+          font-size: 5px;
+      }
+      }
       .name img{
-        margin-top: -8px;
-        height: 5vh;
+        height: 4vh;
         width: 16vw;
       }
-  
-  
-      @media (max-width:412px) {
-        .name{
-          // padding-top: 10px;
-          height: 7vh;
-          width: 20vw;
-          display: flex;
-          // padding-left: 10px;
-          text-transform: uppercase;
-          font-size: 8px;
-          letter-spacing: .1em;
-          align-items: center;
-          #sub{
-            font-weight: normal;
-            font-size: 6px;
+      ion-header{
+        height: 3vh;
+        ion-toolbar{
+          height: 3vh;
+          ion-buttons{
+            .login{
+              ion-button{
+                font-size: .6rem;
+              }
+            }
+          }
         }
-        }
-        .name img{
-          height: 4vh;
-          width: 16vw;
-        }
-      }
-  
-      .name p{
-        display: contents;
-      }
-       
       }
     }
-  
-  @media (max-width:500px) {
-    ion-header{
-      height: 8vh;
-  
-    ion-toolbar{
-      height: 8vh;
-    }
+    
+    .name p{
+      display: contents;
     }
   }
+}
+
+@media (max-width:500px) {
+  ion-header{
+    height: 7vh;
+
+  ion-toolbar{
+    height: 7vh;
+  }
+  }
+}
+
 
 // slides....
 
@@ -100,18 +110,15 @@ ion-content{
     text-align: center;
   }
   ion-card{
-        height: 100%;
+        height: 80%;
         width: 100%;
-        // overflow: scroll;
+        overflow: scroll;
     
     ion-card-header{
       margin-bottom: 10px;
       font-size: 1.3rem;
       font-weight: bold;
-      ion-card-title{
-        font-weight: bold;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      }
+      
     }
     ion-label{
       font-weight: bold;
@@ -136,16 +143,6 @@ ion-content{
   
 }
 
-ion-grid{
-  p{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1.5rem;
-    padding-left: 25px;
-  }
-  ion-card{
-    width: 30vw;
-  }
-}
 
 
 
@@ -153,9 +150,7 @@ ion-grid{
   margin:auto;
   display: flex;
   justify-content: center;
-  // align-items:;
   text-align: center;
-  // border-radius: 100px;
   height: 10%;
   width: 10%;
   justify-content: right;
@@ -166,7 +161,6 @@ ion-grid{
   display: flex;
   justify-content: center;
   align-items: center;
-  // padding-top: 10px;
   margin: auto;
 }
 
@@ -187,14 +181,17 @@ ion-title{
 
 //login
 .login{
-  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin: auto;
+  text-align: center;
   display: flex;
   border-radius: 8px;
   border: 10px;
   border-bottom: black;
   padding: 5px;
   padding-right: 10px;
-  margin: 5px;
   color: white;
   background-color: rgba(50, 0, 91, 0.866);
 }
@@ -205,14 +202,13 @@ ion-title{
   h1{
     color: grey;
   }
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: rgb(27, 0, 61); 
   color: white;
   display: flex;
   height: 40%;
   width: 100%;
   flex-direction: column;
-
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -234,11 +230,14 @@ ion-title{
 
 //content
 #content{
+  background-color:rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   display: table-row;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   height: 90%;
   width: 100%;
   margin: 10px;
+  // background-blend-mode: color-burn;
   
 }
 
@@ -250,8 +249,9 @@ ion-title{
   margin: 10px;
   display: flex;
   padding-top: 20px;
-  padding-left: 20px;
 }
+
+
 
 // Icon 
 ion-icon{
@@ -473,12 +473,6 @@ padding: 10px;
           padding-left: 10px;
         }
       }
-    }
-  }
-
-  ion-grid{
-    ion-card{
-      width: 90vw;
     }
   }
 

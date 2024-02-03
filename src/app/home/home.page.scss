@@ -13,6 +13,45 @@ ion-content {
   }
   }
 
+  //navbar
+.menu-btn{
+  display: none;
+}
+  .header{
+    // position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    // background: rgba(0, 0, 0, 0.755);
+    background: rgba(50, 0, 91, 0.866);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.navbar a{
+  display: inline-block;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px ;
+  transition: .3s;
+}
+
+.navbar a:hover{
+  color: rgba(136, 47, 209, 0.866);
+}
+@media screen and (max-width:720px){
+  .menu-btn{
+    display: block;
+  }
+  .header{
+    display: none;
+  }
+}
+
 
   ion-header{
     height: 10vh;
@@ -78,7 +117,6 @@ ion-content {
       .name p{
         display: contents;
       }
-       
       }
     }
   

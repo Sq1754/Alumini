@@ -59,7 +59,7 @@ ion-header{
     align-items: flex-start;
   //  box-shadow: -1px 5px 6px -2px rgb(62, 0, 107);
   ion-buttons{
-    margin-top: 10px;
+    margin-top: 8px;
     p{
       font-size: 0.5rem;
     } 
@@ -89,10 +89,10 @@ ion-header{
     }
 
 
-    @media (max-width:412px) {
+    @media (max-width:500px) {
       .name{
         // padding-top: 10px;
-        height: 7vh;
+        height: 6vh;
         width: 20vw;
         display: flex;
         // padding-left: 10px;
@@ -124,6 +124,7 @@ ion-header{
 
   ion-toolbar{
     height: 8vh;
+    box-shadow: -1px 5px 6px -2px rgb(62, 0, 107);
   }
   }
 }

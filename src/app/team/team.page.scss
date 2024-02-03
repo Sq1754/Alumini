@@ -13,6 +13,7 @@ ion-content {
   }
 // title "TEAM"
   #title{
+    margin-top: 35px;
     font-family: 'Playfair Display', serif;
     padding: 10px;
     border-bottom: 2px solid;
@@ -157,12 +158,12 @@ ion-header{
         height: 4vh;
         width: 16vw;
       }
+      
     }
 
     .name p{
       display: contents;
     }
-     
     }
   }
 
@@ -173,6 +174,13 @@ ion-header{
   ion-toolbar{
     height: 8vh;
   }
+  }
+  #title{
+    margin-top: 10px;
+    h1{
+      font-size: 1rem;
+      margin: 5px auto;
+    }
   }
 }
 

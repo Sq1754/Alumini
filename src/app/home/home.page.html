@@ -14,6 +14,11 @@
       <p>Alumni Association</p>
       <br>
       <p>Engineering College Ajmer</p>
+<<<<<<< HEAD
+=======
+      <br>
+      <!-- <p id="sub">An Association of ECA Alumini</p> -->
+>>>>>>> 331dd38d64f07ff7323807c0767fac8e16ddb8e5
     </div>
   </ion-title>
   </ion-toolbar>
@@ -24,7 +29,7 @@
     <app-banner [slides]="slides"></app-banner>
     <div class="container">
       <h6 id="num">GECA in Numbers: &nbsp;</h6>
-        <div class="sub-container">
+        <div>
       <h1><strong>{{ counterValue1 }}</strong>+</h1>ALUMNI &nbsp;
       <br>
       <h1><strong>{{ counterValue2 }}</strong>+</h1>Students On Campus &nbsp;
@@ -37,12 +42,11 @@
 <div class="navs">
 <div id="content">
   <h2><b>Engagements</b></h2>
-  <p><b> ipsum</b> dolor, sit amet consectetur adipisicing elit. Et est omnis dignissimos exercitationem animi debitis nam tempore quos inventore nihil, enim itaque, non ipsam excepturi voluptatum? Reprehenderit eius repellendus repellat?
   </div>
-  <div class="reunion">
+  <div class="reunion"><a href="#"></a>
     <ion-icon name="school">
-    </ion-icon><b> Alumni</b>
-    <p>Celebrate your next mileston reunion with us!</p>
+    </ion-icon><b> About Us</b>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, libero numquam cum placeat adipisci atque alias ut, earum optio eius est officiis facilis quidem quis recusandae nam totam asperiores. Quisquam, cupiditate corrupti provident, culpa velit eligendi placeat voluptatibus asperiores ullam fuga obcaecati cumque, facilis eaque tempore accusantium vitae iusto ea repellendus quis assumenda vero iste? Aliquam similique eveniet, eaque odit cum doloribus asperiores perspiciatis ab. Non, ipsa amet. Impedit neque natus inventore, atque quasi ipsum! Illum, voluptatem dolorem repellat nostrum totam, voluptate qui facilis quos officiis quisquam numquam esse sequi reiciendis quia vel porro iure quae fugiat ad excepturi eveniet!</p>
   </div>
   <div class="alumni">
     <ion-icon name="ribbon">
@@ -66,11 +70,55 @@
   </div>
 </div>
 
-  <ion-card >
-      <ion-card-header>
-        <ion-card-title>Top Donation</ion-card-title>
-        <ion-card-subtitle>Recently</ion-card-subtitle>
-      </ion-card-header>
+
+  <ion-grid>
+    <p><b>Explore The College</b></p>
+    <ion-row>
+      <!-- video1 -->
+    <ion-col>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Overview of College</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <iframe width="100%" height="275px" src="https://www.youtube.com/embed/CAiRpBSBLKQ?si=yzzxkbgwRWMqBYeb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+    <!-- video2 -->
+    <ion-col>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Campus Tour</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <iframe width="100%" height="275px" src="https://www.youtube.com/embed/3eAC7XaLLYA?si=ipeQ2NQidEufwJdm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    
+    <!-- video3 -->
+    <ion-col>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Campus Tour</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <iframe width="100%" height="275px" src="https://www.youtube.com/embed/3eAC7XaLLYA?si=ipeQ2NQidEufwJdm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+
+<ion-card >
+  <ion-card-header>
+    <ion-card-title>Top Donation</ion-card-title>
+    <ion-card-subtitle>Recently</ion-card-subtitle>
+  </ion-card-header>
       <ion-card-content>
         <ion-list>
           <ion-item>
@@ -113,7 +161,7 @@
     </ion-card>
    
 
-
+<!-- Footer  -->
   <div class="foot">
     <ion-icon name="location"></ion-icon><b>Address</b>
     <p> Alumni Association office

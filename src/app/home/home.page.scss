@@ -1,3 +1,7 @@
+// @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
 ion-content {
   // overwrite inline styles
   --offset-bottom: auto!important;
@@ -10,6 +14,7 @@ ion-content {
   }
 
 
+<<<<<<< HEAD
 // Navbar
 ion-header{
   height: 8vh;
@@ -24,12 +29,29 @@ ion-header{
       font-size: 0.5rem;
     } 
   }  
+=======
+  ion-header{
+    height: 10vh;
+    ion-toolbar{
+      height: 10vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    //  box-shadow: -1px 5px 6px -2px rgb(62, 0, 107);
+    ion-buttons{
+      margin-top: 10px;
+      p{
+        font-size: 0.5rem;
+      } 
+    }  
+>>>>>>> 331dd38d64f07ff7323807c0767fac8e16ddb8e5
     .name{
       // padding-top: 10px;
       height: 7vh;
       font-weight: bold;
       width: 20vw;
       display: flex;
+      margin-top: 10px;
       padding-left: 10px;
       text-transform: uppercase;
       font-size: 15px;
@@ -40,6 +62,7 @@ ion-header{
         font-size: 10px;
     }
     }
+<<<<<<< HEAD
     
 
     .name img{
@@ -66,10 +89,15 @@ ion-header{
           font-size: 5px;
       }
       }
+=======
+  
+>>>>>>> 331dd38d64f07ff7323807c0767fac8e16ddb8e5
       .name img{
-        height: 4vh;
+        margin-top: -8px;
+        height: 5vh;
         width: 16vw;
       }
+<<<<<<< HEAD
       ion-header{
         height: 3vh;
         ion-toolbar{
@@ -81,14 +109,49 @@ ion-header{
               }
             }
           }
+=======
+  
+  
+      @media (max-width:412px) {
+        .name{
+          // padding-top: 10px;
+          height: 7vh;
+          width: 20vw;
+          display: flex;
+          // padding-left: 10px;
+          text-transform: uppercase;
+          font-size: 8px;
+          letter-spacing: .1em;
+          align-items: center;
+          #sub{
+            font-weight: normal;
+            font-size: 6px;
+        }
+        }
+        .name img{
+          height: 4vh;
+          width: 16vw;
+>>>>>>> 331dd38d64f07ff7323807c0767fac8e16ddb8e5
         }
       }
+  
+      .name p{
+        display: contents;
+      }
+       
+      }
     }
-    
-    .name p{
-      display: contents;
+  
+  @media (max-width:500px) {
+    ion-header{
+      height: 8vh;
+  
+    ion-toolbar{
+      height: 8vh;
+    }
     }
   }
+<<<<<<< HEAD
 }
 
 @media (max-width:500px) {
@@ -101,6 +164,8 @@ ion-header{
   }
 }
 
+=======
+>>>>>>> 331dd38d64f07ff7323807c0767fac8e16ddb8e5
 
 // slides....
 
@@ -110,15 +175,18 @@ ion-content{
     text-align: center;
   }
   ion-card{
-        height: 80%;
+        height: 100%;
         width: 100%;
-        overflow: scroll;
+        // overflow: scroll;
     
     ion-card-header{
       margin-bottom: 10px;
       font-size: 1.3rem;
       font-weight: bold;
-      
+      ion-card-title{
+        font-weight: bold;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
     }
     ion-label{
       font-weight: bold;
@@ -143,6 +211,16 @@ ion-content{
   
 }
 
+ion-grid{
+  p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5rem;
+    padding-left: 25px;
+  }
+  ion-card{
+    width: 30vw;
+  }
+}
 
 
 
@@ -202,13 +280,21 @@ ion-title{
   h1{
     color: grey;
   }
+<<<<<<< HEAD
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+=======
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+>>>>>>> 331dd38d64f07ff7323807c0767fac8e16ddb8e5
   background-color: rgb(27, 0, 61); 
   color: white;
   display: flex;
   height: 40%;
   width: 100%;
   flex-direction: column;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 331dd38d64f07ff7323807c0767fac8e16ddb8e5
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -230,14 +316,11 @@ ion-title{
 
 //content
 #content{
-  background-color:rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
   display: table-row;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   height: 90%;
   width: 100%;
   margin: 10px;
-  // background-blend-mode: color-burn;
   
 }
 
@@ -249,9 +332,8 @@ ion-title{
   margin: 10px;
   display: flex;
   padding-top: 20px;
+  padding-left: 20px;
 }
-
-
 
 // Icon 
 ion-icon{
@@ -473,6 +555,12 @@ padding: 10px;
           padding-left: 10px;
         }
       }
+    }
+  }
+
+  ion-grid{
+    ion-card{
+      width: 90vw;
     }
   }
 

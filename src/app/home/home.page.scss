@@ -14,22 +14,6 @@ ion-content {
   }
 
 
-<<<<<<< HEAD
-// Navbar
-ion-header{
-  height: 8vh;
-  ion-toolbar{
-    height: 8.4vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    box-shadow: -1px 5px 6px -2px rgb(62, 0, 107);
-  ion-buttons{
-    p{
-      font-size: 0.5rem;
-    } 
-  }  
-=======
   ion-header{
     height: 10vh;
     ion-toolbar{
@@ -44,7 +28,6 @@ ion-header{
         font-size: 0.5rem;
       } 
     }  
->>>>>>> 331dd38d64f07ff7323807c0767fac8e16ddb8e5
     .name{
       // padding-top: 10px;
       height: 7vh;
@@ -62,54 +45,12 @@ ion-header{
         font-size: 10px;
     }
     }
-<<<<<<< HEAD
-    
-
-    .name img{
-      margin-top: -8px;
-      height: 5vh;
-      width: 16vw;
-    }
-
-
-  @media screen and (max-width:712px) {
-      .name{
-        // padding-top: 10px;
-        height: 7vh;
-        width: 20vw;
-        display: flex;
-        padding-left: 5px;
-        text-transform: uppercase;
-        font-size: 9px;
-        font-weight: bolder;
-        letter-spacing: .1em;
-        align-items: center;
-        #sub{
-          font-weight: bolder;
-          font-size: 5px;
-      }
-      }
-=======
   
->>>>>>> 331dd38d64f07ff7323807c0767fac8e16ddb8e5
       .name img{
         margin-top: -8px;
         height: 5vh;
         width: 16vw;
       }
-<<<<<<< HEAD
-      ion-header{
-        height: 3vh;
-        ion-toolbar{
-          height: 3vh;
-          ion-buttons{
-            .login{
-              ion-button{
-                font-size: .6rem;
-              }
-            }
-          }
-=======
   
   
       @media (max-width:412px) {
@@ -131,7 +72,6 @@ ion-header{
         .name img{
           height: 4vh;
           width: 16vw;
->>>>>>> 331dd38d64f07ff7323807c0767fac8e16ddb8e5
         }
       }
   
@@ -151,21 +91,6 @@ ion-header{
     }
     }
   }
-<<<<<<< HEAD
-}
-
-@media (max-width:500px) {
-  ion-header{
-    height: 7vh;
-
-  ion-toolbar{
-    height: 7vh;
-  }
-  }
-}
-
-=======
->>>>>>> 331dd38d64f07ff7323807c0767fac8e16ddb8e5
 
 // slides....
 
@@ -228,7 +153,9 @@ ion-grid{
   margin:auto;
   display: flex;
   justify-content: center;
+  // align-items:;
   text-align: center;
+  // border-radius: 100px;
   height: 10%;
   width: 10%;
   justify-content: right;
@@ -239,6 +166,7 @@ ion-grid{
   display: flex;
   justify-content: center;
   align-items: center;
+  // padding-top: 10px;
   margin: auto;
 }
 
@@ -259,17 +187,14 @@ ion-title{
 
 //login
 .login{
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  margin: auto;
-  text-align: center;
+  height: 40px;
   display: flex;
   border-radius: 8px;
   border: 10px;
   border-bottom: black;
   padding: 5px;
   padding-right: 10px;
+  margin: 5px;
   color: white;
   background-color: rgba(50, 0, 91, 0.866);
 }
@@ -280,21 +205,14 @@ ion-title{
   h1{
     color: grey;
   }
-<<<<<<< HEAD
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-=======
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
->>>>>>> 331dd38d64f07ff7323807c0767fac8e16ddb8e5
   background-color: rgb(27, 0, 61); 
   color: white;
   display: flex;
   height: 40%;
   width: 100%;
   flex-direction: column;
-<<<<<<< HEAD
-=======
 
->>>>>>> 331dd38d64f07ff7323807c0767fac8e16ddb8e5
   justify-content: center;
   align-items: center;
   text-align: center;

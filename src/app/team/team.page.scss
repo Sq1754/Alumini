@@ -11,12 +11,12 @@ ion-content {
   &::-webkit-scrollbar {
   display: none;
   }
-// title of page "TEAM"
+// title "TEAM"
   #title{
     font-family: 'Playfair Display', serif;
     padding: 10px;
-    background-color: #f5f5f5;;
-    border-bottom: 2px solid white;
+    // background-color: #f5f5f5;
+    border-bottom: 2px solid;
     h1{
       font-size: 2rem;
       margin-left: 1.3rem;
@@ -106,26 +106,13 @@ ion-header{
 }
 
 
-//enclass
-#enclass{
-  background-color:#f5f5f5;;
-  border: 1px solid white;
-  border-radius: 5px;
-}
-
-
-
-
-
 //card
 ion-card{
     margin: 40px auto;
     height: 65vh;
-    color: black;
     max-width: 23vw;
     display: flex;
     flex-direction: column;
-   
     box-shadow: 1px 1px 10px 1px rgba(10, 10, 10, 0.66);
     
     img{
@@ -133,7 +120,7 @@ ion-card{
         height: 30vh;
     }
     ion-card-title{
-      font-family: 'Playfair Display', serif;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     ion-card-subtitle{
       font-family: 'Josefin Sans', sans-serif;
@@ -210,16 +197,16 @@ ion-card{
 @media (max-width:500px) {
     
     ion-card{
-        margin: 20px 20px;
+        margin: 30px auto;
         height: 70vh;
         color: black;
-        max-width: 90vw;
+        max-width: 80vw;
         display: flex;
         flex-direction: column;
        
         
         img{
-            width: 90vw;
+            width: 80vw;
             height: 30vh;
         }
     

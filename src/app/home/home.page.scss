@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
 ion-content {
   // overwrite inline styles
   --offset-bottom: auto!important;
@@ -39,7 +42,7 @@ ion-content {
 .navbar a:hover{
   color: rgba(136, 47, 209, 0.866);
 }
-@media screen and (max-width:720px){
+@media screen and (max-width:768px){
   .menu-btn{
     display: block;
   }
@@ -49,7 +52,7 @@ ion-content {
 }
 
 
-// Navbar
+// header
 ion-header{
   height: 10vh;
   ion-toolbar{
@@ -114,7 +117,6 @@ ion-header{
     .name p{
       display: contents;
     }
-     
     }
   }
 
@@ -139,12 +141,13 @@ ion-content{
   ion-card{
         height: 80%;
         width: 100%;
-        overflow: scroll;
+        // overflow: scroll;
     
     ion-card-header{
       margin-bottom: 10px;
       font-size: 1.3rem;
       font-weight: bold;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       
     }
     ion-label{
@@ -170,6 +173,39 @@ ion-content{
   
 }
 
+//video block
+ion-grid{
+  p{
+    font-family: 'Josefin Sans', sans-serif;
+    padding-left: 25px;
+    font-size: 1.5rem;
+  }
+  ion-row{
+    ion-col{
+      ion-card{
+        height: 50vh;
+        width: 30vw;
+        margin: 10px auto;
+        
+      }
+    }
+  }
+}
+
+@media screen and (max-width:768px) {
+  ion-grid{
+    ion-row{
+      ion-col{
+        ion-card{
+          height: 350px;
+          width: 90vw;
+          margin: 10px auto;
+          
+        }
+      }
+    }
+  }
+}
 
 
 
@@ -229,8 +265,9 @@ ion-title{
   h1{
     color: grey;
   }
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background-color: rgb(27, 0, 61); 
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  // background-color: rgb(27, 0, 61); 
+  background: rgba(50, 0, 91, 0.866);
   color: white;
   display: flex;
   height: 40%;
@@ -257,8 +294,6 @@ ion-title{
 
 //content
 #content{
-  background-color:rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
   display: table-row;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   height: 90%;
@@ -276,6 +311,7 @@ ion-title{
   margin: 10px;
   display: flex;
   padding-top: 20px;
+  margin-left: 20px;
 }
 
 
@@ -484,23 +520,4 @@ padding: 10px;
 }
 
 
-@media screen and (max-width:717px) {
-  .container{
-    height: 65%;
-  }
 
-  ion-header{
-    height: 6vh;
-    ion-toolbar{
-      ion-title{
-        #nav{
-          margin-top: 5px;
-          width: 20vw;
-          height: 7vh;
-          padding-left: 10px;
-        }
-      }
-    }
-  }
-
-}

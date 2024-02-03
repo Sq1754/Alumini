@@ -9,6 +9,10 @@ android {
 
 apply from: "../capacitor-cordova-android-plugins/cordova.variables.gradle"
 dependencies {
+<<<<<<< HEAD
+    implementation project(':capacitor-community-contacts')
+=======
+>>>>>>> 331dd38d64f07ff7323807c0767fac8e16ddb8e5
     implementation project(':capacitor-app')
     implementation project(':capacitor-haptics')
     implementation project(':capacitor-keyboard')

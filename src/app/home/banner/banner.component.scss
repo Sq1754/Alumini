@@ -3,10 +3,9 @@ div {
     height: 80vh;
     
     swiper-container {
-        width: 100vw;
+        width: 90vw;
         swiper-slide {
             height: 80vh;
-            margin-left: 20px ;
             img {
                 width: 100vw;
                 height: 80vh;
@@ -20,15 +19,16 @@ div {
 
 @media screen and (max-width:717px) {
     div {
-        margin-top: 50px;
+        margin-top: 25px;
         height: 30vh;
         swiper-container {
             swiper-slide {
                 height: 30vh;
                 img {
+                    border-radius: 5px;
                     width: 100%;
                     height: 25vh;
-                    border-radius: 5px;
+                    
                     box-shadow: -1px 11px 13px -6px rgb(87, 86, 86);
                 }
             }

@@ -4,11 +4,11 @@
     #swiper
     (slidechange)="onSlideChange($event)"
     [modules]="swiperModules"
-    [slidesPerView]="1.2"
-    [initialSlide]="1"
+    [slidesPerView]="1"
+    [initialSlide]="0"
     [centeredSlides]="true"
     [autoplay]="true"
-    [spaceBetween]="20"
+    [spaceBetween]="30"
     [pagination]="{clickable: true, dynamicBullets: true}">
    
     <swiper-slide *ngFor="let slide of slides">

@@ -290,6 +290,20 @@ ion-title{
   background-color: rgba(50, 0, 91, 0.866);
 }
 
+.login ion-icon{
+  color: white;
+}
+
+.login:hover{
+  border: 2px solid  #240057;
+  background-color: white;
+  color: #240057;
+}
+.login:hover ion-icon{
+  // background-color: white;
+  color: #240057;
+}
+
 
 //container
 .container{

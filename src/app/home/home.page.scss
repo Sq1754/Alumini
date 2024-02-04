@@ -3,6 +3,7 @@
 *{
 }
 ion-content {
+  // background-color: #3a3a3a3a;
   // overwrite inline styles
   --offset-bottom: auto!important;
   --overflow: hidden;
@@ -38,15 +39,15 @@ ion-content {
   
     background: none;
     z-index: 1;
-    background:none;
     width: 65%;
     margin: 10px auto;
     margin-top: 5%;
     height: 7vh;
     display: hidden;
-    background-color: rgba(50, 0, 91, 0.866);
+    background-color: rgba(194, 194, 194, 0.53);
     display: flex;
     align-items: center;
+    border: 2px solid rgb(44, 0, 80);
     border-radius: 50px;
     align-items: center;
     justify-content: center;
@@ -59,15 +60,15 @@ ion-content {
   justify-content: space-evenly;
   font-size: 18px;
   padding: 0px 20px;
-  color: #fff;
+  color:#240057;
   text-decoration: none;
   font-weight: 500;
   transition: .3s;
 }
 
 .navbar a:hover{
-  color: black;
-  background-color: gray;
+  color: rgb(255, 255, 255);
+  background-color: rgba(68, 0, 108, 0.801);
   border-radius: 20px;
   padding: 5px 10px;
 
@@ -312,7 +313,7 @@ ion-title{
   }
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
   // background-color: rgb(27, 0, 61); 
-  background: rgba(50, 0, 91, 0.866);
+  background: rgb(50, 0, 91);
   color: white;
   display: flex;
   height: 40%;
@@ -534,34 +535,33 @@ text-decoration: none;
 }
 
 
-
 // footer
 .foot{
-
-padding: 10px;
-background-color: rgb(25, 0, 45);
-color: white;
-text-decoration: none;
-border-top-right-radius: 10px;
-border-top-left-radius: 10px;
-
-}
-
-.foot b{
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-padding-left: 10px;
-font-size: large;
-text-decoration: none;
-color: black;
-
-}
-.foot p{
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-padding-left: 28px;
-text-decoration: none;
-color: #343434;
-
-}
+  
+    padding: 10px;
+    background-color: rgb(25, 0, 45);
+    color: white;
+    text-decoration: none;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    
+  }
+  .foot ion-icon{
+  color: white;
+  
+  }
+    
+    .foot b{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 10px;
+    font-size: large;
+    
+    }
+    .foot p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 28px;
+    
+    }
 
 
 //logo

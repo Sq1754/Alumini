@@ -347,11 +347,18 @@ ion-title{
 
 
 
+#content p{
+  margin: 23px;
+}
+
+
+
 // Icon 
 ion-icon{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     size: 10px;
     font-size: large;
+    color: rgb(50, 0, 97);
 
   }
 //------
@@ -360,7 +367,7 @@ ion-icon{
   background-color: rgb(180, 178, 178);
   z-index: 1;
   opacity: 1;
-  border: 2px black;
+  border: 2px rgb(0, 0, 0);
   font-size: small;
   margin: 10px;
   padding: 20px;
@@ -371,11 +378,15 @@ ion-icon{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-left: 5px;
   font-size: large;
+  text-decoration: none;
+  color: black;
 
 }
 .reunion p{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding-left: 26px;
+  padding-left: 28px;
+  text-decoration: none;
+  color: #343434;
 
 }
 
@@ -398,11 +409,15 @@ ion-icon{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-left: 5px;
   font-size: large;
+  text-decoration: none;
+  color: black;
 
 }
 .alumni p{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding-left: 26px;
+  padding-left: 28px;
+  text-decoration: none;
+  color: #343434;
 
 }
 
@@ -425,11 +440,15 @@ ion-icon{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-left: 5px;
   font-size: large;
+  text-decoration: none;
+  color: black;
 
 }
 .book p{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding-left: 26px;
+  padding-left: 28px;
+  text-decoration: none;
+  color: #343434;
 
 }
 
@@ -452,11 +471,15 @@ ion-icon{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-left: 5px;
   font-size: large;
+  text-decoration: none;
+  color: black;
 
 }
 .trophy p{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding-left: 26px;
+  padding-left: 28px;
+  text-decoration: none;
+  color: #343434;
 
 }
 
@@ -478,11 +501,15 @@ ion-icon{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-left: 5px;
   font-size: large;
+  text-decoration: none;
+  color: black;
 
 }
 .wallet p{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding-left: 26px;
+  padding-left: 28px;
+  text-decoration: none;
+  color: #343434;
 
 }
 
@@ -510,11 +537,15 @@ border-top-left-radius: 10px;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 padding-left: 10px;
 font-size: large;
+text-decoration: none;
+color: black;
 
 }
 .foot p{
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 padding-left: 28px;
+text-decoration: none;
+color: #343434;
 
 }
 

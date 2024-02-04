@@ -15,6 +15,22 @@ const routes: Routes = [
     path: 'team',
     loadChildren: () => import('./team/team.module').then( m => m.TeamPageModule)
   },
+  {
+    path: 'alumni',
+    loadChildren: () => import('./alumni/alumni.module').then( m => m.AlumniPageModule)
+  },
+  {
+    path: 'reunion',
+    loadChildren: () => import('./reunion/reunion.module').then( m => m.ReunionPageModule)
+  },
+  {
+    path: 'membership',
+    loadChildren: () => import('./membership/membership.module').then( m => m.MembershipPageModule)
+  },
+  {
+    path: 'donate',
+    loadChildren: () => import('./donate/donate.module').then( m => m.DonatePageModule)
+  },
 ];
 
 @NgModule({

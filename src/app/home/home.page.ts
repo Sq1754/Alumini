@@ -12,6 +12,17 @@ import { BannerComponent } from './banner/banner.component';
  // schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class HomePage implements OnInit {
+  public appPages = [
+    { title: 'Home', url: 'home', icon: 'home' },
+    { title: 'About', url: 'about', icon: 'person' },
+    { title: 'Alumni', url: 'alumni', icon: 'school' },
+    { title: 'Membership', url: 'membership', icon: 'cash' },
+    { title: 'Reunion', url: 'company', icon: 'ribbon' },
+    { title: 'Donate', url: 'donate', icon: 'wallet' },
+    { title: 'Team', url: '/team', icon: 'people' },
+    { title: 'Contact Us', url: 'contact', icon: 'call' },
+   
+  ];
   counterValue1: number = 0;
   counterValue2: number = 50; // Set initial value for counter 2
   counterValue3: number = 100; // Set initial value for counter 3

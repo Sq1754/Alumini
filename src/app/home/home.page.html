@@ -1,226 +1,309 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="end">
-    <div class="login">
-      <ion-button>
-        <ion-icon name="log-in">
-      </ion-icon>Login
-    </ion-button></div>
-    <div class="menu-btn">
-      <ion-menu-button></ion-menu-button>
-    </div>
+      <div class="login">
+        <ion-button> <ion-icon name="log-in"> </ion-icon>Login </ion-button>
+      </div>
+      <div class="menu-btn">
+        <ion-menu-button></ion-menu-button>
+      </div>
     </ion-buttons>
     <ion-title>
-    <div class="name">
-    <img src="../../assets/AAECA-LOGO.png">
-      <p>Alumni Association</p>
-      <br>
-      <p>Engineering College Ajmer</p>
-      <br>
-      <!-- <p id="sub">An Association of ECA Alumini</p> -->
-    </div>
-  </ion-title>
+      <div class="name">
+        <img src="../../assets/AAECA-LOGO.png" />
+        <p>Alumni Association</p>
+        <br />
+        <p>Engineering College Ajmer</p>
+        <br />
+        <!-- <p id="sub">An Association of ECA Alumini</p> -->
+      </div>
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <header class="header">
   <nav class="navbar">
-      <a href="/home" class="active">Home</a>
-      <a href="#">About</a>
-      <a href="/alumni">Alumni</a>
-      <a href="/reunion">Reunion</a>
-      <a href="/membership">Membership</a>
-      <a href="/donate">Donate</a>
-      <a href="/src/app/team/team.page.html">Team</a>
-      <a href="#">Contact Us</a>
+    <a href="/home" class="active">Home</a>
+    <a href="#">About</a>
+    <a href="/alumni">Alumni</a>
+    <a href="/reunion">Reunion</a>
+    <a href="/membership">Membership</a>
+    <a href="/donate">Donate</a>
+    <a href="/team">Team</a>
+    <a href="#">Contact Us</a>
   </nav>
 </header>
 
-
 <ion-content [fullscreen]="true">
-
-    <app-banner [slides]="slides"></app-banner>
-    <div class="container">
-      <h6 id="num">GECA in Numbers: &nbsp;</h6>
-        <div>
-      <h1><strong>{{ counterValue1 }}</strong>+</h1>ALUMNI &nbsp;
-      <br>
-      <h1><strong>{{ counterValue2 }}</strong>+</h1>Students On Campus &nbsp;
-      <br>
-      <h1><strong>{{ counterValue3 }}</strong>+</h1>Faculty &nbsp;
-        </div>
+  <app-banner [slides]="slides"></app-banner>
+  <div class="container">
+    <h6 id="num">GECA in Numbers: &nbsp;</h6>
+    <div>
+      <h1><strong>{{ counterValue1 }}</strong>+</h1>
+      ALUMNI &nbsp;
+      <br />
+      <h1><strong>{{ counterValue2 }}</strong>+</h1>
+      Students On Campus &nbsp;
+      <br />
+      <h1><strong>{{ counterValue3 }}</strong>+</h1>
+      Faculty &nbsp;
     </div>
-
-
-<div class="navs">
-<div id="content">
-  <h2><b>Engagements</b></h2>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo distinctio, corrupti pariatur ratione odio asperiores quae voluptatum ducimus est, nulla dicta aperiam, error ea. Vitae recusandae ducimus autem ullam quod deserunt distinctio vero repellendus quos!</p>
-</div>
-<div class="alumni"><a href="../alumni">
-  <ion-icon name="school">
-  </ion-icon><b> Alumni</b>
-  <p>Lorem ipsum dolor sit amet consectetur.
-  </p></a>
-</div>
-  <div class="reunion"><a href="../reunion">
-    <ion-icon name="ribbon">
-    </ion-icon><b> Reunion</b>
-    <p>Celebrate your Next milestone reunion with us!</p>
-  </a></div>
-  <div class="book"><a href="../donate">
-    <ion-icon name="Heart">
-    </ion-icon><b> Donate</b>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></a>
   </div>
-  <div class="trophy"><a href="../home">
-    <ion-icon name="trophy">
-    </ion-icon><b> Awards</b>
-    <p>  Lorem, ipsum dolor sit amet consectetur adipisicing.
-    </p></a>
-  </div>
-  <div class="wallet"><a href="../membership">
-    <ion-icon name="wallet">
-    </ion-icon><b> Membership</b>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, officiis!
-    </p></a>
-  </div>
-</div>
-
-  <div class="wallet"><a href="../team">
-    <ion-icon name="people">
-    </ion-icon><b> Teams</b>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, officiis!
-    </p></a>
-  </div>
-
-
-  <ion-grid>
-    <p><b>Explore The College</b></p>
-    <ion-row>
-      <!-- video1 -->
-    <ion-col>
-      <ion-card>
-        <ion-card-header>
-          <ion-card-title>Overview of College</ion-card-title>
-        </ion-card-header>
-        <ion-card-content>
-          <iframe width="100%" height="275px" src="https://www.youtube.com/embed/CAiRpBSBLKQ?si=yzzxkbgwRWMqBYeb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </ion-card-content>
-      </ion-card>
-    </ion-col>
-
-    <!-- video2 -->
-    <ion-col>
-      <ion-card>
-        <ion-card-header>
-          <ion-card-title>Campus Tour</ion-card-title>
-        </ion-card-header>
-        <ion-card-content>
-          <iframe width="100%" height="275px" src="https://www.youtube.com/embed/3eAC7XaLLYA?si=ipeQ2NQidEufwJdm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </ion-card-content>
-      </ion-card>
-    </ion-col>
-    
-    <!-- video3 -->
-    <ion-col>
-      <ion-card>
-        <ion-card-header>
-          <ion-card-title>Campus Tour</ion-card-title>
-        </ion-card-header>
-        <ion-card-content>
-          <iframe width="100%" height="275px" src="https://www.youtube.com/embed/3eAC7XaLLYA?si=ipeQ2NQidEufwJdm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </ion-card-content>
-      </ion-card>
-    </ion-col>
-  </ion-row>
-</ion-grid>
-
-
-
-<ion-card >
-  <ion-card-header>
-    <ion-card-title>Top Donation</ion-card-title>
-    <ion-card-subtitle>Recently</ion-card-subtitle>
-  </ion-card-header>
-      <ion-card-content>
-        <ion-list>
-          <ion-item>
-            <ion-thumbnail slot="start">
-              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
-            </ion-thumbnail>
-            <ion-label>Alumini Name 1</ion-label>
-            <ion-text>Donation Amount</ion-text>
-            <ion-text>For Development of xyz</ion-text>
-          </ion-item>
-    
-          <ion-item>
-            <ion-thumbnail slot="start">
-              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
-            </ion-thumbnail>
-            <ion-label>Alumini Name 2</ion-label>
-            <ion-text>Donation Amount</ion-text>
-            <ion-text>For Development of xyz</ion-text>
-          </ion-item>
-    
-          <ion-item>
-            <ion-thumbnail slot="start">
-              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
-            </ion-thumbnail>
-            <ion-label>Alumini Name 3</ion-label>
-            <ion-text>Donation Amount</ion-text>
-            <ion-text>For Development of xyz</ion-text>
-          </ion-item>
-          
-          <ion-item lines="none">
-            <ion-thumbnail slot="start">
-              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
-            </ion-thumbnail>
-            <ion-label>Alumini Name 4</ion-label>
-            <ion-text>Donation Amount</ion-text>
-            <ion-text>For Development of xyz</ion-text>
+  
+  <div id="content">
+    <h1><b>About Us</b></h1>
+    <ion-text>
+      <p>
+        Engineering College Ajmer prides itself on the success of its alumni. After
+        successfully completing their academic years at the institute, our alumni
+        went on to expand their wings and reached new heights, be it as
+        entrepreneurs, industrialists, academicians, researchers, social cause
+        champions, bureaucrats etc. We have had many notable alumni who have
+        received national and international recognition in their respective
+        professional fields. With more than 5500 alumni spanning across the globe,
+      they have been instrumental in strengthening the image of Engineering
+      College Ajmer. Though their dreams took them in new directions, ECA alumni
+      have always felt connected to their alma mater and hence, they have over the
+      years nurtured the institute through their generous contributions. The
+      spirit of Giving Back is reflected in every corner of the institute be it
+      infrastructure development, scholarships, especially to girl students,
+      financial support to various hobby clubs, set-up of different R&D labs and
+      faculty chairs, donations to various community development sectors,
+      environment etc. Established in 31.08.2022, Alumni Association of ECA is an
+      independent registered body of more than 4000 alumni spanning across the
+      world. Its mission is –
+    </p>
+      
+      <ion-list lines="full" [inset]="true">
+        <ion-item>
+          <ion-label>•To actively promote interaction & networking among its alumni.</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>•To be a pillar of support in their hour of need. </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>• To help realize the notion of Giving Back to the Alma mater. </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>•To function on a charitable basis, and to run the Association on ‘no profit-no loss’ basis’.</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>•To contribute to the
+            vision and strengthen the image of ECA at national & international level.
+            Alumni in different parts of the world have formed Chapters of their
+            associations. These Chapters work actively towards promoting networking
+            among themselves and with the institute as well. Organizing alumni
+            Reunions is an integral part of the Alumni Association of ECA</ion-label>
           </ion-item>
         </ion-list>
-      </ion-card-content>
-    </ion-card>
-   
+      </ion-text>
+      </div>   
+      
+  <div class="navs">
+    <div id="content">
+      <h1><b>Engagements</b></h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo
+        distinctio, corrupti pariatur ratione odio asperiores quae voluptatum
+        ducimus est, nulla dicta aperiam, error ea. Vitae recusandae ducimus
+        autem ullam quod deserunt distinctio vero repellendus quos!
+      </p>
+    </div>
+    <div class="alumni">
+      <a href="../alumni">
+        <ion-icon name="school"> </ion-icon><b> Alumni</b>
+        <p>Lorem ipsum dolor sit amet consectetur.</p></a
+      >
+    </div>
+    <div class="reunion">
+      <a href="../reunion">
+        <ion-icon name="ribbon"> </ion-icon><b> Reunion</b>
+        <p>Celebrate your Next milestone reunion with us!</p>
+      </a>
+    </div>
+    <div class="book">
+      <a href="../donate">
+        <ion-icon name="Heart"> </ion-icon><b> Donate</b>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></a
+      >
+    </div>
+    <div class="trophy">
+      <a href="../home">
+        <ion-icon name="trophy"> </ion-icon><b> Awards</b>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p></a
+      >
+    </div>
+    <div class="wallet">
+      <a href="../membership">
+        <ion-icon name="wallet"> </ion-icon><b> Membership</b>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores,
+          officiis!
+        </p></a
+      >
+    </div>
+  </div>
 
-<!-- Footer  -->
+  <div class="wallet">
+    <a href="../team">
+      <ion-icon name="people"> </ion-icon><b> Teams</b>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores,
+        officiis!
+      </p></a
+    >
+  </div>
+
+  <ion-grid>
+    <h1><b>Campus Tour</b></h1>
+    <p> The Alumni Association can assist in organizing campus tours for you and your family, allowing you to revisit and explore the campus.</p>
+    <ion-row>
+      <!-- video1 -->
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Overview of College</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <iframe
+              width="100%"
+              height="275px"
+              src="https://www.youtube.com/embed/CAiRpBSBLKQ?si=yzzxkbgwRWMqBYeb"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <!-- video2 -->
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Campus Tour</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <iframe
+              width="100%"
+              height="275px"
+              src="https://www.youtube.com/embed/3eAC7XaLLYA?si=ipeQ2NQidEufwJdm"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <!-- video3 -->
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Campus Tour</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <iframe
+              width="100%"
+              height="275px"
+              src="https://www.youtube.com/embed/3eAC7XaLLYA?si=ipeQ2NQidEufwJdm"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Top Donation</ion-card-title>
+      <ion-card-subtitle>Recently</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img
+              alt="Silhouette of mountains"
+              src="https://ionicframework.com/docs/img/demos/thumbnail.svg"
+            />
+          </ion-thumbnail>
+          <ion-label>Alumini Name 1</ion-label>
+          <ion-text>Donation Amount</ion-text>
+          <ion-text>For Development of xyz</ion-text>
+        </ion-item>
+
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img
+              alt="Silhouette of mountains"
+              src="https://ionicframework.com/docs/img/demos/thumbnail.svg"
+            />
+          </ion-thumbnail>
+          <ion-label>Alumini Name 2</ion-label>
+          <ion-text>Donation Amount</ion-text>
+          <ion-text>For Development of xyz</ion-text>
+        </ion-item>
+
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img
+              alt="Silhouette of mountains"
+              src="https://ionicframework.com/docs/img/demos/thumbnail.svg"
+            />
+          </ion-thumbnail>
+          <ion-label>Alumini Name 3</ion-label>
+          <ion-text>Donation Amount</ion-text>
+          <ion-text>For Development of xyz</ion-text>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <img
+              alt="Silhouette of mountains"
+              src="https://ionicframework.com/docs/img/demos/thumbnail.svg"
+            />
+          </ion-thumbnail>
+          <ion-label>Alumini Name 4</ion-label>
+          <ion-text>Donation Amount</ion-text>
+          <ion-text>For Development of xyz</ion-text>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+
+  <!-- Footer  -->
   <div class="foot">
     <ion-icon name="location"></ion-icon><b>Address</b>
-    <p> Alumni Association office
-      Room No. NB208
-      Engineering College Ajmer</p>
-    
+    <p>Alumni Association office Room No. NB208 Engineering College Ajmer</p>
+
     <ion-icon name="call"></ion-icon><b>Phone</b>
     <p>+91 7891012342</p>
 
     <ion-icon name="mail"></ion-icon><b>Email</b>
     <p><a href="ecaajmer.ac.in">Alumniaffairs.ac.in</a></p>
-    
+
     <!-- Page to follow -->
-    <div class="logo"><H2>Follow us on:</H2>
-    <ion-icon name="logo-instagram"><a href="instagram.in"></a></ion-icon>
-    <ion-icon name="logo-github"><a href="github.in"></a></ion-icon>
-    <ion-icon name="logo-google"><a href="ecajmer.ac.in"></a></ion-icon>
-    <ion-icon name="logo-linkedin"><a href="ecajmer.ac.in"></a></ion-icon>
+    <div class="logo">
+      <h2>Follow us on:</h2>
+      <ion-icon name="logo-instagram"><a href="instagram.in"></a></ion-icon>
+      <ion-icon name="logo-github"><a href="github.in"></a></ion-icon>
+      <ion-icon name="logo-google"><a href="ecajmer.ac.in"></a></ion-icon>
+      <ion-icon name="logo-linkedin"><a href="ecajmer.ac.in"></a></ion-icon>
     </div>
   </div>
 
-
   <div class="note">
-    <P>www.ecajmer.ac.in</P>ALUMNI OF GECA.
-    <P>Developed by CS Students.</P>GECA
+    <p>www.ecajmer.ac.in</p>
+    ALUMNI OF GECA.
+    <p>Developed by CS Students.</p>
+    GECA
   </div>
-
-
-
-
-
-
 </ion-content>
-
-
-
-
-

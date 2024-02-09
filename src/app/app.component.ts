@@ -17,7 +17,7 @@ export class AppComponent {
     { title: 'Membership', url: 'membership', icon: 'cash' },
     { title: 'Reunion', url: 'company', icon: 'ribbon' },
     { title: 'Donate', url: 'donate', icon: 'wallet' },
-    { title: 'Team', url: '/team', icon: 'people' },
+    { title: 'Team', url: 'team', icon: 'people' },
     { title: 'Contact Us', url: 'contact', icon: 'call' },
    
   ];

@@ -21,7 +21,7 @@ export class HomePage implements OnInit {
     { title: 'Donate', url: 'donate', icon: 'wallet' },
     { title: 'Team', url: '/team', icon: 'people' },
     { title: 'Contact Us', url: 'contact', icon: 'call' },
-   
+  
   ];
   counterValue1: number = 0;
   counterValue2: number = 50; // Set initial value for counter 2
@@ -32,7 +32,6 @@ export class HomePage implements OnInit {
   counterInterval3: any;
 
   slides: any[] = [];
-  slides2: any[] = [];
   
   constructor() {}
 

@@ -156,7 +156,6 @@ ion-header{
 
   ion-toolbar{
     height: 8vh;
-    box-shadow: -1px 5px 6px -2px rgb(62, 0, 107);
   }
   }
 }
@@ -564,11 +563,8 @@ text-decoration: none;
   margin: 5px 30px;
 }
   .developer{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: black;
   margin: 5px 30px;
   display: flex;
-  // height: 10%;
   background: none;
 
 
@@ -578,6 +574,7 @@ text-decoration: none;
   height: 42px;
   width: 340px;
   margin-bottom: 3px;
+  margin-right: 5px;
   display: flex;
   color: black;
   border-radius: 10px;

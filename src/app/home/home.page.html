@@ -38,12 +38,12 @@
 
 
 <ion-content [fullscreen]="true">
-  <ion-infinite-scroll (ionInfinite)="loadData($event)">
+  <!-- <ion-infinite-scroll>
     <ion-infinite-scroll-content
       loadingSpinner="bubbles"
       loadingText="Loading more data...">
     </ion-infinite-scroll-content>
-  </ion-infinite-scroll>
+  </ion-infinite-scroll> -->
 
     <app-banner [slides]="slides"></app-banner>
     <div class="container">
@@ -215,14 +215,14 @@
 
 <!-- Developer -->
 <div class="devel">
-  <h1>Developed by :</h1></div>
+  <h4>Developed by :</h4></div>
   <div class="developer">
 
   <div class="saqlain">
   <ion-thumbnail slot="start">
     <img alt="Silhouette of mountains" src="../../assets/Saqlain prof..jpg" />
   </ion-thumbnail>
-  <ion-label>Mohemmed Saqlain</ion-label>
+  <ion-label>Mohammed Saqlain</ion-label>
   <br>
   <ion-icon name="logo-linkedin"></ion-icon><p><a href="http://www.linkedin.com/in/saqlain1754"> LinkedIn</a></p>
 </div>
@@ -240,12 +240,12 @@
 
 
 
-<!-- </ion-content> -->
-<div class="note">
-  <P>www.ecajmer.ac.in</P>ALUMNI OF GECA.
-  <P>Developed by CS Students.</P>GECA
-</div>
-
+  <div class="note">
+    <P>www.ecajmer.ac.in</P>ALUMNI OF GECA.
+    <P>Developed by CS Students.</P>GECA
+  </div>
+  
+  </ion-content>
 
 
 

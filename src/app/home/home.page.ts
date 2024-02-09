@@ -36,6 +36,16 @@ export class HomePage implements OnInit {
   
   constructor() {}
 
+  items = Array.from({ length: 20 }, (_, i) => `Item ${i + 1}`);
+
+  doRefresh(event: any) {
+    setTimeout(() => {
+      // Your refresh logic goes here
+      this.items = Array.from({ length: 20 }, (_, i) => `New Item ${i + 1}`);
+
+      event.target.complete();
+    }, 1000);}
+
   ngOnInit(): void {
     this.startCounter1();
     this.startCounter2();

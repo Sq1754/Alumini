@@ -62,7 +62,7 @@ ion-content {
       height: 7vh;
       display: hidden;
       background-color: rgba(194, 194, 194, 0.53);
-      display: flex;
+      display: flex; 
       align-items: center;
       border: 2px solid rgb(44, 0, 80);
       border-radius: 50px;
@@ -88,7 +88,6 @@ ion-content {
     background-color: rgba(68, 0, 108, 0.801);
     border-radius: 20px;
     padding: 5px 10px;
-  
   }
 @media screen and (max-width:720px){
   .menu-btn{
@@ -214,8 +213,6 @@ ion-card{
     }
 
 }
-
-//footer
 
 // footer
 .foot{

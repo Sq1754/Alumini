@@ -564,6 +564,107 @@ text-decoration: none;
     }
 
 
+//developer
+
+.devel{
+  font-family:Arial, Helvetica, sans-serif;
+  margin: 5px 30px;
+}
+  .developer{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  margin: 5px 30px;
+  display: flex;
+  // height: 10%;
+  background: none;
+
+
+.saqlain{
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(255, 255, 255, 0.821);
+  height: 42px;
+  width: 340px;
+  margin-bottom: 3px;
+  display: flex;
+  color: black;
+  border-radius: 10px;
+  border: 2px solid black;
+  text-decoration: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+
+  img{
+    border-radius: 50%;
+    padding: 10px;
+  }
+
+  ion-icon{
+    padding-left:50px;
+    margin-top: 5px;
+    cursor: pointer;
+    padding-right: 5px;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.mayank{
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(255, 255, 255, 0.821);
+  height: 42px;
+  width: 340px;
+  margin-bottom: 3px;
+  margin-top: 5px;
+  display: flex;
+  color: black;
+  border-radius: 10px;
+  border: 2px solid black;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+
+  img{
+    border-radius: 50%;
+    padding: 10px;
+  }
+
+  ion-icon{
+    padding-left:68px;
+    margin-top: 5px;
+    cursor: pointer;
+    padding-right: 5px;
+  }
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
+}
+}
+
+
+
+@media screen and (max-width:500px) {
+  .developer{
+    display: inline;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.mayank{
+  width: 55px;
+  margin-left: 27px;
+}
+.saqlain{
+  width: 55px;
+  margin-left: 27px;
+}
+
+}
 //logo
 .logo ion-icon{
 margin-left: 15px;

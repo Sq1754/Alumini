@@ -20,48 +20,34 @@
 
 <header class="header">
   <nav class="navbar">
-      <a href="#"  style="--i:1" class="active">Home</a>
-      <a href="#"  style="--i:2">About</a>
-      <a href="../alumni"  style="--i:3">Alumni</a>
-      <a href="../reunion"  style="--i:4">Reunion</a>
-      <a href="../membership"  style="--i:4">Membership</a>
-      <a href="../donate"  style="--i:4">Donate</a>
-      <a href="/team"  style="--i:5">Team</a>
-      <a href="#"  style="--i:5">Contact Us</a>
+    <a href="#" style="--i:1" class="active">Home</a>
+    <a href="#" style="--i:2">About</a>
+    <a href="../alumni" style="--i:3">Alumni</a>
+    <a href="../reunion" style="--i:4">Reunion</a>
+    <a href="../membership" style="--i:4">Membership</a>
+    <a href="../donate" style="--i:4">Donate</a>
+    <a href="/team" style="--i:5">Team</a>
+    <a href="#" style="--i:5">Contact Us</a>
   </nav>
 </header>
-
 
 <div id="title">
   <h1><b>Membership</b></h1>
 </div>
 
+<form id="myForm" onsubmit="submitForm(event)">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
 
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age" required>
 
-<!-- Footer  -->
-<div class="foot">
-  <ion-icon name="location"></ion-icon><b>Address</b>
-  <p> Alumni Association office
-    Room No. NB208
-    Engineering College Ajmer</p>
-  
-  <ion-icon name="call"></ion-icon><b>Phone</b>
-  <p>+91 7891012342</p>
+  <!-- Repeat similar label and input blocks for other fields -->
 
-  <ion-icon name="mail"></ion-icon><b>Email</b>
-  <p><a href="ecaajmer.ac.in">Alumniaffairs.ac.in</a></p>
-  
-  <!-- Page to follow -->
-  <div class="logo"><H2>Follow us on:</H2>
-  <ion-icon name="logo-instagram"><a href="instagram.in"></a></ion-icon>
-  <ion-icon name="logo-github"><a href="github.in"></a></ion-icon>
-  <ion-icon name="logo-google"><a href="ecajmer.ac.in"></a></ion-icon>
-  <ion-icon name="logo-linkedin"><a href="ecajmer.ac.in"></a></ion-icon>
-  </div>
-</div>
-
+  <button type="submit">Submit</button>
+</form>
 
 <div class="note">
-  <P>www.ecajmer.ac.in</P>ALUMNI OF GECA.
-  <P>Developed by CS Students.</P>GECA
+  <p>www.ecajmer.ac.in</p>ALUMNI OF GECA.
+  <p>Developed by CS Students.</p>GECA
 </div>

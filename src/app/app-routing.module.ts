@@ -31,6 +31,15 @@ const routes: Routes = [
     path: 'donate',
     loadChildren: () => import('./donate/donate.module').then( m => m.DonatePageModule)
   },
+  {
+    path: '',
+    redirectTo: 'sign-in',
+    pathMatch: 'full'
+  },
+  {
+    path: 'sign-in',
+    loadChildren: () => import('./sign-in/sign-in.module').then( m => m.SignInPageModule)
+  },
 ];
 
 @NgModule({

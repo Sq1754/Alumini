@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 import { BannerComponent } from './banner/banner.component';
+import { SignInPage } from '../sign-in/sign-in.page';
+
+
 // import { CUSTOM_ELEMENTS_SCHEMA,  ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 
 @Component({
@@ -84,5 +87,6 @@ export class HomePage implements OnInit {
       }
     }, 50);
   }
+
 
 }

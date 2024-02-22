@@ -11,5 +11,10 @@ export class MembershipPage implements OnInit {
 
   ngOnInit() {
   }
+  onSubmit(event: Event) {
+    event.preventDefault();
+    // Add your form submission logic here
+  }
+  
 
 }

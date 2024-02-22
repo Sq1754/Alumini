@@ -88,5 +88,4 @@ export class HomePage implements OnInit {
     }, 50);
   }
 
-
 }

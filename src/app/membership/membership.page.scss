@@ -208,3 +208,11 @@
     padding: 0;
     overflow: hidden;
   }
+
+
+
+  ion-label[color="danger"]::after {
+    content: ' *';
+    color: red;
+    margin-left: 5px;
+  }

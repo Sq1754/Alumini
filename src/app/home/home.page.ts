@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 import { BannerComponent } from './banner/banner.component';
 import { SignInPage } from '../sign-in/sign-in.page';
+import { Router } from '@angular/router';
 
 
 // import { CUSTOM_ELEMENTS_SCHEMA,  ElementRef, Input, OnInit, ViewChild } from '@angular/core';
@@ -15,6 +16,7 @@ import { SignInPage } from '../sign-in/sign-in.page';
  // schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class HomePage implements OnInit {
+
   public appPages = [
     { title: 'Home', url: 'home', icon: 'home' },
     { title: 'About', url: 'about', icon: 'person' },

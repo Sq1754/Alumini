@@ -17,6 +17,11 @@
    </ion-title>
   </ion-toolbar>
 </ion-header>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=NItemo:wght@400;700&amp;family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+
 
 <header class="header">
   <nav class="navbar">
@@ -37,75 +42,128 @@
 </div>
 
 <ion-content>
-<form (ngSubmit)="onSubmit($event)" action="mailto:001jokergaming@gmail.com?subject=New%20Membership%20Form%20Submission&body=First%20Name:%20%5BfirstName%5D%0A%20%20Roll%20Number:%20%5BrollNumber%5D%0A%20%20Gender:%20%5Bgender%5D%0A%20%20%20%20<!--%20Add%20other%20form%20fields%20here%20-->">
-  <ion-item>
-    <ion-label position="floating">First Name*</ion-label>
-    <ion-input type="text" required></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label position="floating">Roll Number*</ion-label>
-    <ion-input type="number" required></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label>Gender</ion-label>
-    <ion-select required>
-      <ion-select-option value="male">Male</ion-select-option>
-      <ion-select-option value="female">Female</ion-select-option>
-    </ion-select>
-  </ion-item>
-  <ion-item>
-    <ion-label position="floating">Employer*</ion-label>
-    <ion-input type="text" required></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label position="floating">Private Email*</ion-label>
-    <ion-input type="email" required></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label position="floating">Address*</ion-label>
-    <ion-textarea required></ion-textarea>
-  </ion-item>
-  <ion-item>
-    <ion-label position="floating">Middle Name</ion-label>
-    <ion-input type="text"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label>Degree</ion-label>
-    <ion-select required>
-      <ion-select-option value="B.E.">B.E.</ion-select-option>
-      <ion-select-option value="B.Tech">B.Tech</ion-select-option>
-      <ion-select-option value="M.Tech">M.Tech</ion-select-option>
-      <ion-select-option value="MCA">MCA</ion-select-option>
-      <ion-select-option value="MBA">MBA</ion-select-option>
-    </ion-select>
-  </ion-item>
-  <ion-item>
-    <ion-label>Linkedin</ion-label>
-    <ion-input type="url"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label position="floating">Designation*</ion-label>
-    <ion-input type="text" required></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label position="floating">Mobile No.*</ion-label>
-    <ion-input type="tel" required></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label>Whatsapp No.</ion-label>
-    <ion-input type="tel"></ion-input>
-  </ion-item>
-    <ion-item lines="full">
-      <ion-label>I agree that the above data may be shared with Engineering College Ajmer.</ion-label>
-      <ion-checkbox slot="start" required></ion-checkbox>
-    </ion-item>
-    <ion-item lines="full">
-      <ion-label>I agree that the above data may be used to update the Alumni Association database.</ion-label>
-      <ion-checkbox slot="start" required></ion-checkbox>
-    </ion-item>
-    <ion-button type="submit" expand="block" color="primary">Submit</ion-button>
-  </form>
-  
+  <div class="container" src="src/assets/bg rainb (1).jpg">
+  <div class="inquiry-item col-lg-6">
+    <div class="bg-light p-5 rounded-5">
+      <h2 class="display-7 text-dark"> <b>Membership Form</b></h2>
+      <p>Fill this form to became the member of <b>AAECA</b> </p>
+      <form id="form" class="form-group flex-wrap">
+        <div class="col-lg-12 mb-3">
+          <label for="middleName">Your Name :</label>
+          <input type="text" class="form-control ps-3 me-3" id="middleName" placeholder="Write Your Name Here">
+        </div>
+        <div class="col-lg-12 mb-3">
+          <label for="rollNumber">College ID :<span class="required"></span></label>
+          <input type="text" class="form-control" id="rollNumber" required placeholder="Your College Id">
+        </div>
+        <div class="col-lg-12 mb-3">
+          <label for="Branch">Branch :<span class="required"></span></label>
+          <select class="form-control" id="degree">
+            <option class="grey" value="" disabled selected hidden >Select Branch</option>
+            <option value="Computer Science">Computer Science (CS)</option>
+            <option value="Cyber Security">Cyber Security (CYB)</option>
+            <option value="Electrical">Electrical Engineering (EE)</option>
+            <option value="Mechanical">Mechanical Engineering (ME)</option>
+            <option value="Civil">Civil Engineering (CE)</option>
+            <option value="Electronics & Communication">Electronics & Communication</option>
+            <option value="Electronic Instrumentation & Control">Electronic Instrumentation & Control</option>
+        </select>
+        </div>
+        <div class="col-lg-12 mb-3">
+          <label for="degree" >Degree :</label>
+          <select class="form-control" id="degree">
+            <option class="grey" value="" disabled selected hidden >Select Degree</option>
+              <option value="B.E.">B.E.</option>
+              <option value="B.Tech">B.Tech</option>
+              <option value="M.Tech">M.Tech</option>
+              <option value="MCA">MCA</option>
+              <option value="MBA">MBA</option>
+          </select>
+        </div>
+        <div class="col-lg-12 mb-3">
+        <label for="year-range">Select Batch :<span class="required"></span></label>
+            <select class="form-control" id="year-range">
+              <option class="grey" value="" disabled selected hidden >Select Batch</option>
+                <option value="2001-2005">2001-2005</option>
+                <option value="2002-2006">2002-2006</option>
+                <option value="2003-2007">2003-2007</option>
+                <option value="2004-2008">2004-2008</option>
+                <option value="2005-2009">2005-2009</option>
+                <option value="2006-2010">2006-2010</option>
+                <option value="2007-2011">2007-2011</option>
+                <option value="2008-2012">2008-2012</option>
+                <option value="2009-2013">2009-2013</option>
+                <option value="2010-2014">2010-2014</option>
+                <option value="2011-2015">2011-2015</option>
+                <option value="2012-2016">2012-2016</option>
+                <option value="2013-2017">2013-2017</option>
+                <option value="2014-2018">2014-2018</option>
+                <option value="2015-2019">2015-2019</option>
+                <option value="2016-2020">2016-2020</option>
+                <option value="2017-2021">2017-2021</option>
+                <option value="2018-2022">2018-2022</option>
+                <option value="2019-2023">2019-2023</option>
+                <option value="2020-2024">2020-2024</option>
+                <option value="2021-2025">2021-2025</option>
+                <option value="2022-2026">2022-2026</option>
+                <option value="2023-2027">2023-2027</option>
+                <option value="2024-2028">2024-2028</option>
+                <option value="2025-2029">2025-2029</option>
+                <option value="2026-2030">2026-2030</option>
+                <option value="2027-2031">2027-2031</option>
+                <option value="2028-2032">2028-2032</option>
+                <option value="2029-2033">2029-2033</option>
+                <option value="2030-2034">2030-2034</option>
+            </select>
+          </div>
+          <div class="col-lg-12 mb-3">
+          <label for="gender" >Gender :</label>
+          <select class="form-control" id="gender">
+            <option class="grey" value="" disabled selected hidden >Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="col-lg-12 mb-3">
+          <label for="employer">Employer :<span class="required"></span></label>
+          <input type="text"  placeholder="Employer" class="form-control" id="employer" required>
+        </div>
+        <div class="col-lg-12 mb-3">
+          <label for="privateEmail" >Private Email :<span class="required"></span></label>
+          <input type="email" placeholder="Your Email Id" class="form-control" id="privateEmail" required>
+        </div>
+        <div class="col-lg-12 mb-3">
+          <label for="address" >Address :<span class="required"></span></label>
+          <textarea class="form-control" placeholder="Your Address" id="address" required></textarea>
+        </div>
+        <div class="col-lg-12 mb-3">
+          <label for="linkedin">Linkedin :</label>
+          <input type="text" placeholder="Your Linkedin Page" class="form-control" id="linkedin">
+        </div>
+        <div class="col-lg-12 mb-3">
+          <label for="designation" >Designation :<span class="required"></span></label>
+          <input type="text" placeholder="Designation" class="form-control" id="designation" required>
+        </div>
+        <div class="col-lg-12 mb-3">
+          <label for="mobile" >Mobile No. :<span class="required"></span></label>
+          <input type="tel" placeholder="Your Mobile No." class="form-control" id="mobile" required>
+        </div>
+        <div class="col-lg-12 mb-3">
+          <label for="whatsappMobile">Whatsapp No. :</label>
+          <input type="tel"  placeholder="Your Whatsapp No." class="form-control" id="whatsappMobile">
+        </div>
+        <div class="col-lg-12 mb-3">
+          <label for="picture" >Marksheet or Any Proof :</label>
+          <input type="file" placeholder="Identification" class="form-control-file" id="picture">
+        </div>
+        <div class="d-grid">
+        <button class="btn btn-primary btn-lg text-uppercase btn-rounded-none">Submit</button>
+      </div>
+      </form>
+    </div>
+  </div>
+  </div>
   <!-- Footer  -->
 <div class="foot">
   <ion-icon name="location"></ion-icon><b>Address</b>
@@ -127,13 +185,12 @@
   <ion-icon name="logo-linkedin"><a href="ecajmer.ac.in"></a></ion-icon>
   </div>
 </div>
-
+<div class="note">
+  <P>www.ecajmer.ac.in</P>ALUMNI OF GECA.
+  <P>Developed by CS Students.</P>GECA
+</div>
 </ion-content>
 
 
 
 
-<div class="note">
-  <P>www.ecajmer.ac.in</P>ALUMNI OF GECA.
-  <P>Developed by CS Students.</P>GECA
-</div>

@@ -1,3 +1,4 @@
+  
   //navbar
   .menu-btn{
     display: none;
@@ -58,6 +59,8 @@
   
   }
   @media screen and (max-width:768px){
+
+
     .menu-btn{
       display: block;
     }
@@ -211,8 +214,52 @@
 
 
 
-  ion-label[color="danger"]::after {
-    content: ' *';
-    color: red;
-    margin-left: 5px;
+  #alumniForm {
+    background-color: rgb(60, 0, 80);
+    width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
   }
+
+  #formm{
+    margin: 50px;
+    padding: 50px 0px;
+    border-radius: 30%;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #title{
+    margin-left: 10px;
+  }
+
+
+  .inquiry-item{
+    color: black;
+  }
+
+
+
+.inquiry-item{
+  align-items: center;
+  justify-content: center;
+}
+  
+
+
+.container{
+  width: 100%;
+  align-items: center;
+    justify-content: space-around;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    padding: 20px 0;
+}

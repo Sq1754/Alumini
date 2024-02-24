@@ -1,5 +1,13 @@
 ion-content{
     --background: url(../../assets/AAECA Banner.png) no-repeat center center/cover;
+    ion-toolbar{
+        --background: transparent;
+        ion-button{
+            width: 20px;
+            height: 15px;
+            padding: 0 10px;
+        }
+    }    
     ion-grid{
         transform: translateY(10vh);
         ion-label,p{

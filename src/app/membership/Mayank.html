@@ -1,0 +1,476 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <div class="menu-btn">
+        <ion-menu-button></ion-menu-button>
+      </div>
+    </ion-buttons>
+    <ion-title>
+      <div class="name">
+        <img src="../../assets/AAECA-LOGO.png">
+          <p>Alumni Association</p>
+          <br>
+          <p>Engineering College Ajmer</p>
+          <br>
+          <!-- <p id="sub">An Association of ECA Alumini</p> -->
+        </div>
+   </ion-title>
+  </ion-toolbar>
+</ion-header>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=NItemo:wght@400;700&amp;family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+
+
+<header class="header">
+  <nav class="navbar">
+      <a href="#"  style="--i:1" class="active">Home</a>
+      <a href="#"  style="--i:2">About</a>
+      <a href="../alumni"  style="--i:3">Alumni</a>
+      <a href="../reunion"  style="--i:4">Reunion</a>
+      <a href="../membership"  style="--i:4">Membership</a>
+      <a href="../donate"  style="--i:4">Donate</a>
+      <a href="/team"  style="--i:5">Team</a>
+      <a href="#"  style="--i:5">Contact Us</a>
+  </nav>
+</header>
+
+
+<div id="title">
+  <h1><b>Membership</b></h1>
+</div>
+
+<ion-content>
+  
+  <div class="container" src="src/assets/bg rainb (1).jpg">
+  <div class="inquiry-item col-lg-6">
+    <div class="bg-light p-5 rounded-5">
+      <h2 class="display-7 text-dark"> <b>Membership Form</b></h2>
+      <p>Fill this form to became the member of <b>AAECA</b> </p>
+      <form (submit)="sendEmail(); reset(); return false;" id="form" class="form-group flex-wrap">
+        <div class="col-lg-12 mb-3">
+          <label for="middleName">Your Name :</label>
+          <input type="text" class="form-control ps-3 me-3" id="middleName" placeholder="Write Your Name Here">
+        </div>
+        <div class="col-lg-12 mb-3">
+          <label for="rollNumber">College ID :<span class="required"></span></label>
+          <input type="text" class="form-control" id="rollNumber" required placeholder="Your College Id">
+        </div>
+        <div class="col-lg-12 mb-3">
+          <label for="Branch">Branch :<span class="required"></span></label>
+          <select class="form-control" id="degree">
+            <option class="grey" value="" disabled selected hidden >Select Branch</option>
+            <option value="Computer Science">Computer Science (CS)</option>
+            <option value="Cyber Security">Cyber Security (CYB)</option>
+            <option value="Electrical">Electrical Engineering (EE)</option>
+            <option value="Mechanical">Mechanical Engineering (ME)</option>
+            <option value="Civil">Civil Engineering (CE)</option>
+            <option value="Electronics & Communication">Electronics & Communication</option>
+            <option value="Electronic Instrumentation & Control">Electronic Instrumentation & Control</option>
+        </select>
+        </div>
+        <div class="col-lg-12 mb-3">
+          <label for="degree" >Degree :</label>
+          <select class="form-control" id="degree">
+            <option class="grey" value="" disabled selected hidden >Select Degree</option>
+              <option value="B.E.">B.E.</option>
+              <option value="B.Tech">B.Tech</option>
+              <option value="M.Tech">M.Tech</option>
+              <option value="MCA">MCA</option>
+              <option value="MBA">MBA</option>
+          </select>
+        </div>
+        <div class="col-lg-12 mb-3">
+        <label for="year-range">Select Batch :<span class="required"></span></label>
+            <select class="form-control" id="year-range">
+              <option class="grey" value="" disabled selected hidden >Select Batch</option>
+                <option value="2001-2005">2001-2005</option>
+                <option value="2002-2006">2002-2006</option>
+                <option value="2003-2007">2003-2007</option>
+                <option value="2004-2008">2004-2008</option>
+                <option value="2005-2009">2005-2009</option>
+                <option value="2006-2010">2006-2010</option>
+                <option value="2007-2011">2007-2011</option>
+                <option value="2008-2012">2008-2012</option>
+                <option value="2009-2013">2009-2013</option>
+                <option value="2010-2014">2010-2014</option>
+                <option value="2011-2015">2011-2015</option>
+                <option value="2012-2016">2012-2016</option>
+                <option value="2013-2017">2013-2017</option>
+                <option value="2014-2018">2014-2018</option>
+                <option value="2015-2019">2015-2019</option>
+                <option value="2016-2020">2016-2020</option>
+                <option value="2017-2021">2017-2021</option>
+                <option value="2018-2022">2018-2022</option>
+                <option value="2019-2023">2019-2023</option>
+                <option value="2020-2024">2020-2024</option>
+                <option value="2021-2025">2021-2025</option>
+                <option value="2022-2026">2022-2026</option>
+                <option value="2023-2027">2023-2027</option>
+                <option value="2024-2028">2024-2028</option>
+                <option value="2025-2029">2025-2029</option>
+                <option value="2026-2030">2026-2030</option>
+                <option value="2027-2031">2027-2031</option>
+                <option value="2028-2032">2028-2032</option>
+                <option value="2029-2033">2029-2033</option>
+                <option value="2030-2034">2030-2034</option>
+            </select>
+          </div>
+          <div class="col-lg-12 mb-3">
+          <label for="gender" >Gender :</label>
+          <select class="form-control" id="gender">
+            <option class="grey" value="" disabled selected hidden >Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="col-lg-12 mb-3">
+          <label for="employer">Employer :<span class="required"></span></label>
+          <input type="text"  placeholder="Employer" class="form-control" id="employer" required>
+        </div>
+        <div class="col-lg-12 mb-3">
+          <label for="privateEmail" >Private Email :<span class="required"></span></label>
+          <input type="email" placeholder="Your Email Id" class="form-control" id="privateEmail" required>
+        </div>
+        <div class="col-lg-12 mb-3">
+          <label for="address" >Address :<span class="required"></span></label>
+          <textarea class="form-control" placeholder="Your Address" id="address" required></textarea>
+        </div>
+        <div class="col-lg-12 mb-3">
+          <label for="linkedin">Linkedin :</label>
+          <input type="text" placeholder="Your Linkedin Page" class="form-control" id="linkedin">
+        </div>
+        <div class="col-lg-12 mb-3">
+          <label for="designation" >Designation :<span class="required"></span></label>
+          <input type="text" placeholder="Designation" class="form-control" id="designation" required>
+        </div>
+        <div class="col-lg-12 mb-3">
+          <label for="mobile" >Mobile No. :<span class="required"></span></label>
+          <input type="tel" placeholder="Your Mobile No." class="form-control" id="mobile" required>
+        </div>
+        <div class="col-lg-12 mb-3">
+          <label for="whatsappMobile">Whatsapp No. :</label>
+          <input type="tel"  placeholder="Your Whatsapp No." class="form-control" id="whatsappMobile">
+        </div>
+        <div class="col-lg-12 mb-3">
+          <label for="picture" >Marksheet or Any Proof :</label>
+          <input type="file" placeholder="Identification" class="form-control-file" id="picture">
+        </div>
+        <div class="d-grid">
+        <button (submit)="sendEmail(); reset(); return false; class="btn btn-primary btn-lg text-uppercase btn-rounded-none">Submit</button>
+      </div>
+      </form>
+    </div>
+  </div>
+  </div>
+  <!-- Footer  -->
+<div class="foot">
+  <ion-icon name="location"></ion-icon><b>Address</b>
+  <p> Alumni Association office
+    Room No. NB208
+    Engineering College Ajmer</p>
+  
+  <ion-icon name="call"></ion-icon><b>Phone</b>
+  <p>+91 7891012342</p>
+
+  <ion-icon name="mail"></ion-icon><b>Email</b>
+  <p><a href="ecaajmer.ac.in">Alumniaffairs.ac.in</a></p>
+  
+  <!-- Page to follow -->
+  <div class="logo"><H2>Follow us on:</H2>
+  <ion-icon name="logo-instagram"><a href="instagram.in"></a></ion-icon>
+  <ion-icon name="logo-github"><a href="github.in"></a></ion-icon>
+  <ion-icon name="logo-google"><a href="ecajmer.ac.in"></a></ion-icon>
+  <ion-icon name="logo-linkedin"><a href="ecajmer.ac.in"></a></ion-icon>
+  </div>
+</div>
+<div class="note">
+  <P>www.ecajmer.ac.in</P>ALUMNI OF GECA.
+  <P>Developed by CS Students.</P>GECA
+</div>
+</ion-content>
+
+
+</form>
+
+</ion-content>
+    <script src=" https://smtpjs.com/v3/smtp.js">
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "studentdata11000@gmail.com",
+          Password: "student@1111",
+          To: "studentdata11000@gmail.com",
+          From: document.getElementById("email").value,
+          Subject: "Data of the student",
+          Body: "And this is the body"
+        }).then(
+          message => alert(message)
+        );
+      }
+    </script>
+  
+<style>
+    
+
+  .menu-btn{
+    display: none;
+  }
+    .header{
+
+      z-index: 1;
+      margin: auto;
+      justify-content: space-evenly;
+      align-items:start;
+      text-align: center;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    
+  }
+  .navbar{
+    font-family: 'Josefin Sans', sans-serif;
+    position:absolute;
+    
+      background: none;
+      z-index: 1;
+      width: 65%;
+      margin: 10px auto;
+      margin-top: 5%;
+      height: 7vh;
+      display: hidden;
+      background-color: rgba(194, 194, 194, 0.53);
+      display: flex;
+      align-items: center;
+      border: 2px solid rgb(44, 0, 80);
+      border-radius: 50px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+  }
+  
+  
+  .navbar a{
+    display: inline-block;
+    justify-content: space-evenly;
+    font-size: 18px;
+    padding: 0px 20px;
+    color:#240057;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+  }
+  
+  .navbar a:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgba(68, 0, 108, 0.801);
+    border-radius: 20px;
+    padding: 5px 10px;
+  
+  }
+  @media screen and (max-width:768px){
+
+
+    .menu-btn{
+      display: block;
+    }
+    .header{
+      display: none;
+    }
+  }
+  
+  
+header
+  ion-header{
+    height: 10vh;
+    ion-toolbar{
+      height: 10vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    ion-buttons{
+      margin-top: 8px;
+      p{
+        font-size: 0.5rem;
+      } 
+    }  
+    .name{
+    
+      height: 7vh;
+      font-weight: bold;
+      width: 20vw;
+      display: flex;
+      margin-top: 10px;
+      padding-left: 10px;
+      text-transform: uppercase;
+      font-size: 15px;
+      letter-spacing: .1em;
+      align-items: center;
+      #sub{
+        font-weight: normal;
+        font-size: 10px;
+    }
+    }
+  
+      .name img{
+        margin-top: -8px;
+        height: 5vh;
+        width: 16vw;
+      }
+  
+  
+      @media (max-width:500px) {
+        .name{
+          height: 6vh;
+          width: 20vw;
+          display: flex;
+          text-transform: uppercase;
+          font-size: 8px;
+          letter-spacing: .1em;
+          align-items: center;
+          #sub{
+            font-weight: normal;
+            font-size: 6px;
+        }
+        }
+        .name img{
+          height: 4vh;
+          width: 16vw;
+        }
+      }
+  
+      .name p{
+        display: contents;
+      }
+      }
+    }
+  
+  @media (max-width:500px) {
+    ion-header{
+      height: 8vh;
+  
+    ion-toolbar{
+      height: 8vh;
+      box-shadow: -1px 5px 6px -2px rgb(62, 0, 107);
+    }
+    }
+  }
+
+  .foot{
+  
+  padding: 10px;
+  background-color: rgb(25, 0, 45);
+  color: white;
+  text-decoration: none;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  
+  }
+  
+  .foot b{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 10px;
+  font-size: large;
+  
+  }
+  .foot p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 28px;
+  
+  }
+  
+  
+
+  .logo ion-icon{
+  margin-left: 15px;
+  padding: 10px;
+  }
+  
+  .logo h2{
+  padding-top: 20px;
+  padding-left: 25px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  
+  .note{
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: x-small;
+  }
+  
+  .note p{
+  color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  }
+
+
+
+  ion-title{
+    padding: 0;
+    overflow: hidden;
+  }
+
+
+
+  #alumniForm {
+    background-color: rgb(60, 0, 80);
+    width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+
+  #formm{
+    margin: 50px;
+    padding: 50px 0px;
+    border-radius: 30%;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #title{
+    margin-left: 10px;
+  }
+
+
+  .inquiry-item{
+    color: black;
+  }
+
+
+
+.inquiry-item{
+  align-items: center;
+  justify-content: center;
+}
+  
+
+
+.container{
+  width: 100%;
+  align-items: center;
+    justify-content: space-around;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    padding: 20px 0;
+}
+</style>

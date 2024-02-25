@@ -98,7 +98,6 @@ ion-header{
     } 
   }  
   .name{
-    // padding-top: 10px;
     height: 7vh;
     font-weight: bold;
     width: 20vw;
@@ -121,14 +120,11 @@ ion-header{
       width: 16vw;
     }
 
-
     @media (max-width:500px) {
       .name{
-        // padding-top: 10px;
         height: 6vh;
         width: 20vw;
         display: flex;
-        // padding-left: 10px;
         text-transform: uppercase;
         font-size: 8px;
         letter-spacing: .1em;
@@ -170,14 +166,11 @@ ion-content{
   ion-card{
         height: 80%;
         width: 100%;
-        // overflow: scroll;
-    
     ion-card-header{
       margin-bottom: 10px;
       font-size: 1.3rem;
       font-weight: bold;
-      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
     }
     ion-label{
       font-weight: bold;
@@ -263,8 +256,6 @@ ion-menu-button.md{
 
 }
 
-
-
 ion-title{
   margin: 0%;
   padding: 0%;
@@ -299,10 +290,8 @@ ion-title{
   color: #240057;
 }
 .login:hover ion-icon{
-  // background-color: white;
   color: #240057;
 }
-
 
 //container
 .container{
@@ -310,7 +299,6 @@ ion-title{
     color: grey;
   }
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-  // background-color: rgb(27, 0, 61); 
   background: rgb(50, 0, 91);
   color: white;
   display: flex;
@@ -334,8 +322,6 @@ ion-title{
   display: flex;
 }
 
-
-
 //content
 #content{
   display: table-row;
@@ -343,7 +329,6 @@ ion-title{
   height: 90%;
   width: 100%;
   margin: 10px;
-  // background-blend-mode: color-burn;
   
 }
 
@@ -379,7 +364,6 @@ ion-icon{
   margin: 10px;
   padding: 20px;
   border-radius: 20px;
-
 }
 .reunion b{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -387,7 +371,6 @@ ion-icon{
   font-size: large;
   text-decoration: none;
   color: black;
-
 }
 .reunion p{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -396,7 +379,6 @@ ion-icon{
   color: #343434;
 
 }
-
 
 //----------
 .alumni{
@@ -409,7 +391,6 @@ ion-icon{
   margin: 10px;
   padding: 20px;
   border-radius: 20px;
-
 }
 
 .alumni b{
@@ -418,16 +399,13 @@ ion-icon{
   font-size: large;
   text-decoration: none;
   color: black;
-
 }
 .alumni p{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-left: 28px;
   text-decoration: none;
   color: #343434;
-
 }
-
 
 //-------
 .book{
@@ -440,7 +418,6 @@ ion-icon{
   margin: 10px;
   padding: 20px;
   border-radius: 20px;
-
 }
 
 .book b{
@@ -449,16 +426,13 @@ ion-icon{
   font-size: large;
   text-decoration: none;
   color: black;
-
 }
 .book p{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-left: 28px;
   text-decoration: none;
   color: #343434;
-
 }
-
 
 //------
 .trophy{
@@ -471,7 +445,6 @@ ion-icon{
   margin: 10px;
   padding: 20px;
   border-radius: 20px;
-
 }
 
 .trophy b{
@@ -480,16 +453,13 @@ ion-icon{
   font-size: large;
   text-decoration: none;
   color: black;
-
 }
 .trophy p{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-left: 28px;
   text-decoration: none;
   color: #343434;
-
 }
-
 
 //-----
 .wallet{
@@ -502,7 +472,6 @@ ion-icon{
   margin: 10px;
   padding: 20px;
   border-radius: 20px;
-
 }
 .wallet b{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -510,54 +479,42 @@ ion-icon{
   font-size: large;
   text-decoration: none;
   color: black;
-
 }
 .wallet p{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-left: 28px;
   text-decoration: none;
   color: #343434;
-
 }
 
 a {
 color: white;
 text-decoration: none;
-
 }
 
-
 // footer
-.foot{
-  
+.foot{  
     padding: 10px;
     background-color: rgb(25, 0, 45);
     color: white;
     text-decoration: none;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    
   }
   .foot ion-icon{
   color: white;
-  
   }
-    
     .foot b{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-left: 10px;
-    font-size: large;
-    
+    font-size: large; 
     }
     .foot p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-left: 28px;
-    
     }
 
-
 //developer
-
 .devel{
   font-family:Arial, Helvetica, sans-serif;
   margin: 5px 30px;
@@ -566,8 +523,6 @@ text-decoration: none;
   margin: 5px 30px;
   display: flex;
   background: none;
-
-
 .saqlain{
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: rgba(255, 255, 255, 0.821);
@@ -633,11 +588,8 @@ text-decoration: none;
     text-decoration: none;
     color: black;
   }
-
 }
 }
-
-
 
 @media screen and (max-width:500px) {
   .developer{
@@ -659,13 +611,11 @@ text-decoration: none;
 margin-left: 15px;
 padding: 10px;
 }
-
 .logo h2{
 padding-top: 20px;
 padding-left: 25px;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
 
 .note{
 background-color: black;
@@ -684,6 +634,3 @@ align-items: center;
 justify-content: center;
 padding: 10px;
 }
-
-
-

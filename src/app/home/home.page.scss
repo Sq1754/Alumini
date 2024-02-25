@@ -587,24 +587,39 @@ text-decoration: none;
 }
 
 .mayank{
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(255, 255, 255, 0.821);
+  height: 42px;
+  width: 340px;
+  margin-bottom: 3px;
+  margin-right: 5px;
+  display: flex;
+  color: black;
+  border-radius: 10px;
+  border: 2px solid black;
+  text-decoration: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+
   img{
     border-radius: 50%;
     padding: 10px;
   }
 
   ion-icon{
-    padding-left:68px;
+    padding-left:50px;
     margin-top: 5px;
     cursor: pointer;
     padding-right: 5px;
   }
-
   a{
     text-decoration: none;
     color: black;
   }
 }
-}
+  }
 
 @media screen and (max-width:500px) {
   .developer{

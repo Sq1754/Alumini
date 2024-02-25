@@ -157,82 +157,80 @@ ion-header{
 }
 
 // slides....
-
-ion-content{
+ion-content {
   scroll-behavior: smooth;
-  ion-header{
+  ion-header {
     text-align: center;
   }
   ion-card{
         height: 80%;
         width: 100%;
+        // overflow: scroll;
+    
     ion-card-header{
       margin-bottom: 10px;
       font-size: 1.3rem;
       font-weight: bold;
-      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      
     }
-    ion-label{
+    ion-label {
       font-weight: bold;
       font-size: 1.1rem;
     }
-    ion-text{
+    ion-text {
       font-size: small;
     }
-    ion-list{
-      ion-item{
+    ion-list {
+      ion-item {
         margin-bottom: 10px;
       }
-      img{
+      img {
         border-radius: 50%;
       }
     }
   }
-  .startPara{
+  .startPara {
     margin: 20px;
     font-size: 1.2rem;
   }
-  
 }
 
-//video block
-ion-grid{
-  h2{
+ion-grid {
+  h2 {
     font-family: 'Josefin Sans', sans-serif;
     padding-left: 25px;
   }
-  p{
+  p {
     padding: 10px 25px;
   }
-  ion-row{
-    ion-col{
-      ion-card{
+  ion-row {
+    ion-col {
+      ion-card {
         height: 50vh;
         width: 30vw;
         margin: 10px auto;
-        
       }
     }
   }
 }
 
 @media screen and (max-width:768px) {
-  ion-grid{
-    ion-row{
-      ion-col{
-        ion-card{
+  ion-grid {
+    ion-row {
+      ion-col {
+        ion-card {
           height: 350px;
           width: 90vw;
-          margin: 10px auto; 
+          margin: 10px auto;
         }
       }
     }
   }
 }
 
-
-#img{
-  margin:auto;
+#img {
+  margin: auto;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -242,19 +240,20 @@ ion-grid{
   align-items: flex-end;
 }
 
-#top{
+#top {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
 }
 
-ion-menu-button.md{
+ion-menu-button.md {
   display: flex;
   justify-content: right;
   align-items: flex-end;
-
 }
+
+
 
 ion-title{
   margin: 0%;
@@ -262,8 +261,7 @@ ion-title{
   overflow: hidden;
 }
 
-//login
-.login{
+.login {
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -280,18 +278,20 @@ ion-title{
   background-color: rgba(50, 0, 91, 0.866);
 }
 
-.login ion-icon{
+.login ion-icon {
   color: white;
 }
 
-.login:hover{
-  border: 2px solid  #240057;
+.login:hover {
+  border: 2px solid #240057;
   background-color: white;
   color: #240057;
 }
 .login:hover ion-icon{
+  // background-color: white;
   color: #240057;
 }
+
 
 //container
 .container{
@@ -299,6 +299,7 @@ ion-title{
     color: grey;
   }
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  // background-color: rgb(27, 0, 61); 
   background: rgb(50, 0, 91);
   color: white;
   display: flex;
@@ -314,13 +315,14 @@ ion-title{
   margin-top: 2%;
   padding-bottom: 5%;
   padding-top: 2%;
-
 }
 
-#num{
+#num {
   font-size: 1.5em;
   display: flex;
 }
+
+
 
 //content
 #content{
@@ -329,17 +331,18 @@ ion-title{
   height: 90%;
   width: 100%;
   margin: 10px;
+  // background-blend-mode: color-burn;
   
 }
 
-#content h2{
+#content h2 {
   margin: 10px;
   display: flex;
   padding-top: 20px;
   margin-left: 20px;
 }
 
-#content p{
+#content p {
   margin: 23px;
 }
 
@@ -364,6 +367,7 @@ ion-icon{
   margin: 10px;
   padding: 20px;
   border-radius: 20px;
+
 }
 .reunion b{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -371,6 +375,7 @@ ion-icon{
   font-size: large;
   text-decoration: none;
   color: black;
+
 }
 .reunion p{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -379,6 +384,7 @@ ion-icon{
   color: #343434;
 
 }
+
 
 //----------
 .alumni{
@@ -393,19 +399,22 @@ ion-icon{
   border-radius: 20px;
 }
 
-.alumni b{
+.reunion b, .alumni b, .book b, .trophy b, .wallet b {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-left: 5px;
   font-size: large;
   text-decoration: none;
   color: black;
+
 }
 .alumni p{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-left: 28px;
   text-decoration: none;
   color: #343434;
+
 }
+
 
 //-------
 .book{
@@ -418,6 +427,7 @@ ion-icon{
   margin: 10px;
   padding: 20px;
   border-radius: 20px;
+
 }
 
 .book b{
@@ -426,13 +436,16 @@ ion-icon{
   font-size: large;
   text-decoration: none;
   color: black;
+
 }
 .book p{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-left: 28px;
   text-decoration: none;
   color: #343434;
+
 }
+
 
 //------
 .trophy{
@@ -445,6 +458,7 @@ ion-icon{
   margin: 10px;
   padding: 20px;
   border-radius: 20px;
+
 }
 
 .trophy b{
@@ -453,13 +467,16 @@ ion-icon{
   font-size: large;
   text-decoration: none;
   color: black;
+
 }
 .trophy p{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-left: 28px;
   text-decoration: none;
   color: #343434;
+
 }
+
 
 //-----
 .wallet{
@@ -472,6 +489,7 @@ ion-icon{
   margin: 10px;
   padding: 20px;
   border-radius: 20px;
+
 }
 .wallet b{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -479,6 +497,7 @@ ion-icon{
   font-size: large;
   text-decoration: none;
   color: black;
+
 }
 .wallet p{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -490,28 +509,36 @@ ion-icon{
 a {
 color: white;
 text-decoration: none;
+
 }
 
+
 // footer
-.foot{  
+.foot{
+  
     padding: 10px;
     background-color: rgb(25, 0, 45);
     color: white;
     text-decoration: none;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+    
   }
   .foot ion-icon{
   color: white;
+  
   }
+    
     .foot b{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-left: 10px;
-    font-size: large; 
+    font-size: large;
+    
     }
     .foot p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-left: 28px;
+    
     }
 
 //developer
@@ -523,6 +550,8 @@ text-decoration: none;
   margin: 5px 30px;
   display: flex;
   background: none;
+
+
 .saqlain{
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: rgba(255, 255, 255, 0.821);
@@ -558,20 +587,6 @@ text-decoration: none;
 }
 
 .mayank{
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgba(255, 255, 255, 0.821);
-  height: 42px;
-  width: 340px;
-  margin-bottom: 3px;
-  display: flex;
-  color: black;
-  border-radius: 10px;
-  border: 2px solid black;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-content: center;
-  align-items: center;
-
   img{
     border-radius: 50%;
     padding: 10px;

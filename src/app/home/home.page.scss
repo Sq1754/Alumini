@@ -39,7 +39,6 @@ ion-header{
     } 
   }  
   .name{
-    // padding-top: 10px;
     height: 7vh;
     font-weight: bold;
     width: 20vw;
@@ -62,14 +61,11 @@ ion-header{
       width: 16vw;
     }
 
-
     @media (max-width:500px) {
       .name{
-        // padding-top: 10px;
         height: 6vh;
         width: 20vw;
         display: flex;
-        // padding-left: 10px;
         text-transform: uppercase;
         font-size: 8px;
         letter-spacing: .1em;
@@ -107,14 +103,17 @@ ion-content {
   ion-header {
     text-align: center;
   }
-  ion-card {
-    height: 80%;
-    width: 100%;
-    ion-card-header {
+  ion-card{
+        height: 80%;
+        width: 100%;
+        // overflow: scroll;
+    
+    ion-card-header{
       margin-bottom: 10px;
       font-size: 1.3rem;
       font-weight: bold;
-      font-family: 'Lucida Sans', sans-serif;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      
     }
     ion-label {
       font-weight: bold;
@@ -195,7 +194,9 @@ ion-menu-button.md {
   align-items: flex-end;
 }
 
-ion-title {
+
+
+ion-title{
   margin: 0%;
   padding: 0%;
   overflow: hidden;
@@ -227,16 +228,19 @@ ion-title {
   background-color: white;
   color: #240057;
 }
-
-.login:hover ion-icon {
+.login:hover ion-icon{
+  // background-color: white;
   color: #240057;
 }
 
-.container {
-  h1 {
+
+//container
+.container{
+  h1{
     color: grey;
   }
-  font-family: 'Lucida Sans', sans-serif;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  // background-color: rgb(27, 0, 61); 
   background: rgb(50, 0, 91);
   color: white;
   display: flex;
@@ -259,12 +263,17 @@ ion-title {
   display: flex;
 }
 
-#content {
+
+
+//content
+#content{
   display: table-row;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   height: 90%;
   width: 100%;
   margin: 10px;
+  // background-blend-mode: color-burn;
+  
 }
 
 #content h2 {
@@ -278,14 +287,48 @@ ion-title {
   margin: 23px;
 }
 
-ion-icon {
+
+
+// Icon 
+ion-icon{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    size: 10px;
+    font-size: large;
+    color: rgb(50, 0, 97);
+
+  }
+//------
+.reunion{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  size: 10px;
+  background-color: rgb(180, 178, 178);
+  z-index: 1;
+  opacity: 1;
+  border: 2px rgb(0, 0, 0);
+  font-size: small;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 20px;
+
+}
+.reunion b{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 5px;
   font-size: large;
-  color: rgb(50, 0, 97);
+  text-decoration: none;
+  color: black;
+
+}
+.reunion p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 28px;
+  text-decoration: none;
+  color: #343434;
+
 }
 
-.reunion, .alumni, .book, .trophy, .wallet {
+
+//----------
+.alumni{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: rgb(180, 178, 178);
   z-index: 1;
@@ -303,9 +346,101 @@ ion-icon {
   font-size: large;
   text-decoration: none;
   color: black;
+
+}
+.alumni p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 28px;
+  text-decoration: none;
+  color: #343434;
+
 }
 
-.reunion p, .alumni p, .book p, .trophy p, .wallet p {
+
+//-------
+.book{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(180, 178, 178);
+  z-index: 1;
+  opacity: 1;
+  border: 2px black;
+  font-size: small;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 20px;
+
+}
+
+.book b{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 5px;
+  font-size: large;
+  text-decoration: none;
+  color: black;
+
+}
+.book p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 28px;
+  text-decoration: none;
+  color: #343434;
+
+}
+
+
+//------
+.trophy{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(180, 178, 178);
+  z-index: 1;
+  opacity: 1;
+  border: 2px black;
+  font-size: small;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 20px;
+
+}
+
+.trophy b{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 5px;
+  font-size: large;
+  text-decoration: none;
+  color: black;
+
+}
+.trophy p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 28px;
+  text-decoration: none;
+  color: #343434;
+
+}
+
+
+//-----
+.wallet{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(180, 178, 178);
+  z-index: 1;
+  opacity: 1;
+  border: 2px black;
+  font-size: small;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 20px;
+
+}
+.wallet b{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 5px;
+  font-size: large;
+  text-decoration: none;
+  color: black;
+
+}
+.wallet p{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-left: 28px;
   text-decoration: none;
@@ -313,36 +448,41 @@ ion-icon {
 }
 
 a {
+color: white;
+text-decoration: none;
+
+}
+
+
+// footer
+.foot{
+  
+    padding: 10px;
+    background-color: rgb(25, 0, 45);
+    color: white;
+    text-decoration: none;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    
+  }
+  .foot ion-icon{
   color: white;
-  text-decoration: none;
-}
-
-.foot {
-  padding: 10px;
-  background-color: rgb(25, 0, 45);
-  color: white;
-  text-decoration: none;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-}
-
-.foot ion-icon {
-  color: white;
-}
-
-.foot b {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding-left: 10px;
-  font-size: large;
-}
-
-.foot p {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding-left: 28px;
-}
+  
+  }
+    
+    .foot b{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 10px;
+    font-size: large;
+    
+    }
+    .foot p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 28px;
+    
+    }
 
 //developer
-
 .devel{
   font-family:Arial, Helvetica, sans-serif;
   margin: 5px 30px;
@@ -352,23 +492,24 @@ a {
   display: flex;
   background: none;
 
-  .saqlain, .mayank {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgba(255, 255, 255, 0.821);
-    height: 42px;
-    width: 340px;
-    margin-bottom: 3px;
-    margin-right: 5px;
-    display: flex;
-    color: black;
-    border-radius: 10px;
-    border: 2px solid black;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    align-items: center;
-  }
+
 .saqlain{
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(255, 255, 255, 0.821);
+  height: 42px;
+  width: 340px;
+  margin-bottom: 3px;
+  margin-right: 5px;
+  display: flex;
+  color: black;
+  border-radius: 10px;
+  border: 2px solid black;
+  text-decoration: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+
   img{
     border-radius: 50%;
     padding: 10px;
@@ -387,27 +528,39 @@ a {
 }
 
 .mayank{
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(255, 255, 255, 0.821);
+  height: 42px;
+  width: 340px;
+  margin-bottom: 3px;
+  margin-right: 5px;
+  display: flex;
+  color: black;
+  border-radius: 10px;
+  border: 2px solid black;
+  text-decoration: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+
   img{
     border-radius: 50%;
     padding: 10px;
   }
 
   ion-icon{
-    padding-left:68px;
+    padding-left:50px;
     margin-top: 5px;
     cursor: pointer;
     padding-right: 5px;
   }
-
   a{
     text-decoration: none;
     color: black;
   }
-
 }
-}
-
-
+  }
 
 @media screen and (max-width:500px) {
   .developer{
@@ -429,13 +582,11 @@ a {
 margin-left: 15px;
 padding: 10px;
 }
-
 .logo h2{
 padding-top: 20px;
 padding-left: 25px;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
 
 .note{
 background-color: black;
@@ -454,6 +605,3 @@ align-items: center;
 justify-content: center;
 padding: 10px;
 }
-
-
-

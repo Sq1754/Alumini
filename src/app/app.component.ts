@@ -1,4 +1,6 @@
+
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 // import function to register Swiper custom elements
 import { register } from 'swiper/element/bundle';
 // register Swiper custom elements
@@ -9,6 +11,7 @@ register();
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
+  
   public appPages = [
     { title: 'Home', url: 'home', icon: 'home' },
     { title: 'About', url: 'about', icon: 'person' },
@@ -30,5 +33,9 @@ export class AppComponent {
       {URL: 'linked.in', icon:''},
     ],
   };
-  constructor() {}
+  constructor(private Router: Router){}
+
+  shouldShowNavbar():boolean{
+    return this.Router.url !=='/sign-in'
+  }
 }

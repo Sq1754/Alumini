@@ -36,6 +36,6 @@ export class AppComponent {
   constructor(private Router: Router){}
 
   shouldShowNavbar():boolean{
-    return this.Router.url !=='/sign-in'
+    return !['/sign-in','/sign-in/sign-up'].includes(this.Router.url);
   }
 }

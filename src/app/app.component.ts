@@ -36,6 +36,6 @@ export class AppComponent {
   constructor(private Router: Router){}
 
   shouldShowNavbar():boolean{
-    return this.Router.url !=='/sign-in'
+    return this.Router.url !=='/sign-in';
   }
 }

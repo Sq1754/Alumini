@@ -2,101 +2,14 @@
   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
-ion-content {
-  // overwrite inline styles
-  --offset-bottom: auto!important;
-  --overflow: hidden;
-  overflow: auto;
-  scroll-behavior: smooth;
-  &::-webkit-scrollbar {
-  display: none;
+  .menu-btn{
+    display: none;
   }
-// title "TEAM"
-  #title{
-    margin-top: 35px;
-    font-family: 'Playfair Display', serif;
-    padding: 10px;
-    border-bottom: 2px solid;
-    h1{
-      font-size: 2rem;
-      margin-left: 1.3rem;
+    @media screen and (max-width:768px){
+      .menu-btn{
+        display: block;
+      }
     }
-  }
-  }
-
-  ion-title{
-    padding: 0;
-    overflow: hidden;
-  }
-
-
-  
-  //navbar
-  .menu-btn{
-    display: none;
-  }
-    .header{
-      // float: var(--overflow);
-      // background: none;
-      z-index: 1;
-      margin: auto;
-      justify-content: space-evenly;
-      align-items:start;
-      text-align: center;
-      padding: 0;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      justify-content: center;
-    
-  }
-  .navbar{
-    font-family: 'Josefin Sans', sans-serif;
-    position:absolute;
-    
-      background: none;
-      z-index: 1;
-      width: 65%;
-      margin: 10px auto;
-      margin-top: 5%;
-      height: 7vh;
-      display: hidden;
-      background-color: rgba(194, 194, 194, 0.53);
-      display: flex; 
-      align-items: center;
-      border: 2px solid rgb(44, 0, 80);
-      border-radius: 50px;         
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-  }
-  
-  
-  .navbar a{
-    display: inline-block;
-    justify-content: space-evenly;
-    font-size: 18px;
-    padding: 0px 20px;
-    color:#240057;
-    text-decoration: none;
-    font-weight: 500;
-    transition: .3s; 
-  }
-  
-  .navbar a:hover{
-    color: rgb(255, 255, 255);
-    background-color: rgba(68, 0, 108, 0.801);
-    border-radius: 20px;
-    padding: 5px 10px;
-  }
-@media screen and (max-width:720px){
-  .menu-btn{
-    display: block;
-  }
-  .header{
-    display: none;
-  }
-}
 
 ion-header{
   height: 10vh;
@@ -182,7 +95,16 @@ ion-header{
     }
   }
 }
-
+ion-content{
+  //Title
+  .title{
+    display: flex;
+    font-family: "Josefin Sans", sans-serif;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+}
 
 //card
 ion-card{
@@ -205,7 +127,7 @@ ion-card{
       font-weight: bold;
     }
     ion-card-content{
-      font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Josefin Sans', sans-serif;
         position: relative;
         overflow: hidden;
         overflow-y: auto;

@@ -3,5 +3,6 @@
     "@ionic/angular/common",
     "@ionic/angular/standalone"
   ],
-  "angular-schematics.forcedDependencies": {}
+  "angular-schematics.forcedDependencies": {},
+  "liveServer.settings.port": 5501
 }

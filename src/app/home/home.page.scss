@@ -570,6 +570,10 @@ text-decoration: none;
 .mayank{
   width: 55px;
   margin-left: 27px;
+
+  ion-icon{
+    margin-left: 11px;
+  }
 }
 .saqlain{
   width: 55px;
@@ -603,5 +607,19 @@ color: grey;
 display: flex;
 align-items: center;
 justify-content: center;
+padding: 10px;
+}
+
+.note1{
+background-color: black;
+color: white;
+
+padding: 10px;
+font-size: x-small;
+}
+
+.note1 p{
+color: grey;
+
 padding: 10px;
 }

@@ -86,6 +86,16 @@
     }
     }
   }
+
+
+
+//content/header-----
+  .header{
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
   
   // footer
   .foot{
@@ -144,7 +154,112 @@
   }
 
 
+
+// .form{
+//   display:;
+// }
+ion-item{
+  // display:list-item;
+  // justify-content: space-between;
+}
+
+
+  
+
   ion-title{
     padding: 0;
     overflow: hidden;
   }
+
+
+
+
+
+//ion items
+ion-item{
+  width: 42vw;
+  margin: 20px auto;
+  border-radius: 7px;
+  margin-left: 5%;
+  display: inline-flex;
+  max-width: 90vw;
+  flex-direction: column;
+  box-shadow: 1px 1px 10px 1px rgba(143, 143, 143, 0.66);
+}
+
+@media (max-width:500px){
+  ion-item{
+    width: 90vw;
+    // height: 50px;
+    // margin-top: 0%;
+    // padding-top: 0;
+    margin: 20px auto;
+    border-radius: 7px;
+    display:flex;
+    // max-width: 90vw;
+    // flex-direction: column;
+    box-shadow: 1px 1px 10px 1px rgba(143, 143, 143, 0.66);
+  }
+}
+
+
+ 
+  ion-input:focus,
+  ion-select:focus,
+  ion-textarea:focus {
+    border-color: #007aff;
+  }
+  
+  .ion-text-wrap {
+    color: red;
+  }
+  .ion-url-wrap {
+    color: red;
+  }
+  
+
+  
+
+  
+  ion-input[type="file"] {
+    padding: 0;
+    border: none;
+    background: none;
+    font-size: 16px;
+    width: auto;
+    --padding-start: 0;
+  }
+  
+  ion-input[type="file"]::part(native) {
+    height: 45px;
+  }
+  
+  ion-input[type="file"]::part(control) {
+    height: 45px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  ion-input[type="file"]::part(control)::before {
+    content: "Browse";
+    display: inline-block;
+    padding: 10px;
+    background-color: #007aff;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  ion-input[type="file"]::part(control):hover::before {
+    background-color: #005ea5;
+  }
+
+
+
+

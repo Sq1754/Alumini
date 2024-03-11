@@ -2,7 +2,41 @@
   <header class="header" *ngIf="shouldShowNavbar()">
     <nav class="navbar">
       <a routerLink="home" >Home</a>
-      <a routerLink="#content">About</a>
+      <div class="about">
+       <a href="#content"> About
+        <button class="dropdown-btn">
+          <span class="dropdown-icon">&#9660;</span>
+          <!-- Unicode character &#9660; represents a downward-pointing triangle (chevron down) -->
+          <div class="dropdown-content">
+              <!-- Dropdown items -->
+              <a href="../assets/DOC-20221229-WA0013..pdf" class="dropdown-item">Constitution</a>
+              <a href="#" class="dropdown-item" style="display:table;padding-top:5px;padding-bottom:5px;">Chapter</a>
+              <!-- <a href="#" class="dropdown-item">Item 3</a> -->
+          </div>
+        </button></a>
+      </div>
+    <!-- <ion-button id="popover-button"><ion-icon name="arrow-dropdown"></ion-icon></ion-button>
+<ion-popover trigger="popover-button" [dismissOnSelect]="true">
+<ng-template>
+  <ion-content>
+    <ion-list>
+      <ion-item [button]="true" [detail]="false">Option 1</ion-item>
+      <ion-item [button]="true" [detail]="false">Option 2</ion-item>
+      <ion-item [button]="true" id="nested-trigger">More options...</ion-item>
+
+      <ion-popover trigger="nested-trigger" [dismissOnSelect]="true" side="end">
+        <ng-template>
+          <ion-content>
+            <ion-list>
+              <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+            </ion-list>
+          </ion-content>
+        </ng-template>
+      </ion-popover>
+    </ion-list>
+  </ion-content>
+</ng-template>
+</ion-popover> -->
         <a routerLink="alumni">Alumni</a>
         <a routerLink="reunion">Reunion</a>
         <a routerLink="membership">Membership</a>
@@ -19,7 +53,7 @@
             <img src="../assets/LOGO....png">
             </div>
             <div class="container"><b>AAECA</b></div>
-          <ion-note>
+          <ion-note class="name2" style="color: black;">
             Alumni Association Engineering College Ajmer
           </ion-note>
 

@@ -30,132 +30,188 @@
 
 
 
-<ion-content>
-
-  <div class="container" src="src/assets/bg rainb (1).jpg">
-    <div class="inquiry-item col-lg-6">
-      <div class="bg-light p-5 rounded-5">
-        <h2 class="display-7 text-dark"> <b>Membership Form</b></h2>
-        <p>Fill this form to became the member of <b>AAECA</b> </p>
-        <form id="form" class="form-group flex-wrap" action="https://formspree.io/f/mleqndzl" method="POST">
-          <div class="col-lg-12 mb-3">
-            <label for="fname">Your Name :</label>
-            <input name="Name" type="text" class="form-control ps-3 me-3" id="fname" placeholder="Write Your Name Here">
-          </div>
-          <div class="col-lg-12 mb-3">
-            <label for="fname">College ID :<span class="required"></span></label>
-            <input name="College ID" type="text" class="form-control" id="fname" required placeholder="Your College Id">
-          </div>
-          <div class="col-lg-12 mb-3">
-            <label for="fname">Branch :<span class="required"></span></label>
-            <select class="form-control" id="fname">
-              <option class="grey" value="" disabled selected hidden>Select Branch</option>
-              <option value="Computer Science">Computer Science (CS)</option>
-              <option value="Cyber Security">Cyber Security (CYB)</option>
-              <option value="Electrical">Electrical Engineering (EE)</option>
-              <option value="Mechanical">Mechanical Engineering (ME)</option>
-              <option value="Civil">Civil Engineering (CE)</option>
-              <option value="Electronics & Communication">Electronics & Communication</option>
-              <option value="Electronic Instrumentation & Control">Electronic Instrumentation & Control</option>
-            </select>
-          </div>
-          <div class="col-lg-12 mb-3">
-            <label for="fname">Degree :</label>
-            <select class="form-control" id="fname">
-              <option class="grey" value="" disabled selected hidden>Select Degree</option>
-              <option value="B.E.">B.E.</option>
-              <option value="B.Tech">B.Tech</option>
-              <option value="M.Tech">M.Tech</option>
-              <option value="MCA">MCA</option>
-              <option value="MBA">MBA</option>
-            </select>
-          </div>
-          <div class="col-lg-12 mb-3">
-            <label for="fname">Select Batch :<span class="required"></span></label>
-            <select class="form-control" id="fname">
-              <option class="grey" value="" disabled selected hidden>Select Batch</option>
-              <option value="2001-2005">2001-2005</option>
-              <option value="2002-2006">2002-2006</option>
-              <option value="2003-2007">2003-2007</option>
-              <option value="2004-2008">2004-2008</option>
-              <option value="2005-2009">2005-2009</option>
-              <option value="2006-2010">2006-2010</option>
-              <option value="2007-2011">2007-2011</option>
-              <option value="2008-2012">2008-2012</option>
-              <option value="2009-2013">2009-2013</option>
-              <option value="2010-2014">2010-2014</option>
-              <option value="2011-2015">2011-2015</option>
-              <option value="2012-2016">2012-2016</option>
-              <option value="2013-2017">2013-2017</option>
-              <option value="2014-2018">2014-2018</option>
-              <option value="2015-2019">2015-2019</option>
-              <option value="2016-2020">2016-2020</option>
-              <option value="2017-2021">2017-2021</option>
-              <option value="2018-2022">2018-2022</option>
-              <option value="2019-2023">2019-2023</option>
-              <option value="2020-2024">2020-2024</option>
-              <option value="2021-2025">2021-2025</option>
-              <option value="2022-2026">2022-2026</option>
-              <option value="2023-2027">2023-2027</option>
-              <option value="2024-2028">2024-2028</option>
-              <option value="2025-2029">2025-2029</option>
-              <option value="2026-2030">2026-2030</option>
-              <option value="2027-2031">2027-2031</option>
-              <option value="2028-2032">2028-2032</option>
-              <option value="2029-2033">2029-2033</option>
-              <option value="2030-2034">2030-2034</option>
-            </select>
-          </div>
-          <div class="col-lg-12 mb-3">
-            <label for="fname">Gender :</label>
-            <select class="form-control" id="fname">
-              <option class="grey" value="" disabled selected hidden>Select Gender</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <div class="col-lg-12 mb-3">
-            <label for="fname">Employer :<span class="required"></span></label>
-            <input name="Employer" type="text" placeholder="Employer" class="form-control" id="fname" required>
-          </div>
-          <div class="col-lg-12 mb-3">
-            <label for="fname">Private Email :<span class="required"></span></label>
-            <input name="Email" type="email" placeholder="Your Email Id" class="form-control" id="fname" required>
-          </div>
-          <div class="col-lg-12 mb-3">
-            <label for="fname">Address :<span class="required"></span></label>
-            <textarea name="Address" class="form-control" placeholder="Your Address" id="fname" required></textarea>
-          </div>
-          <div class="col-lg-12 mb-3">
-            <label for="fname">LinkedIn :</label>
-            <input name="LinkedIn" type="url" placeholder="Your Linkedin Page" class="form-control" id="linkedin">
-          </div>
-          <div class="col-lg-12 mb-3">
-            <label for="fname">Designation :<span class="required"></span></label>
-            <input name="Designation" type="text" placeholder="Designation" class="form-control" id="fname" required>
-          </div>
-          <div class="col-lg-12 mb-3">
-            <label for="fname">Mobile No. :<span class="required"></span></label>
-            <input name="Mobile No" type="tel" pattern="[0-9]{10}" title="10 digits number" placeholder="Your Mobile No."
-              class="form-control" id="fname" required>
-          </div>
-          <div class="col-lg-12 mb-3">
-            <label for="fname">Whatsapp No. :<span class="required"></span></label>
-            <input name="Whatsapp No." type="tel" pattern="[0-9]{10}" title="10 digits number" placeholder="Your Whatsapp No."
-              class="form-control" id="fname" required>
-          </div>
-          <div class="col-lg-12 mb-3">
-            <label for="fname">Marksheet or Any Proof :</label>
-            <input name="Marksheet" type="file" accept="application/pdf" class="form-control-file" id="fname">
-          </div>
-          <div class="d-grid">
-            <button class="btn btn-primary btn-lg text-uppercase btn-rounded-none">Submit</button>
-          </div>
-        </form>
-      </div>
-    </div>
+  <ion-content>
+    <div class="header">
+  <h2> <b>Membership Form</b></h2>
+  <p>Fill this form to become the member of<b> AAECA</b> </p>
   </div>
+  <div class="form">
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">
+        Your Name 
+        <ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input  [(ngModel)]="formData.Name" name="Name" type="text"  required></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">
+        College ID 
+        <ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input [(ngModel)]="formData['College ID']" name="College ID" type="text" required></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">
+        Branch 
+        <ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-select [(ngModel)]="formData.Branch" name="Branch"  required >
+        <!-- Add other branch options here -->
+      <ion-select-option value="Computer Science">Computer Science (CS)</ion-select-option>
+      <ion-select-option value="Cyber Security">Cyber Security (CYB)</ion-select-option>
+      <ion-select-option value="Electrical">Electrical Engineering (EE)</ion-select-option>
+      <ion-select-option value="Mechanical">Mechanical Engineering (ME)</ion-select-option>
+      <ion-select-option value="Civil">Civil Engineering (CE)</ion-select-option>
+      <ion-select-option value="Electronics & Communication">Electronics & Communication</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">
+        Degree 
+        <ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-select [(ngModel)]="formData.Degree" name="Degree"  required>
+        <ion-select-option value="B.E.">B.E.</ion-select-option>
+        <ion-select-option value="B.Tech">B.Tech</ion-select-option>
+        <ion-select-option value="M.Tech">M.Tech</ion-select-option>
+        <ion-select-option value="MCA">MCA</ion-select-option>
+        <ion-select-option value="MBA">MBA</ion-select-option>
+        <!-- Add other degree options here -->
+      </ion-select>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">
+        Select Batch 
+        <ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-select  [(ngModel)]="formData['Select Batch']" name="Select Batch" required >
+        <!-- Add batch options here -->
+        <ion-select-option value=""></ion-select-option>
+        <ion-select-option value="2001-2005">2001-2005</ion-select-option>
+        <ion-select-option value="2002-2006">2002-2006</ion-select-option>
+        <ion-select-option value="2003-2007">2003-2007</ion-select-option>
+        <ion-select-option value="2004-2008">2004-2008</ion-select-option>
+        <ion-select-option value="2005-2009">2005-2009</ion-select-option>
+        <ion-select-option value="2006-2010">2006-2010</ion-select-option>
+        <ion-select-option value="2007-2011">2007-2011</ion-select-option>
+        <ion-select-option value="2008-2012">2008-2012</ion-select-option>
+        <ion-select-option value="2009-2013">2009-2013</ion-select-option>
+        <ion-select-option value="2010-2014">2010-2014</ion-select-option>
+        <ion-select-option value="2011-2015">2011-2015</ion-select-option>
+        <ion-select-option value="2012-2016">2012-2016</ion-select-option>
+        <ion-select-option value="2013-2017">2013-2017</ion-select-option>
+        <ion-select-option value="2014-2018">2014-2018</ion-select-option>
+        <ion-select-option value="2015-2019">2015-2019</ion-select-option>
+        <ion-select-option value="2016-2020">2016-2020</ion-select-option>
+        <ion-select-option value="2017-2021">2017-2021</ion-select-option>
+        <ion-select-option value="2018-2022">2018-2022</ion-select-option>
+        <ion-select-option value="2019-2023">2019-2023</ion-select-option>
+        <ion-select-option value="2020-2024">2020-2024</ion-select-option>
+        <ion-select-option value="2021-2025">2021-2025</ion-select-option>
+        <ion-select-option value="2022-2026">2022-2026</ion-select-option>
+        <ion-select-option value="2023-2027">2023-2027</ion-select-option>
+        <ion-select-option value="2024-2028">2024-2028</ion-select-option>
+        <ion-select-option value="2025-2029">2025-2029</ion-select-option>
+        <ion-select-option value="2026-2030">2026-2030</ion-select-option>
+        <ion-select-option value="2027-2031">2027-2031</ion-select-option>
+        <ion-select-option value="2028-2032">2028-2032</ion-select-option>
+        <ion-select-option value="2029-2033">2029-2033</ion-select-option>
+        <ion-select-option value="2030-2034">2030-2034</ion-select-option>
+        <ion-select-option value=""></ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">
+        Gender 
+        <ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-select [(ngModel)]="formData.Gender" name="Gender"  required>
+        <ion-select-option value="male">Male</ion-select-option>
+        <ion-select-option value="female">Female</ion-select-option>
+        <ion-select-option value="other">Other</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">
+        Employer 
+        <ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input [(ngModel)]="formData.Employer" name="Employer" type="text" required></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">
+        Private Email 
+        <ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input [(ngModel)]="formData.Email" name="Email" type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required></ion-input>
+    </ion-item>
+  
+    
+    <ion-item>
+      <ion-label position="floating">
+        LinkedIn 
+        <ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input [(ngModel)]="formData.LinkedIn"  name="LinkedIn" type="url"  required></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="floating">
+        Designation 
+        <ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input [(ngModel)]="formData.Designation" name="Designation" type="text" required></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">
+        Mobile No. 
+        <ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input [(ngModel)]="formData['Mobile No']" name="Mobile No" type="tel" pattern="[0-9]{10}" title="Mobile number should be 10 digits and contain only numbers" maxlength="10" required></ion-input>
+    </ion-item>
+    
+    
+    <ion-item>
+      <ion-label position="floating">
+        Whatsapp No. 
+        <ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input  [(ngModel)]="formData['Whatsapp No']" name="Whatsapp No" type="tel" pattern="[0-9]{10}" title="Mobile number should be 10 digits and contain only numbers" maxlength="10" required></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="floating">
+        Address 
+        <ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-textarea [(ngModel)]="formData.Address" name="Address" type="text"  required></ion-textarea>
+    </ion-item
+    >
+    <ion-item>
+      <ion-label position="floating">
+        Marksheet or Any Proof 
+        <ion-text color="danger">*</ion-text>
+      </ion-label><br>
+      <ion-input [(ngModel)]="formData.Marksheet" name="Marksheet" type="file" accept="application/pdf"  required></ion-input>
+    </ion-item>
+  
+    <div class="d-grid">
+      <ion-item style="width: 25vw;margin-left:37.5%">
+        <ion-button expand="full" (click)="submitForm()" style="width: 25vw;">Submit</ion-button>
+      </ion-item>
+  </div>
+  </ion-list>
+  </div>
+  
   <!-- Footer  -->
   <div class="foot">
     <ion-icon name="location"></ion-icon><b>Address</b>

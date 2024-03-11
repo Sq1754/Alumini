@@ -150,52 +150,177 @@
 
 
 
-  #alumniForm {
-    background-color: rgb(60, 0, 80);
-    width: 800px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-  }
-
-  #formm{
-    margin: 50px;
-    padding: 50px 0px;
-    border-radius: 30%;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  #title{
-    margin-left: 10px;
-  }
-
-
-  .inquiry-item{
-    color: black;
-  }
-
-
-
-.inquiry-item{
+//content/header-----
+.header{
+  padding-top: 10px;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
-  
+
+// footer
+.foot{
+
+padding: 10px;
+background-color: rgb(25, 0, 45);
+color: white;
+text-decoration: none;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+
+}
+
+.foot b{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+padding-left: 10px;
+font-size: large;
+
+}
+.foot p{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+padding-left: 28px;
+
+}
 
 
-.container{
+//logo
+.logo ion-icon{
+margin-left: 15px;
+padding: 10px;
+}
+
+.logo h2{
+padding-top: 20px;
+padding-left: 25px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.note{
+background-color: black;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 10px;
+font-size: x-small;
+}
+
+.note p{
+color: grey;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 10px;
+}
+
+
+
+// .form{
+//   display:;
+// }
+ion-item{
+// display:list-item;
+// justify-content: space-between;
+}
+
+
+
+
+ion-title{
+  padding: 0;
+  overflow: hidden;
+}
+
+
+
+
+
+//ion items
+ion-item{
+width: 42vw;
+margin: 20px auto;
+border-radius: 7px;
+margin-left: 5%;
+display: inline-flex;
+max-width: 90vw;
+flex-direction: column;
+box-shadow: 1px 1px 10px 1px rgba(143, 143, 143, 0.66);
+}
+
+@media (max-width:500px){
+ion-item{
+  width: 90vw;
+  // height: 50px;
+  // margin-top: 0%;
+  // padding-top: 0;
+  margin: 20px auto;
+  border-radius: 7px;
+  display:flex;
+  // max-width: 90vw;
+  // flex-direction: column;
+  box-shadow: 1px 1px 10px 1px rgba(143, 143, 143, 0.66);
+}
+}
+
+
+
+ion-input:focus,
+ion-select:focus,
+ion-textarea:focus {
+  border-color: #007aff;
+}
+
+.ion-text-wrap {
+  color: red;
+}
+.ion-url-wrap {
+  color: red;
+}
+
+
+
+
+
+ion-input[type="file"] {
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: 16px;
+  width: auto;
+  --padding-start: 0;
+}
+
+ion-input[type="file"]::part(native) {
+  height: 45px;
+}
+
+ion-input[type="file"]::part(control) {
+  height: 45px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
   width: 100%;
-  align-items: center;
-    justify-content: space-around;
-    display: flex;
-    overflow: hidden;
-    flex-direction: row;
-    padding: 20px 0;
+  box-sizing: border-box;
 }
+
+ion-input[type="file"]::part(control)::before {
+  content: "Browse";
+  display: inline-block;
+  padding: 10px;
+  background-color: #007aff;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+ion-input[type="file"]::part(control):hover::before {
+  background-color: #005ea5;
+}
+
+
+
+

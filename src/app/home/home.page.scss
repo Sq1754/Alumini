@@ -562,6 +562,8 @@ text-decoration: none;
   a{
     text-decoration: none;
     color: black;
+    display: inline;
+    justify-content: center;
   }
 }
   }
@@ -574,7 +576,7 @@ text-decoration: none;
 .mayank{
   width: 55px;
   ion-icon{
-    margin-left: 16.8px;
+    margin-left: 17.8px;
   }
 }
 .saqlain{

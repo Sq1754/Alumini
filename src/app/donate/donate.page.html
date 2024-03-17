@@ -8,13 +8,13 @@
     <ion-title>
       <div class="name">
         <img src="../../assets/AAECA-LOGO.png">
-          <p>Alumni Association</p>
-          <br>
-          <p>Engineering College Ajmer</p>
-          <br>
-          <!-- <p id="sub">An Association of ECA Alumini</p> -->
-        </div>
-   </ion-title>
+        <p>Alumni Association</p>
+        <br>
+        <p>Engineering College Ajmer</p>
+        <br>
+        <!-- <p id="sub">An Association of ECA Alumini</p> -->
+      </div>
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -22,20 +22,20 @@
 
 <ion-content>
   <div class="header">
-<h2> <b>Donate Us:</b></h2>
-<p>You can Donate for<b> AAECA</b> </p>
-</div>
-<div class="form">
-<ion-list>
-  <ion-item>
-    <ion-label position="floating">
-      Your Name 
-      <ion-text color="danger">*</ion-text>
-    </ion-label>
-    <ion-input  [(ngModel)]="formData.Name" name="Name" type="text"  required></ion-input>
-  </ion-item>
+    <h2> <b>Donate Us:</b></h2>
+    <p>You can Donate for<b> AAECA</b> </p>
+  </div>
+  <div class="form">
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">
+          Your Name
+          <ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input [(ngModel)]="formData.Name" name="Name" type="text" required></ion-input>
+      </ion-item>
 
-  <!-- <ion-item>
+      <!-- <ion-item>
     <ion-label position="floating">
       College ID 
       <ion-text color="danger">*</ion-text>
@@ -43,14 +43,14 @@
     <ion-input [(ngModel)]="formData['College ID']" name="College ID" type="text" required></ion-input>
   </ion-item> -->
 
-  <!-- <ion-item>
+      <!-- <ion-item>
     <ion-label position="floating">
       Branch 
       <ion-text color="danger">*</ion-text>
     </ion-label>
     <ion-select [(ngModel)]="formData.Branch" name="Branch"  required > -->
       <!-- Add other branch options here -->
-    <!-- <ion-select-option value="Computer Science">Computer Science (CS)</ion-select-option>
+      <!-- <ion-select-option value="Computer Science">Computer Science (CS)</ion-select-option>
     <ion-select-option value="Cyber Security">Cyber Security (CYB)</ion-select-option>
     <ion-select-option value="Electrical">Electrical Engineering (EE)</ion-select-option>
     <ion-select-option value="Mechanical">Mechanical Engineering (ME)</ion-select-option>
@@ -59,7 +59,7 @@
     </ion-select>
   </ion-item> -->
 
-  <!-- <ion-item>
+      <!-- <ion-item>
     <ion-label position="floating">
       Degree 
       <ion-text color="danger">*</ion-text>
@@ -71,10 +71,10 @@
       <ion-select-option value="MCA">MCA</ion-select-option>
       <ion-select-option value="MBA">MBA</ion-select-option> -->
       <!-- Add other degree options here -->
-    <!-- </ion-select>
+      <!-- </ion-select>
   </ion-item> -->
 
-  <!-- <ion-item>
+      <!-- <ion-item>
     <ion-label position="floating">
       Select Batch 
       <ion-text color="danger">*</ion-text>
@@ -116,93 +116,95 @@
     </ion-select>
   </ion-item> -->
 
-  <ion-item>
-    <ion-label position="floating">
-      Gender 
-      <ion-text color="danger">*</ion-text>
-    </ion-label>
-    <ion-select [(ngModel)]="formData.Gender" name="Gender"  required>
-      <ion-select-option value="male">Male</ion-select-option>
-      <ion-select-option value="female">Female</ion-select-option>
-      <ion-select-option value="other">Other</ion-select-option>
-    </ion-select>
-  </ion-item>
+      <ion-item>
+        <ion-label position="floating">
+          Gender
+          <ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-select [(ngModel)]="formData.Gender" name="Gender" required>
+          <ion-select-option value="male">Male</ion-select-option>
+          <ion-select-option value="female">Female</ion-select-option>
+          <ion-select-option value="other">Other</ion-select-option>
+        </ion-select>
+      </ion-item>
 
-  <ion-item>
-    <ion-label position="floating">
-      Employer 
-      <ion-text color="danger">*</ion-text>
-    </ion-label>
-    <ion-input [(ngModel)]="formData.Employer" name="Employer" type="text" required></ion-input>
-  </ion-item>
+      <ion-item>
+        <ion-label position="floating">
+          Employer
+          <ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input [(ngModel)]="formData.Employer" name="Employer" type="text" required></ion-input>
+      </ion-item>
 
-  <ion-item>
-    <ion-label position="floating">
-      Private Email 
-      <ion-text color="danger">*</ion-text>
-    </ion-label>
-    <ion-input [(ngModel)]="formData.Email" name="Email" type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required></ion-input>
-  </ion-item>
+      <ion-item>
+        <ion-label position="floating">
+          Private Email
+          <ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input [(ngModel)]="formData.Email" name="Email" type="email"
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required></ion-input>
+      </ion-item>
 
-  
-  <ion-item>
-    <ion-label position="floating">
-      LinkedIn 
-      <ion-text color="danger">*</ion-text>
-    </ion-label>
-    <ion-input [(ngModel)]="formData.LinkedIn"  name="LinkedIn" type="url"  required></ion-input>
-  </ion-item>
-  
-  <ion-item>
-    <ion-label position="floating">
-      Designation 
-      <ion-text color="danger">*</ion-text>
-    </ion-label>
-    <ion-input [(ngModel)]="formData.Designation" name="Designation" type="text" required></ion-input>
-  </ion-item>
 
-  <ion-item>
-    <ion-label position="floating">
-      Mobile No. 
-      <ion-text color="danger">*</ion-text>
-    </ion-label>
-    <ion-input [(ngModel)]="formData['Mobile No']" name="Mobile No" type="tel" pattern="[0-9]{10}" title="Mobile number should be 10 digits and contain only numbers" maxlength="10" required></ion-input>
-  </ion-item>
+      <ion-item>
+        <ion-label position="floating">
+          LinkedIn
+          <ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input [(ngModel)]="formData.LinkedIn" name="LinkedIn" type="url" required></ion-input>
+      </ion-item>
 
-  <ion-item>
-    <ion-label position="floating">
-      Payment Method
-      <ion-text color="danger">*</ion-text>
-    </ion-label>
-    <ion-input [(ngModel)]="formData.Payment" name="Designation" type="text" required></ion-input>
-  </ion-item>
-  
-  
-  <!-- <ion-item>
+      <ion-item>
+        <ion-label position="floating">
+          Designation
+          <ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input [(ngModel)]="formData.Designation" name="Designation" type="text" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">
+          Mobile No.
+          <ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input [(ngModel)]="formData['Mobile No']" name="Mobile No" type="tel" pattern="[0-9]{10}"
+          title="Mobile number should be 10 digits and contain only numbers" maxlength="10" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">
+          Payment Method
+          <ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input [(ngModel)]="formData.Payment" name="Designation" type="text" required></ion-input>
+      </ion-item>
+
+
+      <!-- <ion-item>
     <ion-label position="floating">
       Whatsapp No. 
       <ion-text color="danger">*</ion-text>
     </ion-label>
     <ion-input  [(ngModel)]="formData['Whatsapp No']" name="Whatsapp No" type="tel" pattern="[0-9]{10}" title="Mobile number should be 10 digits and contain only numbers" maxlength="10" required></ion-input>
   </ion-item> -->
-  
-  <ion-item>
-    <ion-label position="floating">
-      Address 
-      <ion-text color="danger">*</ion-text>
-    </ion-label>
-    <ion-textarea [(ngModel)]="formData.Address" name="Address" type="text"  required></ion-textarea>
-  </ion-item>
 
-  <ion-item>
-    <ion-label position="floating">
-      Why are you donating?
-      <ion-text color="danger">*</ion-text>
-    </ion-label>
-    <ion-textarea [(ngModel)]="formData.donate" name="text" type="text"  required></ion-textarea>
-  </ion-item>
+      <ion-item>
+        <ion-label position="floating">
+          Address
+          <ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-textarea [(ngModel)]="formData.Address" name="Address" type="text" required></ion-textarea>
+      </ion-item>
 
-  <!-- <ion-item>
+      <ion-item>
+        <ion-label position="floating">
+          Why are you donating?
+          <ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-textarea [(ngModel)]="formData.donate" name="text" type="text" required></ion-textarea>
+      </ion-item>
+
+      <!-- <ion-item>
     <ion-label position="floating">
       Marksheet or Any Proof 
       <ion-text color="danger">*</ion-text>
@@ -210,40 +212,41 @@
     <ion-input [(ngModel)]="formData.Marksheet" name="Marksheet" type="file" accept="application/pdf"  required></ion-input>
   </ion-item> -->
 
-  <div class="d-grid">
-    <ion-item style="width: 25vw;margin-left:37.5%">
-      <ion-button expand="full" (click)="submitForm()" style="width: 25vw;">Submit</ion-button>
-    </ion-item>
-</div>
-</ion-list>
-</div>
-
-
-<!-- Footer  -->
-<div class="foot">
-  <ion-icon name="location"></ion-icon><b>Address</b>
-  <p> Alumni Association office
-    Room No. NB203
-    Engineering College Ajmer</p>
-  
-  <ion-icon name="call"></ion-icon><b>Phone</b>
-  <p>+91 7891012342</p>
-
-  <ion-icon name="mail"></ion-icon><b>Email</b>
-  <p><a href="ecaajmer.ac.in">Alumniaffairs.ac.in</a></p>
-  
-  <!-- Page to follow -->
-  <div class="logo"><H2>Follow us on:</H2>
-  <ion-icon name="logo-instagram"><a href="instagram.in"></a></ion-icon>
-  <ion-icon name="logo-github"><a href="github.in"></a></ion-icon>
-  <ion-icon name="logo-google"><a href="ecajmer.ac.in"></a></ion-icon>
-  <ion-icon name="logo-linkedin"><a href="ecajmer.ac.in"></a></ion-icon>
+      <div class="d-grid">
+        <ion-item style="width: 25vw;margin-left:37.5%">
+          <ion-button expand="full" (click)="submitForm()" style="width: 25vw;">Submit</ion-button>
+        </ion-item>
+      </div>
+    </ion-list>
   </div>
-</div>
 
 
-<div class="note">
-  <P>www.ecajmer.ac.in</P>ALUMNI OF GECA.
-  <P>Developed by CS Students.</P>GECA
-</div>
+  <!-- Footer  -->
+  <div class="foot">
+    <ion-icon name="location"></ion-icon><b>Address</b>
+    <p> Alumni Association office
+      Room No. NB203
+      Engineering College Ajmer</p>
+
+    <ion-icon name="call"></ion-icon><b>Phone</b>
+    <p>+91 7891012342</p>
+
+    <ion-icon name="mail"></ion-icon><b>Email</b>
+    <p><a href="ecaajmer.ac.in">Alumniaffairs.ac.in</a></p>
+
+    <!-- Page to follow -->
+    <div class="logo">
+      <H2>Follow us on:</H2>
+      <ion-icon name="logo-instagram"><a href="instagram.in"></a></ion-icon>
+      <ion-icon name="logo-github"><a href="github.in"></a></ion-icon>
+      <ion-icon name="logo-google"><a href="ecajmer.ac.in"></a></ion-icon>
+      <ion-icon name="logo-linkedin"><a href="ecajmer.ac.in"></a></ion-icon>
+    </div>
+  </div>
+
+
+  <div class="note">
+    <P>www.ecajmer.ac.in</P>ALUMNI OF GECA.
+    <P>Developed by CS Students.</P>GECA
+  </div>
 </ion-content>

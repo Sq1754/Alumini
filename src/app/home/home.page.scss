@@ -494,8 +494,10 @@ text-decoration: none;
 
 
 .saqlain{
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: rgba(255, 255, 255, 0.821);
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: .1em;
   height: 42px;
   width: 340px;
   margin-bottom: 3px;
@@ -528,8 +530,10 @@ text-decoration: none;
 }
 
 .mayank{
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: rgba(255, 255, 255, 0.821);
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: .1em;
   height: 42px;
   width: 340px;
   margin-bottom: 3px;
@@ -569,15 +573,12 @@ text-decoration: none;
 }
 .mayank{
   width: 55px;
-  margin-left: 27px;
-
   ion-icon{
-    margin-left: 11px;
+    margin-left: 16.8px;
   }
 }
 .saqlain{
   width: 55px;
-  margin-left: 27px;
 }
 
 }

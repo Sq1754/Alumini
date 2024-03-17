@@ -11,6 +11,11 @@ register();
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
+  showDropdown = false;
+
+   toggleDropdown() {
+    this.showDropdown = !this.showDropdown;
+  }
   
   public appPages = [
     { title: 'Home', url: 'home', icon: 'home' },

@@ -131,7 +131,11 @@
     <ion-input [(ngModel)]="formData.Marksheet" name="Marksheet" type="file" accept="application/pdf"  required></ion-input>
   </ion-item> -->
 
-  <ion-button style="width: 50vw;margin-left:25%;margin-top:2%" expand="block" (click)="submitForm()">Submit</ion-button>
+  <div class="submit" style="display: flex;margin-bottom:10px">
+    <ion-button style="width: 30vw;margin-left:13%;margin-top:2%" fill="outline">Cancel</ion-button>
+    <ion-button style="width: 30vw;margin-left:13%;margin-top:2%" expand="block"
+      (click)="submitForm()">Submit</ion-button>
+  </div>
     </ion-list>
   </div>
 

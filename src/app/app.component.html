@@ -47,12 +47,42 @@
             Alumni Association Engineering College Ajmer
           </ion-note>
 
-          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
-            <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
-              <ion-icon aria-hidden="true" slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
-              <ion-label>{{ p.title }}</ion-label>
-            </ion-item>
+           <!-- Other menu items -->
+           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+            <ng-container *ngIf="p.title !== 'About' && p.title !== 'Constitution'">
+              <!-- Render regular menu item -->
+              <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+                <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+                <ion-label>{{ p.title }}</ion-label>
+              </ion-item>
+            </ng-container>
+          
+            <ng-container *ngIf="p.title === 'About'">
+              <!-- Render dropdown button -->
+              <ion-item button="true" detail="false" lines="none" (click)="toggleAboutDropdown($event)">
+                <ion-icon slot="start" name="information-circle-outline"></ion-icon>
+                <ion-label>About</ion-label>
+                <ion-icon slot="end" [name]="showAboutDropdown ? 'chevron-up' : 'chevron-down'"></ion-icon>
+              </ion-item>
+              
+              <!-- Render dropdown items -->
+              <div *ngIf="showAboutDropdown" class="dropdown-content">
+                <ion-item [button]="true" [detail]="false" lines="none">
+                  <a href="#content" color="medium" style="text-decoration: none;" class="dropdown-items">
+                    <ion-icon  slot="start" name="information-circle-outline"></ion-icon>
+                    About
+                  </a>
+                </ion-item>
+                <ion-item [button]="true" [detail]="false" lines="none">
+                  <a href="../assets/DOC-20221229-WA0013..pdf" color="medium" style="text-decoration: none;" class="dropdown-items">
+                    <ion-icon  slot="start" name="document"></ion-icon>
+                    Constitution
+                  </a>
+                </ion-item>
+              </div>
+            </ng-container>
           </ion-menu-toggle>
+          
           <div class="social-icons">Follow us On :
             <a href="https://twitter.com" target="_blank">
               <ion-icon name="logo-twitter"></ion-icon>

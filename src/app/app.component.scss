@@ -369,3 +369,16 @@ ion-menu ion-content {
 #popover-button {
   background-color: transparent; /* or use a specific color, e.g., #ffffff for white */
 }
+
+.dropdown-items {
+  // left: 10%;
+  color: rgb(172, 172, 172);
+  margin-left: 40px; /* Adjust the padding as needed */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  ion-icon{
+    margin-right: 15px;
+  }
+  
+}

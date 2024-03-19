@@ -1,5 +1,5 @@
 {
-  "name": "aluminiHome",
+  "name": "aluminihome",
   "version": "0.0.1",
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
@@ -38,6 +38,7 @@
     "ionic": "^4.1.2",
     "ionicons": "^7.0.0",
     "mailgun.js": "^10.2.1",
+    "mysql2": "^3.9.2",
     "nodemailer": "^6.9.10",
     "rxjs": "~7.8.0",
     "swiper": "^11.0.5",
@@ -78,5 +79,17 @@
     "plugins": {
       "cordova-plugin-file-transfer": {}
     }
+  },
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sq1754/Alumini.git"
+  },
+  "keywords": [
+    "Aaeca"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sq1754/Alumini/issues"
   }
 }

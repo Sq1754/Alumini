@@ -373,15 +373,20 @@ ion-menu ion-content {
 .dropdown-items {
   // left: 10%;
   // color: rgb(172, 172, 172);
-  margin-left: 57px; /* Adjust the padding as needed */
+  // margin-left: 57px; /* Adjust the padding as needed */
   display: flex;
+  font-size: small;
   justify-content: space-between;
   color: var(--ion-color-ptimary-contrast);
   align-items: center;
   ion-icon{
+    margin-left: 60px;
     margin-right: 15px;
+    font-size:18px;
+    // size: 10px;
   }
   
 }
+
 
 

@@ -8,9 +8,10 @@
 <ion-popover trigger="popover-button" [dismissOnSelect]="true">
 <ng-template>
   <ion-content>
-    <ion-list color="medium" style="text-decoration: none;">
-      <ion-item [button]="true" [detail]="false"><a href="#content" color="medium" style="text-decoration: none;" class="dropdown-item">About</a></ion-item>
-      <ion-item [button]="true" [detail]="false"><a href="../assets/DOC-20221229-WA0013..pdf" color="medium" style="text-decoration: none;"class="dropdown-item">Constitution</a></ion-item>
+    <ion-list style="text-decoration: none;">
+      <ion-item [button]="true" [detail]="false"><a href="#content" style="text-decoration: none;color: var(--ion-color-ptimary-contrast);" class="dropdown-item">About</a></ion-item>
+
+      <ion-item [button]="true" [detail]="false"><a href="../assets/DOC-20221229-WA0013..pdf" style="text-decoration: none;color: var(--ion-color-ptimary-contrast);"class="dropdown-item">Constitution</a></ion-item>
       <ion-item [button]="true" id="nested-trigger">More options...</ion-item>
 
       <ion-popover trigger="nested-trigger" [dismissOnSelect]="true" side="end">
@@ -70,13 +71,13 @@
                 <ion-item [button]="true" [detail]="false" lines="none">
                   <a href="#content" color="medium" style="text-decoration: none;" class="dropdown-items">
                     <ion-icon  slot="start" name="information-circle-outline"></ion-icon>
-                    About
+                    <a style="color: var(--ion-color-ptimary-contrast);">About</a>
                   </a>
                 </ion-item>
                 <ion-item [button]="true" [detail]="false" lines="none">
                   <a href="../assets/DOC-20221229-WA0013..pdf" color="medium" style="text-decoration: none;" class="dropdown-items">
                     <ion-icon  slot="start" name="document"></ion-icon>
-                    Constitution
+                    <a style="color: var(--ion-color-ptimary-contrast);">Constitution</a> 
                   </a>
                 </ion-item>
               </div>

@@ -11,6 +11,14 @@ register();
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
+  //Theme
+  isDarkMode: boolean = false;
+  checkForDarkMode() {
+
+    this.isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+
+
   showAboutDropdown: boolean = false;
   aboutDropdownItems: any[] = [
     { title: 'About', link: '#content' },

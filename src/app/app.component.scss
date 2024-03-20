@@ -215,11 +215,11 @@ ion-menu ion-content {
   }
   
   ion-menu.md ion-item.selected ion-icon {
-    color:#572396;
+    color:#4d067c;
   }
   
   ion-menu.md ion-item ion-icon {
-    color: #ccb6e0;
+    color: #bd92df;
   }
   
   // ion-menu.md ion-item ion-label {
@@ -372,13 +372,16 @@ ion-menu ion-content {
 
 .dropdown-items {
   // left: 10%;
-  color: rgb(172, 172, 172);
-  margin-left: 45px; /* Adjust the padding as needed */
+  // color: rgb(172, 172, 172);
+  margin-left: 57px; /* Adjust the padding as needed */
   display: flex;
   justify-content: space-between;
+  color: var(--ion-color-ptimary-contrast);
   align-items: center;
   ion-icon{
     margin-right: 15px;
   }
   
 }
+
+

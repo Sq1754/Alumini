@@ -31,6 +31,7 @@
   justify-content: center;
   text-align:end;
   ion-button{
+    color:"medium";
   text-decoration: none;
 
   }
@@ -42,7 +43,7 @@ display: inline-block;
 justify-content: space-evenly;
 font-size: 1rem;
 padding: 0px 2px;
-color:#6d6d6d;
+// color:#6d6d6d;
 text-decoration: none;
 font-weight: 500;
 transition: .3s;
@@ -69,7 +70,6 @@ font-family: inherit;
     top: 9px;
     left: 41%;
     a,ion-button{
-      color:#6d6d6d;
       font-weight: 300;
     font-size: 12px;
     }
@@ -82,7 +82,6 @@ font-family: inherit;
     a,ion-button{
       font-weight: 300;
     font-size: 12px;
-    color:#6d6d6d;
     }
   }
 }
@@ -93,7 +92,6 @@ font-family: inherit;
     a,ion-button{
       font-weight: 300;
     font-size: 12px;
-    color:#6d6d6d;
     }
   }
 }
@@ -104,7 +102,6 @@ font-family: inherit;
     a,ion-button{
       font-weight: 300;
     font-size: 12px;
-    color:#6d6d6d;
     }
 
   }
@@ -116,7 +113,6 @@ font-family: inherit;
     a,ion-button{
       font-weight: 100;
     font-size: 12px;
-    color:#6d6d6d;
     }
 
   }
@@ -128,7 +124,6 @@ font-family: inherit;
     a,ion-button{
       font-weight: 100;
     font-size: 12px;
-    color:#6d6d6d;
     }
 
   }
@@ -140,7 +135,6 @@ font-family: inherit;
     a,ion-button{
       font-weight: 100;
     font-size: 12px;
-    color:#6d6d6d;
     }
 
   }

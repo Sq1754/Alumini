@@ -1,24 +1,24 @@
 <ion-app>
   <header class="header" *ngIf="shouldShowNavbar()">
     <nav class="navbar">
-      <ion-button fill="clear" color="medium"><a routerLink="home" >Home</a></ion-button>
+      <ion-button fill="clear" style="color: var(--ion-color-ptimary-contrast)"><a routerLink="home" style="color: var(--ion-color-ptimary-contrast)">Home</a></ion-button>
 
-<ion-button fill="clear" color="#6d6d6d" id="popover-button"style="background: none;height:5px;text-decoration: none;">About<ion-icon name="arrow-dropdown"></ion-icon>
-  <span class="dropdown-icon"  style="background: none;">&#9660;</span></ion-button>
+<ion-button fill="clear" style="color: var(--ion-color-ptimary-contrast)" id="popover-button"style="background: none;height:5px;text-decoration: none;color: var(--ion-color-ptimary-contrast)">About<ion-icon name="arrow-dropdown"></ion-icon>
+  <span class="dropdown-icon" style="color: var(--ion-color-ptimary-contrast)"  style="background: none;">&#9660;</span></ion-button>
 <ion-popover trigger="popover-button" [dismissOnSelect]="true">
 <ng-template>
   <ion-content>
     <ion-list style="text-decoration: none;">
-      <ion-item [button]="true" [detail]="false"><a href="#content" style="text-decoration: none;color: var(--ion-color-ptimary-contrast);" class="dropdown-item">About</a></ion-item>
+      <ion-item [button]="true" [detail]="false" style="color: var(--ion-color-ptimary-contrast)"><a href="#content" style="text-decoration: none;color: var(--ion-color-ptimary-contrast);" class="dropdown-item">About</a></ion-item>
 
-      <ion-item [button]="true" [detail]="false"><a href="../assets/DOC-20221229-WA0013..pdf" style="text-decoration: none;color: var(--ion-color-ptimary-contrast);"class="dropdown-item">Constitution</a></ion-item>
-      <ion-item [button]="true" id="nested-trigger">More options...</ion-item>
+      <ion-item [button]="true" [detail]="false" style="color: var(--ion-color-ptimary-contrast)"><a href="../assets/DOC-20221229-WA0013..pdf" style="text-decoration: none;color: var(--ion-color-ptimary-contrast);"class="dropdown-item">Constitution</a></ion-item>
+      <ion-item [button]="true" id="nested-trigger" style="color: var(--ion-color-ptimary-contrast)">More options...</ion-item>
 
       <ion-popover trigger="nested-trigger" [dismissOnSelect]="true" side="end">
         <ng-template>
           <ion-content>
             <ion-list>
-              <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+              <ion-item [button]="true" [detail]="false"style="color: var(--ion-color-ptimary-contrast)">Nested option</ion-item>
             </ion-list>
           </ion-content>
         </ng-template>
@@ -28,12 +28,12 @@
 </ng-template>
 </ion-popover>
 
-<ion-button fill="clear" color="medium"> <a routerLink="alumni">Alumni</a></ion-button>
-  <ion-button fill="clear" color="medium"><a routerLink="reunion">Reunion</a></ion-button>
-    <ion-button fill="clear" color="medium"> <a routerLink="membership">Membership</a></ion-button>
-      <ion-button fill="clear" color="medium"><a routerLink="donate">Donate</a></ion-button>
-        <ion-button fill="clear" color="medium"> <a  routerLink="team">Team</a></ion-button>
-        <ion-button fill="clear" color="medium"><a routerLink="#">Contact Us</a></ion-button>
+<ion-button fill="clear" style="color: var(--ion-color-ptimary-contrast)"> <a routerLink="alumni" style="color: var(--ion-color-ptimary-contrast)">Alumni</a></ion-button>
+  <ion-button fill="clear" style="color: var(--ion-color-ptimary-contrast)"><a routerLink="reunion" style="color: var(--ion-color-ptimary-contrast)">Reunion</a></ion-button>
+    <ion-button fill="clear" style="color: var(--ion-color-ptimary-contrast)"> <a routerLink="membership" style="color: var(--ion-color-ptimary-contrast)">Membership</a></ion-button>
+      <ion-button fill="clear" style="color: var(--ion-color-ptimary-contrast)"><a routerLink="donate" style="color: var(--ion-color-ptimary-contrast)">Donate</a></ion-button>
+        <ion-button fill="clear" style="color: var(--ion-color-ptimary-contrast)"> <a  routerLink="team" style="color: var(--ion-color-ptimary-contrast)">Team</a></ion-button>
+        <ion-button fill="clear" style="color: var(--ion-color-ptimary-contrast)"><a routerLink="#" style="color: var(--ion-color-ptimary-contrast)">Contact Us</a></ion-button>
     </nav>
   </header>
   <!-- <ion-split-pane contentId="main-content"> -->

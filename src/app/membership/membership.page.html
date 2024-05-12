@@ -202,7 +202,7 @@
           <ion-text color="danger">*</ion-text>
         </ion-label><br>
         <ion-input [(ngModel)]="formData.Marksheet" name="Marksheet" type="file" accept="application/pdf"
-          required></ion-input>
+          (change)="validateFileType($event)" required></ion-input>
       </ion-item>
       <div class="submit" style="display: flex;margin-bottom:10px">
         <ion-button style="width: 30vw;margin-left:13%;margin-top:2%" fill="outline">Cancel</ion-button>

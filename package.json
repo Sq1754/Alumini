@@ -1,5 +1,5 @@
 {
-  "name": "aluminiHome",
+  "name": "aluminihome",
   "version": "0.0.1",
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
@@ -22,6 +22,7 @@
     "@angular/platform-browser": "^17.0.2",
     "@angular/platform-browser-dynamic": "^17.0.2",
     "@angular/router": "^17.0.2",
+    "@capacitor-community/contacts": "^5.0.5",
     "@capacitor/android": "5.6.0",
     "@capacitor/app": "5.0.6",
     "@capacitor/core": "^5.6.0",
@@ -33,6 +34,8 @@
     "@ionic/cli-framework": "^6.0.1",
     "angular": "^1.8.3",
     "body-parser": "^1.20.2",
+    "aos": "^3.0.0-beta.6",
+    "capacitor": "^0.5.6",
     "composer": "^4.1.0",
     "cordova-plugin-file-transfer": "2.0.0",
     "cors": "^2.8.5",
@@ -46,6 +49,7 @@
     "nodemailer": "^6.9.10",
     "rxjs": "~7.8.0",
     "swiper": "^11.0.5",
+    "tailwind": "^4.0.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2"
   },
@@ -83,5 +87,17 @@
     "plugins": {
       "cordova-plugin-file-transfer": {}
     }
+  },
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sq1754/Alumini.git"
+  },
+  "keywords": [
+    "Aaeca"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sq1754/Alumini/issues"
   }
 }

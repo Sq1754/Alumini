@@ -11,6 +11,32 @@ register();
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
+  //Theme
+  isDarkMode: boolean = false;
+  checkForDarkMode() {
+
+    this.isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+
+
+  showAboutDropdown: boolean = false;
+  aboutDropdownItems: any[] = [
+    { title: 'About', link: '#content' },
+    { title: 'Constitution', link: '../assets/DOC-20221229-WA0013..pdf' }
+    // Add more items if needed
+  ];
+  showDropdown = false;
+
+   toggleDropdown() {
+    this.showDropdown = !this.showDropdown;
+    this.showAboutDropdown = !this.showAboutDropdown;
+  }
+
+  toggleAboutDropdown(event: Event) {
+    event.stopPropagation(); // Prevents the click event from propagating further
+    this.showAboutDropdown = !this.showAboutDropdown;
+  }
+  
   
   public appPages = [
     { title: 'Home', url: 'home', icon: 'home' },

@@ -1,34 +1,24 @@
 <ion-app>
   <header class="header" *ngIf="shouldShowNavbar()">
     <nav class="navbar">
-      <a routerLink="home" >Home</a>
-      <div class="about">
-       <a href="#content"> About
-        <button class="dropdown-btn">
-          <span class="dropdown-icon">&#9660;</span>
-          <!-- Unicode character &#9660; represents a downward-pointing triangle (chevron down) -->
-          <div class="dropdown-content">
-              <!-- Dropdown items -->
-              <a href="../assets/DOC-20221229-WA0013..pdf" class="dropdown-item">Constitution</a>
-              <a href="#" class="dropdown-item" style="display:table;padding-top:5px;padding-bottom:5px;">Chapter</a>
-              <!-- <a href="#" class="dropdown-item">Item 3</a> -->
-          </div>
-        </button></a>
-      </div>
-    <!-- <ion-button id="popover-button"><ion-icon name="arrow-dropdown"></ion-icon></ion-button>
+      <ion-button fill="clear" style="color: var(--ion-color-ptimary-contrast)"><a routerLink="home" style="color: var(--ion-color-ptimary-contrast)">Home</a></ion-button>
+
+<ion-button fill="clear" style="color: var(--ion-color-ptimary-contrast)" id="popover-button"style="background: none;height:5px;text-decoration: none;color: var(--ion-color-ptimary-contrast)">About<ion-icon name="arrow-dropdown"></ion-icon>
+  <span class="dropdown-icon" style="color: var(--ion-color-ptimary-contrast)"  style="background: none;">&#9660;</span></ion-button>
 <ion-popover trigger="popover-button" [dismissOnSelect]="true">
 <ng-template>
   <ion-content>
-    <ion-list>
-      <ion-item [button]="true" [detail]="false">Option 1</ion-item>
-      <ion-item [button]="true" [detail]="false">Option 2</ion-item>
-      <ion-item [button]="true" id="nested-trigger">More options...</ion-item>
+    <ion-list style="text-decoration: none;">
+      <ion-item [button]="true" [detail]="false" style="color: var(--ion-color-ptimary-contrast)"><a href="#content" style="text-decoration: none;color: var(--ion-color-ptimary-contrast);" class="dropdown-item">About</a></ion-item>
+
+      <ion-item [button]="true" [detail]="false" style="color: var(--ion-color-ptimary-contrast)"><a href="../assets/DOC-20221229-WA0013..pdf" style="text-decoration: none;color: var(--ion-color-ptimary-contrast);"class="dropdown-item">Constitution</a></ion-item>
+      <ion-item [button]="true" id="nested-trigger" style="color: var(--ion-color-ptimary-contrast)">More options...</ion-item>
 
       <ion-popover trigger="nested-trigger" [dismissOnSelect]="true" side="end">
         <ng-template>
           <ion-content>
             <ion-list>
-              <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+              <ion-item [button]="true" [detail]="false"style="color: var(--ion-color-ptimary-contrast)">Nested option</ion-item>
             </ion-list>
           </ion-content>
         </ng-template>
@@ -36,13 +26,14 @@
     </ion-list>
   </ion-content>
 </ng-template>
-</ion-popover> -->
-        <a routerLink="alumni">Alumni</a>
-        <a routerLink="reunion">Reunion</a>
-        <a routerLink="membership">Membership</a>
-        <a routerLink="donate">Donate</a>
-        <a  routerLink="team">Team</a>
-        <a routerLink="#">Contact Us</a>
+</ion-popover>
+
+<ion-button fill="clear" style="color: var(--ion-color-ptimary-contrast)"> <a routerLink="alumni" style="color: var(--ion-color-ptimary-contrast)">Alumni</a></ion-button>
+  <ion-button fill="clear" style="color: var(--ion-color-ptimary-contrast)"><a routerLink="reunion" style="color: var(--ion-color-ptimary-contrast)">Reunion</a></ion-button>
+    <ion-button fill="clear" style="color: var(--ion-color-ptimary-contrast)"> <a routerLink="membership" style="color: var(--ion-color-ptimary-contrast)">Membership</a></ion-button>
+      <ion-button fill="clear" style="color: var(--ion-color-ptimary-contrast)"><a routerLink="donate" style="color: var(--ion-color-ptimary-contrast)">Donate</a></ion-button>
+        <ion-button fill="clear" style="color: var(--ion-color-ptimary-contrast)"> <a  routerLink="team" style="color: var(--ion-color-ptimary-contrast)">Team</a></ion-button>
+        <ion-button fill="clear" style="color: var(--ion-color-ptimary-contrast)"><a routerLink="#" style="color: var(--ion-color-ptimary-contrast)">Contact Us</a></ion-button>
     </nav>
   </header>
   <!-- <ion-split-pane contentId="main-content"> -->
@@ -54,15 +45,45 @@
             </div>
             <div class="container"><b>AAECA</b></div>
           <ion-note class="name2" style="color: black;">
-            Alumni Association Engineering College Ajmer
+            Alumni Association <br> Engineering College Ajmer
           </ion-note>
 
-          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
-            <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
-              <ion-icon aria-hidden="true" slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
-              <ion-label>{{ p.title }}</ion-label>
-            </ion-item>
+           <!-- Other menu items -->
+           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+            <ng-container *ngIf="p.title !== 'About' && p.title !== 'Constitution'">
+              <!-- Render regular menu item -->
+              <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+                <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+                <ion-label>{{ p.title }}</ion-label>
+              </ion-item>
+            </ng-container>
+          
+            <ng-container *ngIf="p.title === 'About'">
+              <!-- Render dropdown button -->
+              <ion-item button="true" detail="false" lines="none" (click)="toggleAboutDropdown($event)">
+                <ion-icon slot="start" name="information-circle-outline"></ion-icon>
+                <ion-label>About</ion-label>
+                <ion-icon slot="end" [name]="showAboutDropdown ? 'chevron-up' : 'chevron-down'"></ion-icon>
+              </ion-item>
+              
+              <!-- Render dropdown items -->
+              <div *ngIf="showAboutDropdown" class="dropdown-content">
+                <ion-item [button]="true" [detail]="false" lines="none">
+                  <a href="#content" color="medium" style="text-decoration: none;" class="dropdown-items">
+                    <ion-icon  slot="start" name="information-circle-outline"></ion-icon>
+                    <a style="color: var(--ion-color-ptimary-contrast);">About</a>
+                  </a>
+                </ion-item>
+                <ion-item [button]="true" [detail]="false" lines="none">
+                  <a href="../assets/DOC-20221229-WA0013..pdf" color="medium" style="text-decoration: none;" class="dropdown-items">
+                    <ion-icon  slot="start" name="document"></ion-icon>
+                    <a style="color: var(--ion-color-ptimary-contrast);">Constitution</a> 
+                  </a>
+                </ion-item>
+              </div>
+            </ng-container>
           </ion-menu-toggle>
+          
           <div class="social-icons">Follow us On :
             <a href="https://twitter.com" target="_blank">
               <ion-icon name="logo-twitter"></ion-icon>
@@ -79,27 +100,9 @@
           </div>
         </ion-list>
 
-        <!-- <ion-list id="labels-list">
-          <ion-list-header>Labels</ion-list-header>
-
-          <ion-item *ngFor="let label of labels" lines="none">
-            <ion-icon aria-hidden="true" slot="start" ios="bookmark-outline" md="bookmark-sharp"></ion-icon>
-            <ion-label>{{ label }}</ion-label>
-          </ion-item>
-        </ion-list> -->
        
       </ion-content>
     </ion-menu>
     <ion-router-outlet id="main-content"></ion-router-outlet>
   <!-- </ion-split-pane> -->
 </ion-app>
-
-
-
-
-<!-- <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
-                      <ul class="dropdown-menu" aria-labelledby="pages">
-                        <li><a href="about.html" class="dropdown-item">About Us </a></li>
-                      </ul>
-                    </li> -->

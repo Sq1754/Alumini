@@ -1,26 +1,26 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="end">
-    <div class="login">
-      <ion-button href="sign-in" >
-        <ion-icon name="log-in">
-        </ion-icon>Login
-    </ion-button>
-  </div>
-    <div class="menu-btn">
-      <ion-menu-button></ion-menu-button>
-    </div>
+      <div class="login">
+        <ion-button href="sign-in">
+          <ion-icon name="log-in">
+          </ion-icon>Login
+        </ion-button>
+      </div>
+      <div class="menu-btn">
+        <ion-menu-button></ion-menu-button>
+      </div>
     </ion-buttons>
     <ion-title>
-    <div class="name">
-    <img src="../../assets/AAECA-LOGO.png">
-      <p>Alumni Association</p>
-      <br>
-      <p>Engineering College Ajmer</p>
-      <br>
-      <!-- <p id="sub">An Association of ECA Alumini</p> -->
-    </div>
-  </ion-title>
+      <div class="name">
+        <img src="../../assets/AAECA-LOGO.png">
+        <p>Alumni Association</p>
+        <br>
+        <p>Engineering College Ajmer</p>
+        <br>
+        <!-- <p id="sub">An Association of ECA Alumini</p> -->
+      </div>
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -29,203 +29,312 @@
 
 <ion-content [fullscreen]="true">
 
-    <app-banner [slides]="slides"></app-banner>
-    <div class="container">
-      <h6 id="num">GECA in Numbers: &nbsp;</h6>
-        <div>
-      <h1><strong>{{ counterValue1 }}</strong>+</h1>ALUMNI &nbsp;
-      <br>
-      <h1><strong>{{ counterValue2 }}</strong>+</h1>Students On Campus &nbsp;
-      <br>
-      <h1><strong>{{ counterValue3 }}</strong>+</h1>Faculty &nbsp;
-        </div>
+  <app-banner [slides]="slides"></app-banner>
+  <div class="container">
+    <h6 id="num">GECA in Numbers : &nbsp;</h6>
+    <div class="white-bar">
+      <div class="section alumnii">
+        <h1><strong>{{ counterValue1 }}</strong>+</h1>
+        <span>Alumni</span>
+      </div>
+      <div class="section students">
+        <h1><strong>{{ counterValue2 }}</strong>+</h1>
+        <span>Students On Campus</span>
+      </div>
+      <div class="section faculty">
+        <h1><strong>{{ counterValue3 }}</strong>+</h1>
+        <span>Faculty</span>
+      </div>
     </div>
+  </div>
 
 
-<div class="navs">
-<div id="content">
-  <h2><b>Engagements</b></h2>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo distinctio, corrupti pariatur ratione odio asperiores quae voluptatum ducimus est, nulla dicta aperiam, error ea. Vitae recusandae ducimus autem ullam quod deserunt distinctio vero repellendus quos!</p>
+<div id="plans" style="display:flex;
+justify-content:center;
+align-items:center;
+width:100%;">
+  <p>
+    BE THE MEMBER OF AAECA
+  </p>
+  <div class="engg">
+
+<ion-card class="subs">
+  <ion-card-header>
+    <ion-card-title style="margin-top: 15px;font-size:35px;font-weight:lighter; color:rgb(36, 0, 97)">Elite</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    Suitable to grow steadily.
+  </ion-card-content>
+  <div class="mt-6" style="margin-top: 20px">
+      <span style="font-size:45px ;font-weight:lighter">
+        ₹3990</span>
+      <span style="font-size: medium;">/ mo </span>
+  </div>
+  <ion-button fill="fill" color="black" shape="round"style="align-items:center;display:flex;color:white;background-color:black;border-radius:25px; margin-top: 30px;margin-bottom: 30px;">Pay Now</ion-button>
+  <!-- <ion-button shape="round">
+    <ion-icon slot="icon-only" name="heart"></ion-icon>
+  </ion-button> -->
+</ion-card>
+
+<ion-card class="subs" style="
+margin-top:5%;margin-bottom:5%;
+">
+  <ion-card-header>
+    <ion-card-title style="margin-top: 15px;font-size:35px;font-weight:lighter; color:rgb(36, 0, 97)">Elite Plus</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    Suitable to grow steadily.
+  </ion-card-content>
+  <div class="mt-6" style="margin-top: 20px">
+      <span style="font-size:45px ;font-weight:lighter">
+        ₹3990</span>
+      <span style="font-size: medium;">/ mo </span>
+  </div>
+  <ion-button fill="fill" shape="round"style="align-items:center;display:flex;color:white;background-color:black;border-radius:25px; margin-top: 30px;margin-bottom: 30px;">Pay Now</ion-button>
+  <!-- <ion-button shape="round">
+    <ion-icon slot="icon-only" name="heart"></ion-icon>
+  </ion-button> -->
+</ion-card>
+<!-- </div>
+<div class="alumni"> -->
+<ion-card class="subs" >
+  <ion-card-header>
+    <ion-card-title style="margin-top: 15px;font-size:35px;font-weight:lighter; color:rgb(36, 0, 97)">Standard</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    Suitable to grow steadily.
+  </ion-card-content>
+  <div class="mt-6" style="margin-top: 20px">
+      <span style="font-size:45px ;font-weight:lighter">
+        ₹3990</span>
+      <span style="font-size: medium;">/ mo </span>
+  </div>
+  <ion-button fill="fill" shape="round"style="align-items:center;display:flex;color:white;background-color:black;border-radius:25px; margin-top: 30px;margin-bottom: 30px;">Pay Now</ion-button>
+  <!-- <ion-button shape="round">
+    <ion-icon slot="icon-only" name="heart"></ion-icon>
+  </ion-button> -->
+</ion-card>
+<!-- </div> -->
+<!-- <div class="alumni"> -->
 </div>
-<div class="alumni"><a href="../alumni">
-  <ion-icon name="school">
-  </ion-icon><b> Alumni</b>
-  <p>Lorem ipsum dolor sit amet consectetur.
-  </p></a>
-</div>
-  <div class="reunion"><a href="../reunion">
-    <ion-icon name="ribbon">
-    </ion-icon><b> Reunion</b>
-    <p>Celebrate your Next milestone reunion with us!</p>
-  </a></div>
-  <div class="book"><a href="../donate">
-    <ion-icon name="Heart">
-    </ion-icon><b> Donate</b>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></a>
-  </div>
-  <div class="trophy"><a href="../home">
-    <ion-icon name="trophy">
-    </ion-icon><b> Awards</b>
-    <p>  Lorem, ipsum dolor sit amet consectetur adipisicing.
-    </p></a>
-  </div>
-  <div class="wallet"><a href="../membership">
-    <ion-icon name="wallet">
-    </ion-icon><b> Membership</b>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, officiis!
-    </p></a>
-  </div>
 </div>
 
-  <div class="wallet"><a href="../team">
-    <ion-icon name="people">
-    </ion-icon><b> Teams</b>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, officiis!
-    </p></a>
-  </div>
 
 
+  <div class="navs">
+    <div id="content">
+      <h2><b>Engagements</b></h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo distinctio, corrupti pariatur ratione odio
+        asperiores quae voluptatum ducimus est, nulla dicta aperiam, error ea. Vitae recusandae ducimus autem ullam quod
+        deserunt distinctio vero repellendus quos!</p>
+    </div>
+<div class="engg">
+    <div class="alumni"><a href="../alumni" style="cursor: pointer;">
+        <ion-icon name="school">
+        </ion-icon><b> Alumni</b>
+        <p>Lorem ipsum dolor sit amet consectetur.
+        </p>
+      </a>
+    </div>
+    <div class="alumni"><a href="../reunion" style="cursor: pointer;">
+        <ion-icon name="ribbon">
+        </ion-icon><b> Reunion</b>
+        <p>Celebrate your Next milestone reunion with us!</p>
+      </a>
+    </div></div>
+    
+    <div class="engg">
+      <div class="alumni"><a href="../donate" style="cursor: pointer;">
+        <ion-icon name="Heart">
+        </ion-icon><b> Donate</b>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </a>
+    </div>
+    <div class="alumni"><a href="../home" style="cursor: pointer;">
+        <ion-icon name="trophy">
+        </ion-icon><b> Awards</b>
+        <p> Lorem, ipsum dolor sit amet consectetur adipisicing.
+        </p>
+      </a>
+    </div>
+    </div>
+    <div class="engg">
+    <div class="alumni"><a href="../membership" style="cursor: pointer;">
+        <ion-icon name="wallet">
+        </ion-icon><b> Membership</b>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        </p>
+      </a>
+    </div>
+ 
+
+  <div class="alumni"><a href="../team" style="cursor: pointer;">
+      <ion-icon name="people">
+      </ion-icon><b> Teams</b>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, officiis!
+      </p>
+    </a>
+  </div></div> </div>
   <ion-grid>
     <h2><b>Explore The College</b></h2>
     <ion-row>
       <!-- video1 -->
-    <ion-col>
-      <ion-card>
-        <ion-card-header>
-          <ion-card-title>Overview of College</ion-card-title>
-        </ion-card-header>
-        <ion-card-content>
-          <iframe width="100%" height="275px" src="https://www.youtube.com/embed/CAiRpBSBLKQ?si=yzzxkbgwRWMqBYeb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </ion-card-content>
-      </ion-card>
-    </ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Overview of College</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <iframe width="100%" height="275px" src="https://www.youtube.com/embed/CAiRpBSBLKQ?si=yzzxkbgwRWMqBYeb"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
 
-    <!-- video2 -->
-    <ion-col>
-      <ion-card>
-        <ion-card-header>
-          <ion-card-title>Campus Tour</ion-card-title>
-        </ion-card-header>
-        <ion-card-content>
-          <iframe width="100%" height="275px" src="https://www.youtube.com/embed/3eAC7XaLLYA?si=ipeQ2NQidEufwJdm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </ion-card-content>
-      </ion-card>
-    </ion-col>
-    
-    <!-- video3 -->
-    <ion-col>
-      <ion-card>
-        <ion-card-header>
-          <ion-card-title>Campus Tour</ion-card-title>
-        </ion-card-header>
-        <ion-card-content>
-          <iframe width="100%" height="275px" src="https://www.youtube.com/embed/3eAC7XaLLYA?si=ipeQ2NQidEufwJdm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </ion-card-content>
-      </ion-card>
-    </ion-col>
-  </ion-row>
-</ion-grid>
+      <!-- video2 -->
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Campus Tour</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <iframe width="100%" height="275px" src="https://www.youtube.com/embed/3eAC7XaLLYA?si=ipeQ2NQidEufwJdm"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
 
-<ion-card >
-  <ion-card-header>
-    <ion-card-title>Top Donation</ion-card-title>
-    <ion-card-subtitle>Recently</ion-card-subtitle>
-  </ion-card-header>
-      <ion-card-content>
-        <ion-list>
-          <ion-item>
-            <ion-thumbnail slot="start">
-              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
-            </ion-thumbnail>
-            <ion-label>Alumini Name 1</ion-label>
-            <ion-text>Donation Amount</ion-text>
-            <ion-text>For Development of xyz</ion-text>
-          </ion-item>
-    
-          <ion-item>
-            <ion-thumbnail slot="start">
-              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
-            </ion-thumbnail>
-            <ion-label>Alumini Name 2</ion-label>
-            <ion-text>Donation Amount</ion-text>
-            <ion-text>For Development of xyz</ion-text>
-          </ion-item>
-    
-          <ion-item>
-            <ion-thumbnail slot="start">
-              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
-            </ion-thumbnail>
-            <ion-label>Alumini Name 3</ion-label>
-            <ion-text>Donation Amount</ion-text>
-            <ion-text>For Development of xyz</ion-text>
-          </ion-item>
-          
-          <ion-item lines="none">
-            <ion-thumbnail slot="start">
-              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
-            </ion-thumbnail>
-            <ion-label>Alumini Name 4</ion-label>
-            <ion-text>Donation Amount</ion-text>
-            <ion-text>For Development of xyz</ion-text>
-          </ion-item>
-        </ion-list>
-      </ion-card-content>
-    </ion-card>
+      <!-- video3 -->
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Campus Tour</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <iframe width="100%" height="275px" src="https://www.youtube.com/embed/3eAC7XaLLYA?si=ipeQ2NQidEufwJdm"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Top Donation</ion-card-title>
+      <ion-card-subtitle>Recently</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+          </ion-thumbnail>
+          <ion-label>Alumini Name 1</ion-label>
+          <ion-text>Donation Amount</ion-text>
+          <ion-text>For Development of xyz</ion-text>
+        </ion-item>
+
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+          </ion-thumbnail>
+          <ion-label>Alumini Name 2</ion-label>
+          <ion-text>Donation Amount</ion-text>
+          <ion-text>For Development of xyz</ion-text>
+        </ion-item>
+
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+          </ion-thumbnail>
+          <ion-label>Alumini Name 3</ion-label>
+          <ion-text>Donation Amount</ion-text>
+          <ion-text>For Development of xyz</ion-text>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+          </ion-thumbnail>
+          <ion-label>Alumini Name 4</ion-label>
+          <ion-text>Donation Amount</ion-text>
+          <ion-text>For Development of xyz</ion-text>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
 
 
-<!-- Footer  -->
+  <!-- Footer  -->
   <div class="foot">
     <ion-icon name="location"></ion-icon><b>Address</b>
     <p> Alumni Association office
       Room No. NB203
       Engineering College Ajmer</p>
-    
+
     <ion-icon name="call"></ion-icon><b>Phone</b>
     <p>+91 7891012342</p>
 
     <ion-icon name="mail"></ion-icon><b>Email</b>
     <p><a href="ecaajmer.ac.in">Alumniaffairs.ac.in</a></p>
-    
+
     <!-- Page to follow -->
-    <div class="logo"><H2>Follow us on:</H2>
-    <ion-icon name="logo-instagram"><a href="instagram.in"></a></ion-icon>
-    <ion-icon name="logo-github"><a href="github.in"></a></ion-icon>
-    <ion-icon name="logo-google"><a href="ecajmer.ac.in"></a></ion-icon>
-    <ion-icon name="logo-linkedin"><a href="ecajmer.ac.in"></a></ion-icon>
+    <div class="logo">
+      <H2>Follow us on:</H2>
+      <ion-icon name="logo-instagram"><a href="instagram.in"></a></ion-icon>
+      <ion-icon name="logo-github"><a href="github.in"></a></ion-icon>
+      <ion-icon name="logo-google"><a href="ecajmer.ac.in"></a></ion-icon>
+      <ion-icon name="logo-linkedin"><a href="ecajmer.ac.in"></a></ion-icon>
     </div>
   </div>
 
-<!-- Developer -->
-<div class="note1">
-<div class="devel">
-  <h4>Developed by :</h4></div>
-  <div class="developer">
+  <!-- Developer -->
+  <div class="note1">
+    <div class="devel">
+      <h4>Developed by :</h4>
+    </div>
+    <div class="developer">
 
-  <div class="saqlain">
-  <ion-thumbnail slot="start">
-    <img alt="Silhouette of mountains" src="../../assets/Saqlain prof..jpg" />
-  </ion-thumbnail>
-  <ion-label>Mohammed Saqlain</ion-label>
-  <br>
-  <ion-icon name="logo-linkedin"></ion-icon><p><a href="http://www.linkedin.com/in/saqlain1754"> LinkedIn</a></p>
-</div>
+      <div class="saqlain">
+        <ion-thumbnail slot="start">
+          <img alt="Silhouette of mountains" src="../../assets/Saqlain prof..jpg" />
+        </ion-thumbnail>
+        <ion-label>Mohammed Saqlain</ion-label>
+        <br>
+        <ion-icon name="logo-linkedin"></ion-icon>
+        <p><a href="http://www.linkedin.com/in/saqlain1754"> LinkedIn</a></p>
+      </div>
 
-<div class="mayank">
-  
-  <ion-thumbnail slot="start">
-    <img alt="Silhouette of mountains" src="../../assets/logo.png" />
-  </ion-thumbnail>
-  <ion-label>  Mayank Meghwal</ion-label>
-  <br>
-     <ion-icon name="logo-linkedin"></ion-icon><p><a href="https://www.linkedin.com/in/mayank-meghwal-2b4856205?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> LinkedIn </a></p>
-</div>
+
+      <div class="mayank">
+
+        <ion-thumbnail slot="start">
+          <img alt="Silhouette of mountains" src="../../assets/logo.png" />
+        </ion-thumbnail>
+        <ion-label> Mayank Meghwal</ion-label>
+        <br>
+        <ion-icon style="text-align: right;" name="logo-linkedin"></ion-icon>
+        <p><a
+            href="https://www.linkedin.com/in/mayank-meghwal-2b4856205?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+            LinkedIn </a></p>
+      </div>
+    </div>
   </div>
-</div>
 
 
   <div class="note">
     <P>www.ecajmer.ac.in</P>ALUMNI OF GECA.
     <P>Developed by CS Students.</P>GECA
   </div>
-  
-  </ion-content>
+
+</ion-content>

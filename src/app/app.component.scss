@@ -21,22 +21,20 @@
   font-family: 'Josefin Sans', sans-serif;
   position:absolute;
   top: 9px;
-  left: 35%;
+  left: 30%;
   background: none;
-  margin-left: 15%;
-  // background-color: white;
   z-index: 1;
-  // width: 100vh;
-  // margin: 10px auto;------------
-  // margin-top: 5%;
   height: 7vh;
   display: hidden;
   display: flex;
-  // align-items: center;
-  // border-radius: 50px;
   align-items: center;
   justify-content: center;
   text-align:end;
+  ion-button{
+    color:"medium";
+  text-decoration: none;
+
+  }
 }
 
 
@@ -44,73 +42,100 @@
 display: inline-block;
 justify-content: space-evenly;
 font-size: 1rem;
-padding: 0px 11px;
-color:#6d6d6d;
+padding: 0px 2px;
+// color:#6d6d6d;
 text-decoration: none;
 font-weight: 500;
 transition: .3s;
+font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    text-decoration: inherit;
+    text-indent: inherit;
+    text-overflow: inherit;
+    text-transform: inherit;
+    text-align: inherit;
+    white-space: inherit;
 }
-// .about a{
-// display: inline-block;
-// justify-content: space-evenly;
-// font-size: 1rem;
-// padding: 0px 11px;
-// color:#6d6d6d;
-// text-decoration: none;
-// font-weight: 500;
-// transition: .3s;
-// }
-
-.navbar a:hover{
-color: rgb(255, 255, 255);
-background-color: rgba(68, 0, 108, 0.801);
-border-radius: 20px;
-padding: 5px 10px;
-}
-// .about a:hover{
-// color: rgb(255, 255, 255);
-// background-color: rgba(68, 0, 108, 0.801);
-// border-radius: 20px;
-// padding: 5px 10px;
-// }
 @media screen and (max-width:768px){
   .header{
   display: none;
   }
 }
 
+@media screen and (max-width:1600px){
+  .navbar{
+    top: 9px;
+    left: 41%;
+    a,ion-button{
+      font-weight: 300;
+    font-size: 12px;
+    }
+  }
+}
 @media screen and (max-width:1500px){
   .navbar{
     top: 9px;
-    left: 32%;
-
+    left: 38%;
+    a,ion-button{
+      font-weight: 300;
+    font-size: 12px;
+    }
   }
 }
 @media screen and (max-width:1428px){
   .navbar{
     top: 9px;
-    left: 28%;
+    left: 38%;
+    a,ion-button{
+      font-weight: 300;
+    font-size: 12px;
+    }
+  }
+}
+@media screen and (max-width:1460px){
+  .navbar{
+    top: 9px;
+    left: 36%;
+    a,ion-button{
+      font-weight: 300;
+    font-size: 12px;
+    }
+
+  }
+}
+@media screen and (max-width:1374px){
+  .navbar{
+    top: 9px;
+    left: 34%;
+    a,ion-button{
+      font-weight: 100;
+    font-size: 12px;
+    }
 
   }
 }
 @media screen and (max-width:1328px){
   .navbar{
     top: 9px;
-    left: 24%;
+    left: 32%;
+    a,ion-button{
+      font-weight: 100;
+    font-size: 12px;
+    }
 
   }
 }
-@media screen and (max-width:1228px){
+@media screen and (max-width:1278px){
   .navbar{
     top: 9px;
-    left: 20%;
-
-  }
-}
-@media screen and (max-width:1128px){
-  .navbar{
-    top: 9px;
-    left: 16%;
+    left: 30%;
+    a,ion-button{
+      font-weight: 100;
+    font-size: 12px;
+    }
 
   }
 }
@@ -184,11 +209,11 @@ ion-menu ion-content {
   }
   
   ion-menu.md ion-item.selected ion-icon {
-    color:#572396;
+    color:#4d067c;
   }
   
   ion-menu.md ion-item ion-icon {
-    color: #ccb6e0;
+    color: #bd92df;
   }
   
   // ion-menu.md ion-item ion-label {
@@ -335,51 +360,27 @@ ion-menu ion-content {
     align-items: center;
 }
 
-
- /* Style for the dropdown button */
- .dropdown-btn {
-  // padding: 10px;
-  // background-color: #3498db;
-  color: #000000;
-  background: none;
-  border: none;
-  cursor: pointer;
+#popover-button {
+  background-color: transparent; /* or use a specific color, e.g., #ffffff for white */
 }
 
-/* Style for the dropdown content */
-.dropdown-content {
-  display: none;
-  background-color: #c6c6c6;
-  border-radius: 5px;
-  margin: 5px 2px;
-  position:absolute;
-  padding-top: 5px;
-  margin-top: 5px;
-  left: 65px;
-  // background-color: #f9f9f9;
-  // box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+.dropdown-items {
+  // left: 10%;
+  // color: rgb(172, 172, 172);
+  // margin-left: 57px; /* Adjust the padding as needed */
+  display: flex;
+  font-size: small;
+  justify-content: space-between;
+  color: var(--ion-color-ptimary-contrast);
+  align-items: center;
+  ion-icon{
+    margin-left: 60px;
+    margin-right: 15px;
+    font-size:18px;
+    // size: 10px;
+  }
+  
 }
 
-/* Style for dropdown items */
-.dropdown-item {
-  background: none;
-  display: list-item;
-  // padding: 10px;
-  display: block;
-  // color: #333
-  text-decoration: none;
-}
 
-/* Style for the dropdown icon (chevron down) */
-.dropdown-icon {
-  background: none;
-  // margin-left: 5px;
-  border-radius: 30px;
-}
 
-/* Show the dropdown content when the dropdown button is hovered over */
-.dropdown-btn:hover .dropdown-content {
-  display: block;
-
-}

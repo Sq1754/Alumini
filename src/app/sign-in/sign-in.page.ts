@@ -8,7 +8,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class SignInPage implements OnInit {
 
-  form!: FormGroup;
+  form!: FormGroup 
   type: boolean = true;
 
   constructor() { }

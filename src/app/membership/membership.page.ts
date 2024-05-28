@@ -27,14 +27,6 @@ export class MembershipPage implements OnInit {
     // You may want to send the form data to your server or perform other actions here
   }
 
-  validateFileType(event: any) {
-    const file = event.target.files[0];
-    if (file.type!== 'application/pdf') {
-      alert('Please upload a PDF file.');
-      this.formData.Marksheet = null;
-    }
-  }
-
   constructor() {}
 
   ngOnInit() {

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 
-
 @Component({
   selector: 'app-donate',
   templateUrl: './donate.page.html',
@@ -27,12 +26,9 @@ export class DonatePage implements OnInit {
     // If all validations pass, proceed with form submission
     console.log('Form submitted successfully!');
     // You may want to send the form data to your server or perform other actions here
-
   }
 
-  constructor() {
-  }
-
+  constructor(public navCtrl: NavController) {}
 
   ngOnInit() {
   }

@@ -33,14 +33,9 @@ const routes: Routes = [
   },
 {
   path: 'sign-in',
-<<<<<<< HEAD
   loadChildren: () => import('./sign-in/sign-in.module').then( m => m.SignInPageModule)
-}
-=======
-  loadChildren: () => import('./home/sign-in/sign-in.module').then( m => m.SignInPageModule)
 },
 
->>>>>>> 6117182d28fd0238a21eaf04d769a7959f6c918c
 ];
 
 @NgModule({

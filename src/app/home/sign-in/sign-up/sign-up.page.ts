@@ -5,7 +5,7 @@ import { OtpComponent } from './otp/otp.component';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 
-@Component({
+@Component({  
   selector: 'app-sign-up',
   templateUrl: './sign-up.page.html',
   styleUrls: ['./sign-up.page.scss'],

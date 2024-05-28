@@ -238,20 +238,23 @@ ion-title{
 .container{
   h1{
     color: grey;
+    display: flex;
+    flex-direction: row;
   }
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
   // background-color: rgb(27, 0, 61); 
   background: rgb(50, 0, 91);
   color: white;
   display: flex;
-  height: 40%;
-  width: 100%;
-  flex-direction: column;
+  height: 60%;
+  // width: 100%;
+  // flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  text-align: center;
+  margin: 0px 5px;
+  border-radius: 10px;
   line-height: 20px;
   margin-top: 2%;
   padding-bottom: 5%;
@@ -259,8 +262,117 @@ ion-title{
 }
 
 #num {
-  font-size: 1.5em;
+  font-size: 2em;
+  height: 10px;
+  text-align: center;
+  justify-content: center;
   display: flex;
+  margin-left: 50px;
+  flex-direction: row;
+}
+
+
+.white-bar {
+  // background-color: white;
+  display: flex;
+  height: 100px;
+  width: 70vw;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  margin-left: 30px;
+  text-align: center;
+}
+
+
+.section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+.section span {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width:500px) {
+  .container{
+    h1{
+      color: grey;
+      display: flex;
+      // flex-direction: column;
+    }
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    // background-color: rgb(27, 0, 61); 
+    background: rgb(50, 0, 91);
+    color: white;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-align: center;
+    border-radius: 30px;
+    // border-bottom-right-radius: 30px;
+    line-height: 20px;
+    margin-top: 2%;
+    padding-bottom: 9%;
+    padding-top: 4%;
+  }
+  
+  #num {
+    font-size: 1.5em;
+    height: 10px;
+    width: 100vw;
+    text-align: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: 2%;
+  }
+  
+  
+  .white-bar {
+    margin-left: -10%;
+    // background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 35%;
+    width: 100%;
+    // height: 40vh;
+    // width: 100vw;
+  }
+  
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    // margin-right: 15px;
+    text-align: center;
+  }
+  
+  
+  .section h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  
+  .section span {
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
 }
 
 
@@ -296,34 +408,6 @@ ion-icon{
     font-size: large;
     color: rgb(50, 0, 97);
 
-  }
-//------
-.reunion{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgb(180, 178, 178);
-  z-index: 1;
-  opacity: 1;
-  border: 2px rgb(0, 0, 0);
-  font-size: small;
-  margin: 10px;
-  padding: 20px;
-  border-radius: 20px;
-
-}
-.reunion b{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding-left: 5px;
-  font-size: large;
-  text-decoration: none;
-  color: black;
-
-}
-.reunion p{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding-left: 28px;
-  text-decoration: none;
-  color: #343434;
-
 }
 
 
@@ -333,6 +417,8 @@ ion-icon{
   background-color: rgb(180, 178, 178);
   z-index: 1;
   opacity: 1;
+  margin: 0px 5px;
+  width: 50%;
   border: 2px black;
   font-size: small;
   margin: 10px;
@@ -340,7 +426,7 @@ ion-icon{
   border-radius: 20px;
 }
 
-.reunion b, .alumni b, .book b, .trophy b, .wallet b {
+.alumni b {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-left: 5px;
   font-size: large;
@@ -357,21 +443,46 @@ ion-icon{
 }
 
 
-//-------
-.book{
+a {
+color: white;
+text-decoration: none;
+
+}
+
+.engg{
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width:500px) {
+  .engg{
+    display: flex;
+    flex-direction: column;
+  }
+  // Icon 
+ion-icon{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    size: 10px;
+    font-size: large;
+    color: rgb(50, 0, 97);
+
+  }
+
+
+//----------
+.alumni{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: rgb(180, 178, 178);
   z-index: 1;
   opacity: 1;
+  width: 95%;
   border: 2px black;
   font-size: small;
   margin: 10px;
   padding: 20px;
   border-radius: 20px;
-
 }
-
-.book b{
+ .alumni b{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-left: 5px;
   font-size: large;
@@ -379,7 +490,7 @@ ion-icon{
   color: black;
 
 }
-.book p{
+.alumni p{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-left: 28px;
   text-decoration: none;
@@ -387,70 +498,12 @@ ion-icon{
 
 }
 
-
-//------
-.trophy{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgb(180, 178, 178);
-  z-index: 1;
-  opacity: 1;
-  border: 2px black;
-  font-size: small;
-  margin: 10px;
-  padding: 20px;
-  border-radius: 20px;
-
-}
-
-.trophy b{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding-left: 5px;
-  font-size: large;
-  text-decoration: none;
-  color: black;
-
-}
-.trophy p{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding-left: 28px;
-  text-decoration: none;
-  color: #343434;
-
-}
-
-
-//-----
-.wallet{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgb(180, 178, 178);
-  z-index: 1;
-  opacity: 1;
-  border: 2px black;
-  font-size: small;
-  margin: 10px;
-  padding: 20px;
-  border-radius: 20px;
-
-}
-.wallet b{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding-left: 5px;
-  font-size: large;
-  text-decoration: none;
-  color: black;
-
-}
-.wallet p{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding-left: 28px;
-  text-decoration: none;
-  color: #343434;
-}
 
 a {
 color: white;
 text-decoration: none;
 
+}
 }
 
 
@@ -628,3 +681,110 @@ color: grey;
 
 padding: 10px;
 }
+
+
+#plans{
+  p{
+    display: flex;justify-content:center;font-size:20px;margin-top:5%;font-family: sans-serif;align-items:center;font-weight:lighter
+  }
+  ion-button{
+    background-color: black;
+    color: white;
+}
+.subs{
+cursor: pointer;
+margin-top:2%;
+margin-bottom:2%;
+border-radius:25px;
+align-items: center;
+justify-content: center;
+height: 40vh;
+width: 30vh;
+display: flex;
+color: rgb(0, 0, 0);
+background-color: white;
+flex-direction: column;
+}
+}
+
+#plans{
+  display: flex;
+  flex-direction: column;
+  ion-card{
+    margin-left: 0%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+      ion-button{
+        width:40vw;
+      }
+    }
+  }
+  //plans and subscriptions
+  @media screen and (min-width:1500px),(min-width:1400px),(min-width:1300px),(min-width:1200px),(min-width:1100px) {
+    #plans{
+      width: 85%;
+      ion-button{
+        width:10vw;
+        background-color: black;
+        color: white;
+    }
+      p{
+        display: flex;
+        justify-content:center;
+        font-size:30px;
+        margin-top:3%;
+        font-family: sans-serif;
+        align-items:center;
+        font-weight:lighter
+      }
+      ion-card{
+        ion-button{
+          width:10vw;
+          background-color: black;
+          color: white;
+      }
+    }
+    
+    .subs{
+   width: 22vw;
+   margin-right: 4%;
+   margin-left: 4%;
+cursor: pointer;
+margin-top:2%;
+margin-bottom:2%;
+border-radius:25px;
+align-items: center;
+justify-content: center;
+height: 40vh;
+display: flex;
+color: rgb(0, 0, 0);
+background-color: white;
+flex-direction: column;
+}
+}
+
+}
+
+
+#plans{
+ion-card:hover{
+  // border: 4px solid rgb(144, 0, 255);
+  box-shadow: 0px 0px 35px 10px rgb(110, 0, 206);
+  animation-duration: .4s;
+  animation-name: animate-box;
+
+
+}
+} 
+ @keyframes animate-box{
+    0%{
+      transform: scale(1,1);
+    }
+    50%{
+      transform: scale(1.1,1.1);
+    }
+    100%{
+      transform: scale(1,1);
+    }
+  }

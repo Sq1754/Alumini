@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 import { BannerComponent } from './banner/banner.component';
-import { SignInPage } from '../sign-in/sign-in.page';
-import { Router } from '@angular/router';
 
 
 // import { CUSTOM_ELEMENTS_SCHEMA,  ElementRef, Input, OnInit, ViewChild } from '@angular/core';
